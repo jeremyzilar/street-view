@@ -54,3 +54,43 @@ export const genderOptions = [
   { value: "non-binary", label: "Non-binary" },
   { value: "other", label: "Other" },
 ] as const;
+
+// Encampments table field types
+export interface EncampmentsTableFields {
+  name: string;
+  active: boolean;
+  notes: string;
+  coordinates: string;
+}
+
+// Our code-friendly field names for the form
+export interface EncampmentsFormFields {
+  name: string;
+  active: boolean;
+  notes: string;
+  coordinates: string;
+}
+
+// Mapping between our form fields and Airtable fields for the Encampments table
+export const encampmentsFieldMapping: Record<
+  keyof EncampmentsFormFields,
+  keyof EncampmentsTableFields
+> = {
+  name: "name",
+  active: "active",
+  notes: "notes",
+  coordinates: "coordinates",
+} as const;
+
+// Type for the Airtable record response from the Encampments table
+export interface EncampmentsRecord {
+  id: string;
+  fields: EncampmentsTableFields;
+  createdTime: string;
+}
+
+// Type for creating a new record in the Encampments table
+export type CreateEncampmentsRecord = Omit<
+  EncampmentsRecord,
+  "id" | "createdTime"
+>;

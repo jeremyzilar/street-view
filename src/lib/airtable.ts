@@ -1,5 +1,6 @@
 import Airtable from "airtable";
 import { PeopleRecord, PeopleTableFields } from "@/types/airtable";
+import { EncampmentsRecord, EncampmentsTableFields } from "@/types/airtable";
 
 // Initialize Airtable
 const getBase = () => {
@@ -48,6 +49,39 @@ export const createPeopleRecord = async (
     };
   } catch (error) {
     console.error("Error creating record:", error);
+    return null;
+  }
+};
+
+export const getEncampmentsRecords = async (): Promise<EncampmentsRecord[]> => {
+  try {
+    const base = getBase();
+    const records = await base("Encampments").select().all();
+    return records.map((record) => ({
+      id: record.id,
+      fields: record.fields as unknown as EncampmentsTableFields,
+      createdTime: record._rawJson.createdTime,
+    }));
+  } catch (error) {
+    console.error("Error fetching encampments records:", error);
+    return [];
+  }
+};
+
+export const createEncampmentsRecord = async (
+  fields: EncampmentsTableFields
+): Promise<EncampmentsRecord | null> => {
+  try {
+    const base = getBase();
+    const record = await base("Encampments").create([{ fields }]);
+    const createdRecord = record[0];
+    return {
+      id: createdRecord.id,
+      fields: createdRecord.fields as unknown as EncampmentsTableFields,
+      createdTime: createdRecord._rawJson.createdTime,
+    };
+  } catch (error) {
+    console.error("Error creating encampments record:", error);
     return null;
   }
 };

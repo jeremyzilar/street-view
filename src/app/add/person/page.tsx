@@ -8,7 +8,7 @@ import {
   genderOptions,
 } from "@/types/airtable";
 
-export default function LogPage() {
+export default function AddPersonPage() {
   const [formData, setFormData] = useState<PeopleFormFields>({
     full_name: "",
     mothers_name: "",
@@ -30,7 +30,6 @@ export default function LogPage() {
     setErrorMessage("");
 
     try {
-      // Convert our form data to Airtable field names
       const airtableData: PeopleTableFields = {
         full_name: formData.full_name,
         mothers_name: formData.mothers_name,
@@ -90,7 +89,7 @@ export default function LogPage() {
   };
 
   return (
-    <main className="min-h-screen p-4 bg-gray-100 dark:bg-gray-900 overflow-y-auto">
+    <main className="min-h-screen p-4 bg-gray-100 dark:bg-gray-900 overflow-y-auto pb-20">
       <div className="max-w-lg mx-auto">
         <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
           Add a Person
@@ -252,7 +251,7 @@ export default function LogPage() {
                   />
                   <label
                     htmlFor={`gender-${option.value}`}
-                    className={`flex items-center justify-center h-12 px-4 text-md font-medium rounded cursor-pointer border transition-colors ${
+                    className={`flex items-center justify-center h-12 px-4 text-sm font-medium rounded cursor-pointer border transition-colors ${
                       formData.gender.includes(option.value)
                         ? "bg-blue-100 dark:bg-blue-900 border-blue-500 text-blue-600 dark:text-white"
                         : "text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700"
