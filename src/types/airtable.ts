@@ -8,6 +8,7 @@ export interface PeopleTableFields {
   veteran: boolean;
   vi_6months: boolean;
   notes: string;
+  encampment?: string;
 }
 
 // Our code-friendly field names (snake_case)
@@ -20,6 +21,7 @@ export interface PeopleFormFields {
   veteran: boolean;
   vi_6months: boolean;
   notes: string;
+  encampment: string;
 }
 
 // Mapping between our form fields and Airtable fields for the People table
@@ -35,6 +37,7 @@ export const peopleFieldMapping: Record<
   veteran: "veteran",
   vi_6months: "vi_6months",
   notes: "notes",
+  encampment: "encampment",
 } as const;
 
 // Type for the Airtable record response from the People table
@@ -61,6 +64,7 @@ export interface EncampmentsTableFields {
   active: boolean;
   notes: string;
   coordinates: string;
+  geocode_cache?: string;
 }
 
 // Our code-friendly field names for the form
@@ -69,6 +73,7 @@ export interface EncampmentsFormFields {
   active: boolean;
   notes: string;
   coordinates: string;
+  geocode_cache?: string;
 }
 
 // Mapping between our form fields and Airtable fields for the Encampments table
@@ -80,6 +85,7 @@ export const encampmentsFieldMapping: Record<
   active: "active",
   notes: "notes",
   coordinates: "coordinates",
+  geocode_cache: "geocode_cache",
 } as const;
 
 // Type for the Airtable record response from the Encampments table

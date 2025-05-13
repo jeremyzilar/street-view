@@ -1,4 +1,4 @@
-import Airtable from "airtable";
+import Airtable, { FieldSet, Record as AirtableRecord } from "airtable";
 import { PeopleRecord, PeopleTableFields } from "@/types/airtable";
 import { EncampmentsRecord, EncampmentsTableFields } from "@/types/airtable";
 
@@ -40,8 +40,15 @@ export const createPeopleRecord = async (
 ): Promise<PeopleRecord | null> => {
   try {
     const base = getBase();
-    const record = await base("People").create([{ fields }]);
-    const createdRecord = record[0];
+    // Convert the encampment field to an array if it exists
+    const airtableFields = {
+      ...fields,
+      encampment: fields.encampment ? [fields.encampment] : undefined,
+    };
+    const records = await base("People").create([
+      { fields: airtableFields as unknown as FieldSet },
+    ]);
+    const createdRecord = records[0];
     return {
       id: createdRecord.id,
       fields: createdRecord.fields as unknown as PeopleTableFields,
@@ -73,8 +80,10 @@ export const createEncampmentsRecord = async (
 ): Promise<EncampmentsRecord | null> => {
   try {
     const base = getBase();
-    const record = await base("Encampments").create([{ fields }]);
-    const createdRecord = record[0];
+    const records = await base("Encampments").create([
+      { fields: fields as unknown as FieldSet },
+    ]);
+    const createdRecord = records[0];
     return {
       id: createdRecord.id,
       fields: createdRecord.fields as unknown as EncampmentsTableFields,

@@ -1,28 +1,36 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { Map } from "@/components/Map";
 import { createEncampmentsRecord } from "@/lib/airtable";
-import {
-  EncampmentsFormFields,
-  EncampmentsTableFields,
-} from "@/types/airtable";
+import { EncampmentsFormFields } from "@/types/airtable";
 
-export default function AddEncampmentPage() {
+export default function AddEncampment() {
+  const router = useRouter();
   const [formData, setFormData] = useState<EncampmentsFormFields>({
     name: "",
-    active: true,
     notes: "",
     coordinates: "",
+    active: true,
+    geocode_cache: undefined,
   });
-  const [status, setStatus] = useState<
-    "idle" | "submitting" | "success" | "error"
-  >("idle");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
+
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      notes: "",
+      coordinates: "",
+      active: true,
+      geocode_cache: undefined,
+    });
+  };
 
   const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value, type } = e.target;
     setFormData((prev) => ({
@@ -32,86 +40,70 @@ export default function AddEncampmentPage() {
     }));
   };
 
+  const handleLocationSelect = (lat: number, lng: number) => {
+    setFormData((prev) => ({
+      ...prev,
+      coordinates: `${lat},${lng}`,
+      geocode_cache: `🔵 eyJpIjoi${lat}, ${lng}IiwibyI6eyJzdGF0dXMiOiJPSyIsImxhdCI6${lat}LCJsbmciOi0${lng}LCJibG9ja0luc3RhbGxhdGlvbklkcyI6WyJibGk4WElLR1NxaDdBdGlBRiJdLCJsb2NhdGlvbkZpZWxkSWQiOiJmbGRPZktOZXJmMkFUSmxmTSJ9LCJlIjowfQ==`,
+    }));
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("submitting");
-    setErrorMessage("");
+    setIsSubmitting(true);
+    setError(null);
+    setSuccess(false);
 
     try {
-      const airtableData: EncampmentsTableFields = {
-        name: formData.name,
-        active: formData.active,
-        notes: formData.notes,
-        coordinates: formData.coordinates,
-      };
-
-      const result = await createEncampmentsRecord(airtableData);
-      if (result) {
-        setStatus("success");
-        setFormData({
-          name: "",
-          active: true,
-          notes: "",
-          coordinates: "",
-        });
-      } else {
-        setStatus("error");
-        setErrorMessage("Failed to submit form");
-      }
-    } catch (error) {
-      setStatus("error");
-      setErrorMessage(
-        error instanceof Error ? error.message : "An error occurred"
+      await createEncampmentsRecord(formData);
+      setSuccess(true);
+      resetForm();
+      // Clear success message after 3 seconds
+      setTimeout(() => {
+        setSuccess(false);
+      }, 3000);
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Failed to create encampment"
       );
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <main className="min-h-screen p-4 md:p-8 bg-gray-100 dark:bg-gray-900">
-      <div className="max-w-2xl mx-auto">
-        <h1 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-          Add New Encampment
-        </h1>
+    <main className="min-h-screen p-4 bg-gray-100 dark:bg-gray-900 overflow-y-auto pb-20">
+      <h1 className="text-2xl font-bold mb-6">Add New Encampment</h1>
+      {error && (
+        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+          {error}
+        </div>
+      )}
+      {success && (
+        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+          Encampment created successfully!
+        </div>
+      )}
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="space-y-1">
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            Name <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="bg-white dark:bg-gray-700 px-2 py-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:text-white"
+          />
+        </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="space-y-1">
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="bg-white dark:bg-gray-700 px-2 py-2 block w-full rounded border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary-500 focus:ring-primary-500 text-gray-900 dark:text-white"
-              placeholder="Enter encampment name"
-            />
-          </div>
-
-          <div className="space-y-1">
-            <label
-              htmlFor="coordinates"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Coordinates
-            </label>
-            <input
-              type="text"
-              id="coordinates"
-              name="coordinates"
-              value={formData.coordinates}
-              onChange={handleChange}
-              required
-              className="bg-white dark:bg-gray-700 px-2 py-2 block w-full rounded border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary-500 focus:ring-primary-500 text-gray-900 dark:text-white"
-              placeholder="Enter coordinates (e.g., 35.6869° N, 105.9378° W)"
-            />
-          </div>
-
+        <div className="grid grid-cols-2 gap-2">
           <div className="relative">
             <input
               type="checkbox"
@@ -129,51 +121,64 @@ export default function AddEncampmentPage() {
                   : "text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700"
               }`}
             >
-              Active
+              {formData.active ? "Active" : "Inactive"}
             </label>
           </div>
+        </div>
 
-          <div className="space-y-1">
-            <label
-              htmlFor="notes"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
-            >
-              Notes
-            </label>
-            <textarea
-              id="notes"
-              name="notes"
-              value={formData.notes}
-              onChange={handleChange}
-              rows={4}
-              className="bg-white dark:bg-gray-700 px-2 py-2 block w-full rounded border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary-500 focus:ring-primary-500 resize-none text-gray-900 dark:text-white"
-              placeholder="Add any additional notes here..."
-            />
-          </div>
+        <div className="space-y-1">
+          <label
+            htmlFor="notes"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            Notes
+          </label>
+          <textarea
+            id="notes"
+            name="notes"
+            value={formData.notes}
+            onChange={handleChange}
+            rows={3}
+            className="bg-white dark:bg-gray-700 px-2 py-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:text-white"
+          />
+        </div>
 
-          <div className="flex justify-end">
-            <button
-              type="submit"
-              disabled={status === "submitting"}
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {status === "submitting" ? "Submitting..." : "Submit"}
-            </button>
-          </div>
+        <div>
+          <Map
+            onLocationSelect={handleLocationSelect}
+            initialCoordinates={formData.coordinates}
+            address={formData.name}
+            geocodeCache={formData.geocode_cache}
+          />
+        </div>
 
-          {status === "success" && (
-            <div className="p-4 text-sm text-green-700 bg-green-100 rounded-md dark:bg-green-900 dark:text-green-100">
-              Encampment added successfully!
-            </div>
-          )}
+        <div className="space-y-1">
+          <label
+            htmlFor="coordinates"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            Coordinates
+          </label>
+          <input
+            type="text"
+            id="coordinates"
+            name="coordinates"
+            value={formData.coordinates}
+            onChange={handleChange}
+            readOnly
+            placeholder="Click on the map to set coordinates"
+            className="bg-gray-50 dark:bg-gray-800 px-2 py-2 block w-full rounded-md border-gray-300 shadow-sm cursor-not-allowed dark:border-gray-600 dark:text-gray-400"
+          />
+        </div>
 
-          {status === "error" && (
-            <div className="p-4 text-sm text-red-700 bg-red-100 rounded-md dark:bg-red-900 dark:text-red-100">
-              {errorMessage}
-            </div>
-          )}
-        </form>
-      </div>
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
+        >
+          {isSubmitting ? "Creating..." : "Create Encampment"}
+        </button>
+      </form>
     </main>
   );
 }

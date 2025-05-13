@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { createPeopleRecord } from "@/lib/airtable";
+import { useState, useEffect } from "react";
+import { createPeopleRecord, getEncampmentsRecords } from "@/lib/airtable";
 import {
   PeopleFormFields,
   PeopleTableFields,
   genderOptions,
+  EncampmentsRecord,
 } from "@/types/airtable";
 
 export default function AddPersonPage() {
@@ -18,11 +19,25 @@ export default function AddPersonPage() {
     veteran: false,
     vi_6months: false,
     notes: "",
+    encampment: "",
   });
+  const [encampments, setEncampments] = useState<EncampmentsRecord[]>([]);
   const [status, setStatus] = useState<
     "idle" | "submitting" | "success" | "error"
   >("idle");
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    const fetchEncampments = async () => {
+      try {
+        const records = await getEncampmentsRecords();
+        setEncampments(records);
+      } catch (error) {
+        console.error("Failed to fetch encampments:", error);
+      }
+    };
+    fetchEncampments();
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,6 +54,7 @@ export default function AddPersonPage() {
         veteran: formData.veteran,
         vi_6months: formData.vi_6months,
         notes: formData.notes,
+        encampment: formData.encampment,
       };
 
       const result = await createPeopleRecord(airtableData);
@@ -53,6 +69,7 @@ export default function AddPersonPage() {
           veteran: false,
           vi_6months: false,
           notes: "",
+          encampment: "",
         });
       } else {
         setStatus("error");
@@ -67,7 +84,9 @@ export default function AddPersonPage() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value, type } = e.target as HTMLInputElement;
     if (type === "checkbox") {
@@ -279,6 +298,31 @@ export default function AddPersonPage() {
               onChange={handleChange}
               className="bg-white dark:bg-gray-700 px-2 py-2 block w-full rounded border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary-500 focus:ring-primary-500 text-gray-900 dark:text-white"
             />
+          </div>
+
+          <div className="space-y-1">
+            <label
+              htmlFor="encampment"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+            >
+              Encampment
+            </label>
+            <select
+              id="encampment"
+              name="encampment"
+              value={formData.encampment}
+              onChange={handleChange}
+              className="bg-white dark:bg-gray-700 px-2 py-2 block w-full rounded border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary-500 focus:ring-primary-500 text-gray-900 dark:text-white"
+            >
+              <option value="">Select an encampment</option>
+              {encampments
+                .filter((encampment) => encampment.fields.active)
+                .map((encampment) => (
+                  <option key={encampment.id} value={encampment.id}>
+                    {encampment.fields.name}
+                  </option>
+                ))}
+            </select>
           </div>
 
           <div className="grid grid-cols-2 gap-2">
