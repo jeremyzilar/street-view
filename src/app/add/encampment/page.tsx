@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { Map } from "@/components/Map";
+import { StatusMessage } from "@/components/StatusMessage";
 import { createEncampmentsRecord } from "@/lib/airtable";
 import { EncampmentsFormFields } from "@/types/airtable";
-import { Header } from "@/components/Header";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function AddEncampment() {
   const router = useRouter();
@@ -77,16 +77,11 @@ export default function AddEncampment() {
       <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
         Add an Encampment
       </h1>
-      {error && (
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-          {error}
-        </div>
-      )}
-      {success && (
-        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-          Encampment created successfully!
-        </div>
-      )}
+      <StatusMessage type="error" message={error || ""} />
+      <StatusMessage
+        type="success"
+        message={success ? "Encampment created successfully!" : ""}
+      />
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-1">
           <label

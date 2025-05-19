@@ -1,14 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { StatusMessage } from "@/components/StatusMessage";
 import { createPeopleRecord, getEncampmentsRecords } from "@/lib/airtable";
 import {
+  EncampmentsRecord,
   PeopleFormFields,
   PeopleTableFields,
   genderOptions,
-  EncampmentsRecord,
 } from "@/types/airtable";
-import { Header } from "@/components/Header";
+import { useEffect, useState } from "react";
 
 export default function AddPersonPage() {
   const [formData, setFormData] = useState<PeopleFormFields>({
@@ -114,17 +114,11 @@ export default function AddPersonPage() {
         Add a Person
       </h1>
 
-      {status === "success" && (
-        <div className="mb-4 p-4 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-100 rounded-lg">
-          Form submitted successfully!
-        </div>
-      )}
-
-      {status === "error" && (
-        <div className="mb-4 p-4 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-100 rounded-lg">
-          {errorMessage}
-        </div>
-      )}
+      <StatusMessage type="error" message={errorMessage || ""} />
+      <StatusMessage
+        type="success"
+        message={status === "success" ? "Person created successfully!" : ""}
+      />
 
       <h2 className="text-3xl font-mono mb-6 text-gray-900 dark:text-white space-x-1">
         <span>#</span>

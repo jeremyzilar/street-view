@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
+import { getEncampmentsRecords, getPeopleRecords } from "@/lib/airtable";
+import { EncampmentsRecord, PeopleRecord } from "@/types/airtable";
 
 interface MapProps {
   onLocationSelect: (lat: number, lng: number) => void;
@@ -23,7 +25,85 @@ export function Map({
   const markerRef = useRef<google.maps.marker.AdvancedMarkerElement | null>(
     null
   );
+  const encampmentMarkersRef = useRef<
+    google.maps.marker.AdvancedMarkerElement[]
+  >([]);
   const isInitializedRef = useRef(false);
+
+  // Function to create a marker for an encampment
+  const createEncampmentMarker = (
+    map: google.maps.Map,
+    encampment: EncampmentsRecord,
+    peopleCount: number
+  ) => {
+    if (!encampment.fields.coordinates) return null;
+
+    const [lat, lng] = encampment.fields.coordinates.split(",").map(Number);
+    const marker = new google.maps.marker.AdvancedMarkerElement({
+      position: { lat, lng },
+      map,
+      title: encampment.fields.name,
+    });
+
+    // Add click listener to show encampment name
+    marker.addListener("click", () => {
+      const infoWindow = new google.maps.InfoWindow({
+        content: `<div class="p-2">
+          <h3 class="font-bold">${encampment.fields.name}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">People: ${peopleCount}</p>
+          ${
+            encampment.fields.notes
+              ? `<p class="text-sm mt-1">${encampment.fields.notes}</p>`
+              : ""
+          }
+        </div>`,
+      });
+      infoWindow.open(map, marker);
+    });
+
+    return marker;
+  };
+
+  // Function to fetch and display encampments
+  const fetchAndDisplayEncampments = async (map: google.maps.Map) => {
+    try {
+      const [encampments, people] = await Promise.all([
+        getEncampmentsRecords(),
+        getPeopleRecords(),
+      ]);
+
+      // Count people per encampment
+      const peopleCountByEncampment = people.reduce((acc, person) => {
+        const encampmentId = person.fields.encampment;
+        if (encampmentId) {
+          acc[encampmentId] = (acc[encampmentId] || 0) + 1;
+        }
+        return acc;
+      }, {} as Record<string, number>);
+
+      const activeEncampments = encampments.filter(
+        (encampment) =>
+          encampment.fields.active && encampment.fields.coordinates
+      );
+
+      // Clear existing encampment markers
+      encampmentMarkersRef.current.forEach((marker) => {
+        marker.map = null;
+      });
+      encampmentMarkersRef.current = [];
+
+      // Create new markers for active encampments
+      activeEncampments.forEach((encampment) => {
+        const peopleCount = peopleCountByEncampment[encampment.id] || 0;
+        const marker = createEncampmentMarker(map, encampment, peopleCount);
+        if (marker) {
+          encampmentMarkersRef.current.push(marker);
+        }
+      });
+    } catch (error) {
+      console.error("Failed to fetch encampments or people:", error);
+    }
+  };
 
   useEffect(() => {
     const initMap = async () => {
@@ -49,7 +129,6 @@ export function Map({
         // Check if we have a valid cached geocode
         if (geocodeCache) {
           try {
-            // Extract coordinates from Airtable's geocoding format
             const match = geocodeCache.match(/eyJpIjoi([\d.-]+),\s*([\d.-]+)/);
             if (match) {
               const [_, lat, lng] = match;
@@ -63,7 +142,6 @@ export function Map({
           }
         }
         if (!center) {
-          // If not in cache or cache is expired, geocode the address
           const geocoder = new Geocoder();
           try {
             const result = await geocoder.geocode({ address });
@@ -73,7 +151,6 @@ export function Map({
                 lat: location.lat(),
                 lng: location.lng(),
               };
-              // Notify parent to update the cache
               onLocationSelect(location.lat(), location.lng());
             }
           } catch (error) {
@@ -93,8 +170,7 @@ export function Map({
             lng: position.coords.longitude,
           };
         } catch (error) {
-          // Default to Santa Fe if geolocation fails
-          center = { lat: 35.6869, lng: -105.9378 };
+          center = { lat: 35.6869, lng: -105.9378 }; // Default to Santa Fe
         }
       }
 
@@ -108,6 +184,9 @@ export function Map({
       });
 
       mapInstanceRef.current = mapInstance;
+
+      // Fetch and display encampments
+      await fetchAndDisplayEncampments(mapInstance);
 
       // If we have initial coordinates, create a marker
       if (initialCoordinates) {
@@ -182,6 +261,9 @@ export function Map({
         if (markerRef.current) {
           markerRef.current.map = null;
         }
+        encampmentMarkersRef.current.forEach((marker) => {
+          marker.map = null;
+        });
         if (mapInstanceRef.current) {
           google.maps.event.clearInstanceListeners(mapInstanceRef.current);
         }
