@@ -1,4 +1,4 @@
-import { EncampmentsList } from "./EncampmentsList";
+import { EncampmentsList } from "@/components/EncampmentsList";
 
 export default function EncampmentsPage() {
   return (

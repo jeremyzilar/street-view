@@ -18,6 +18,14 @@ export function Header() {
           <li>
             <Link
               className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
+              href="/people"
+            >
+              All people
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
               href="/encampments"
             >
               All encampments

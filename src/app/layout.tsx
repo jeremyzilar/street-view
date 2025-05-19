@@ -33,14 +33,7 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {isAuthenticated ? (
-            <>
-              {children}
-              <Footer />
-            </>
-          ) : (
-            <PasswordProtection />
-          )}
+          {isAuthenticated ? <>{children}</> : <PasswordProtection />}
         </ThemeProvider>
       </body>
     </html>
