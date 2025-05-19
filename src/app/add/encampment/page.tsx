@@ -15,6 +15,10 @@ export default function AddEncampment() {
     coordinates: "",
     active: true,
     geocode_cache: undefined,
+    count: 0,
+    last_updated: "",
+    created: "",
+    created_by: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -27,6 +31,10 @@ export default function AddEncampment() {
       coordinates: "",
       active: true,
       geocode_cache: undefined,
+      count: 0,
+      last_updated: "",
+      created: "",
+      created_by: "",
     });
   };
 
