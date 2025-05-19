@@ -61,18 +61,18 @@ export const genderOptions = [
 // Encampments table field types
 export interface EncampmentsTableFields {
   name: string;
+  notes?: string;
+  coordinates?: string;
   active: boolean;
-  notes: string;
-  coordinates: string;
   geocode_cache?: string;
 }
 
 // Our code-friendly field names for the form
 export interface EncampmentsFormFields {
   name: string;
+  notes?: string;
+  coordinates?: string;
   active: boolean;
-  notes: string;
-  coordinates: string;
   geocode_cache?: string;
 }
 
@@ -82,9 +82,9 @@ export const encampmentsFieldMapping: Record<
   keyof EncampmentsTableFields
 > = {
   name: "name",
-  active: "active",
   notes: "notes",
   coordinates: "coordinates",
+  active: "active",
   geocode_cache: "geocode_cache",
 } as const;
 

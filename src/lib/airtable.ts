@@ -1,6 +1,11 @@
 import Airtable, { FieldSet, Record as AirtableRecord } from "airtable";
 import { PeopleRecord, PeopleTableFields } from "@/types/airtable";
-import { EncampmentsRecord, EncampmentsTableFields } from "@/types/airtable";
+import {
+  EncampmentsRecord,
+  EncampmentsTableFields,
+  EncampmentsFormFields,
+  encampmentsFieldMapping,
+} from "@/types/airtable";
 
 // Initialize Airtable
 const getBase = () => {
@@ -75,24 +80,30 @@ export const getEncampmentsRecords = async (): Promise<EncampmentsRecord[]> => {
   }
 };
 
-export const createEncampmentsRecord = async (
-  fields: EncampmentsTableFields
-): Promise<EncampmentsRecord | null> => {
+export async function createEncampmentsRecord(
+  fields: EncampmentsFormFields
+): Promise<void> {
   try {
     const base = getBase();
-    const records = await base("Encampments").create([
-      { fields: fields as unknown as FieldSet },
-    ]);
-    const createdRecord = records[0];
-    return {
-      id: createdRecord.id,
-      fields: createdRecord.fields as unknown as EncampmentsTableFields,
-      createdTime: createdRecord._rawJson.createdTime,
-    };
+    // Convert form fields to Airtable fields
+    const airtableFields: Partial<EncampmentsTableFields> = {};
+
+    // Handle fields
+    Object.entries(encampmentsFieldMapping).forEach(
+      ([formField, airtableField]) => {
+        if (formField in fields) {
+          airtableFields[airtableField] = fields[
+            formField as keyof EncampmentsFormFields
+          ] as any;
+        }
+      }
+    );
+
+    await base("Encampments").create(airtableFields);
   } catch (error) {
-    console.error("Error creating encampments record:", error);
-    return null;
+    console.error("Error creating encampment record:", error);
+    throw new Error("Failed to create encampment record");
   }
-};
+}
 
 export default getBase();

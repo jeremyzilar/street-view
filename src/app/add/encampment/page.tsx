@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { Map } from "@/components/Map";
 import { createEncampmentsRecord } from "@/lib/airtable";
 import { EncampmentsFormFields } from "@/types/airtable";
+import { Header } from "@/components/Header";
 
 export default function AddEncampment() {
   const router = useRouter();
@@ -72,8 +73,10 @@ export default function AddEncampment() {
   };
 
   return (
-    <main className="min-h-screen p-4 bg-gray-100 dark:bg-gray-900 overflow-y-auto pb-20">
-      <h1 className="text-2xl font-bold mb-6">Add New Encampment</h1>
+    <div className="">
+      <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+        Add an Encampment
+      </h1>
       {error && (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
           {error}
@@ -179,6 +182,6 @@ export default function AddEncampment() {
           {isSubmitting ? "Creating..." : "Create Encampment"}
         </button>
       </form>
-    </main>
+    </div>
   );
 }
