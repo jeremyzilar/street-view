@@ -65,6 +65,10 @@ export interface EncampmentsTableFields {
   coordinates?: string;
   active: boolean;
   geocode_cache?: string;
+  count: number;
+  last_updated: string;
+  created: string;
+  created_by: string;
 }
 
 // Our code-friendly field names for the form
@@ -74,6 +78,10 @@ export interface EncampmentsFormFields {
   coordinates?: string;
   active: boolean;
   geocode_cache?: string;
+  count: number;
+  last_updated: string;
+  created: string;
+  created_by: string;
 }
 
 // Mapping between our form fields and Airtable fields for the Encampments table
@@ -86,6 +94,10 @@ export const encampmentsFieldMapping: Record<
   coordinates: "coordinates",
   active: "active",
   geocode_cache: "geocode_cache",
+  count: "count",
+  last_updated: "last_updated",
+  created: "created",
+  created_by: "created_by",
 } as const;
 
 // Type for the Airtable record response from the Encampments table

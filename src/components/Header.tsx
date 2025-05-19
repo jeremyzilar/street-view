@@ -13,8 +13,18 @@ export function Header() {
         </div>
       </div>
 
-      <nav className="p-4">
-        <ul className="space-y-2">
+      <nav className="p-4 space-y-4">
+        <ul className="space-y-2 pb-4">
+          <li>
+            <Link
+              className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
+              href="/encampments"
+            >
+              All encampments
+            </Link>
+          </li>
+        </ul>
+        <ul className="space-y-2 border-t border-gray-800 dark:border-gray-700 pt-8">
           <li>
             <Link
               href="/add/person"

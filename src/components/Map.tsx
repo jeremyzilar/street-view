@@ -11,6 +11,7 @@ interface MapProps {
   initialCoordinates?: string;
   address?: string;
   geocodeCache?: string;
+  readOnly?: boolean;
 }
 
 export function Map({
@@ -19,6 +20,7 @@ export function Map({
   initialCoordinates,
   address,
   geocodeCache,
+  readOnly = false,
 }: MapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<google.maps.Map | null>(null);
@@ -216,43 +218,45 @@ export function Map({
       }
 
       // Add click listener to drop pin
-      mapInstance.addListener("click", (e: google.maps.MapMouseEvent) => {
-        if (!e.latLng) return;
+      if (!readOnly) {
+        mapInstance.addListener("click", (e: google.maps.MapMouseEvent) => {
+          if (!e.latLng) return;
 
-        // Remove existing marker if any
-        if (markerRef.current) {
-          markerRef.current.map = null;
-        }
-
-        // Create new marker
-        const newMarker = new AdvancedMarkerElement({
-          position: e.latLng,
-          map: mapInstance,
-          gmpDraggable: true,
-        });
-
-        // Update coordinates when marker is dragged
-        newMarker.addListener("dragend", () => {
-          const position = newMarker.position;
-          if (position) {
-            const lat =
-              typeof position.lat === "function"
-                ? position.lat()
-                : position.lat;
-            const lng =
-              typeof position.lng === "function"
-                ? position.lng()
-                : position.lng;
-            onLocationSelect(lat, lng);
+          // Remove existing marker if any
+          if (markerRef.current) {
+            markerRef.current.map = null;
           }
+
+          // Create new marker
+          const newMarker = new AdvancedMarkerElement({
+            position: e.latLng,
+            map: mapInstance,
+            gmpDraggable: true,
+          });
+
+          // Update coordinates when marker is dragged
+          newMarker.addListener("dragend", () => {
+            const position = newMarker.position;
+            if (position) {
+              const lat =
+                typeof position.lat === "function"
+                  ? position.lat()
+                  : position.lat;
+              const lng =
+                typeof position.lng === "function"
+                  ? position.lng()
+                  : position.lng;
+              onLocationSelect(lat, lng);
+            }
+          });
+
+          // Update coordinates on initial placement
+          onLocationSelect(e.latLng.lat(), e.latLng.lng());
+
+          // Store the marker reference
+          markerRef.current = newMarker;
         });
-
-        // Update coordinates on initial placement
-        onLocationSelect(e.latLng.lat(), e.latLng.lng());
-
-        // Store the marker reference
-        markerRef.current = newMarker;
-      });
+      }
 
       isInitializedRef.current = true;
 
@@ -272,7 +276,7 @@ export function Map({
     };
 
     initMap();
-  }, [address, geocodeCache, initialCenter, onLocationSelect]);
+  }, [address, geocodeCache, initialCenter, onLocationSelect, readOnly]);
 
   // Update marker position when initialCoordinates changes
   useEffect(() => {
