@@ -45,6 +45,7 @@ const config = {
         "monospace", // Generic fallback
       ],
       display: [
+        "Bebas Neue",
         "Helvetica Neue", // Suitable for large text and UI elements
         "Arial",
         "Segoe UI",
