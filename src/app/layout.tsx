@@ -52,9 +52,9 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           {isAuthenticated ? (
-            <main className="min-h-screen bg-gray-100 dark:bg-gray-900 overflow-y-auto flex flex-col tablet-lg:flex-row">
+            <main className="relative min-h-screen bg-gray-100 dark:bg-gray-900 overflow-y-auto flex flex-col tablet-lg:flex-row">
               <Header />
-              <div className="p-4 py-12 tablet-lg:p-4 tablet-lg:pl-12 pb-24 w-auto tablet-lg:w-desktop tablet-lg:ml-[240px]">
+              <div className="p-4 py-12 tablet-lg:p-4 tablet-lg:pl-12 pb-24 h-full w-auto tablet-lg:w-desktop tablet-lg:ml-[240px]">
                 {children}
               </div>
             </main>
