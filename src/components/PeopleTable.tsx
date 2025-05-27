@@ -1,30 +1,50 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { PeopleRecord } from "@/types/airtable";
+import { PeopleRecord, EncampmentsRecord } from "@/types/airtable";
 
 export function PeopleTable() {
   const [people, setPeople] = useState<PeopleRecord[]>([]);
+  const [encampments, setEncampments] = useState<EncampmentsRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
+  console.log(encampments);
   useEffect(() => {
-    const fetchPeople = async () => {
+    const fetchData = async () => {
       setLoading(true);
       setError("");
       try {
-        const res = await fetch("/api/people");
-        if (!res.ok) throw new Error("Failed to fetch people");
-        const data = await res.json();
-        setPeople(data.people || []);
+        const [peopleRes, encampmentsRes] = await Promise.all([
+          fetch("/api/people"),
+          fetch("/api/encampments"),
+        ]);
+
+        if (!peopleRes.ok) throw new Error("Failed to fetch people");
+        if (!encampmentsRes.ok) throw new Error("Failed to fetch encampments");
+
+        const peopleData = await peopleRes.json();
+        const encampmentsData = await encampmentsRes.json();
+
+        setPeople(peopleData.people || []);
+        setEncampments(encampmentsData.encampments || []);
       } catch (err) {
-        setError("Failed to load people.");
+        setError("Failed to load data.");
       } finally {
         setLoading(false);
       }
     };
-    fetchPeople();
+    fetchData();
   }, []);
+
+  const getEncampmentName = (encampmentId: string | string[] | undefined) => {
+    if (!encampmentId) return "-";
+    // Handle case where encampmentId is an array (from Airtable)
+    const id = Array.isArray(encampmentId) ? encampmentId[0] : encampmentId;
+    const encampment = encampments.find((e) => e.id === id);
+    console.log("Looking for encampment:", id, "Found:", encampment);
+    return encampment?.fields.name || "-";
+  };
 
   return (
     <div>
@@ -60,12 +80,25 @@ export function PeopleTable() {
                 </div>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-700 dark:text-gray-300">
                   <div>
-                    <span className="font-medium">Chronicity:</span>{" "}
-                    {person.fields.chronicity}
+                    <span className="font-medium underline underline-offset-4 decoration-dotted flex items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {getEncampmentName(person.fields.encampment)}
+                    </span>
                   </div>
                   <div>
-                    <span className="font-medium">Encampment:</span>{" "}
-                    {person.fields.encampment || "-"}
+                    <span className="font-medium">Chronicity:</span>{" "}
+                    {person.fields.chronicity}
                   </div>
                 </div>
                 {person.fields.notes && (
