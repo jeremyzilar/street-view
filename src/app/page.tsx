@@ -71,11 +71,11 @@ export default function Home() {
             className="block p-6 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border border-gray-200 dark:border-gray-600"
           >
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              By-Name List Operations Manual
+              Street View Operations Manual
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Comprehensive guide to managing and maintaining the By-Name List
-              for Santa Fe's coordinated entry system.
+              Guide to collective care coordination and tracking street
+              homelessness in Santa Fe - filling the gap between existing systems.
             </p>
           </Link>
         </div>

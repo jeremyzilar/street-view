@@ -1,434 +1,663 @@
-# By-Name List Operations Manual
+# Street View Operations Manual
 
-**Last updated:** [PLACEHOLDER: Date]  
-**Santa Fe, New Mexico**
+**Santa Fe Collective Care Project**  
+**Last updated:** [PLACEHOLDER: Date]
 
 ---
 
 ## Introduction
 
-A By-Name List (BNL) allows a coordinated entry system to know everyone in our community experiencing homelessness in real time.
+### The Problem We're Solving
+
+In Santa Fe, people experiencing homelessness move through various systems, but a critical gap exists that leaves many invisible to existing data collection:
+
+1. **UniteUS** - Serves housing-insecure and food-insecure individuals, but not those already on the streets
+2. **THE GAP** ← _This is where Street View operates_
+3. **Life Link Shelter** - 3-8 month waitlist; people often lose ID, insurance, or Medicaid while waiting
+4. **HMIS (The Coalition)** - Only captures people once they enter shelters, creating grossly inaccurate total counts
+
+**Street View fills this critical gap** by tracking people experiencing street homelessness who have fallen out of all formal systems. This creates an accurate, real-time picture of homelessness in Santa Fe that existing systems miss.
+
+### Our Mission: Collective Care
+
+Street View operates on a **collective care** model rather than a formal coordinated entry system. Our goals are to:
+
+- **Know everyone** experiencing street homelessness in Santa Fe in real time
+- **Understand individual needs and preferences** - medical, mental health, seasonal shelter, ID, ADA accessibility, and more
+- **Respect autonomy** - some people don't want shelter, and that's okay
+- **Coordinate provider response** through regular case conferencing
+- **Tell an accurate story** to the public about the state of homelessness in Santa Fe using real data
 
 Without this information, we cannot:
 
-- Understand the scope of homelessness in our community
-- Understand how people move in and out of our system on an ongoing basis
-- Have accurate information to set goals to reduce homelessness
-- Have accurate information to understand if we are making progress in ending homelessness
-
-The key components of a quality By-Name List include ensuring that our system is touching everyone who is unhoused in our community; that we can accurately assess who is entering our unhoused system on an ongoing basis; and that we can accurately track progress through the system, including how successful we are in implementing prioritization and providing permanent housing to those who need it.
-
-This is a living document that will change over time, please ensure you have the most recent copy.
+- Understand the true scope of street homelessness in Santa Fe
+- Coordinate care effectively across providers
+- Respect individual preferences while offering appropriate support
+- Advocate for resources based on accurate data
+- Track people through the gap between systems
 
 ---
 
-## Amendments, Approval, + Feedback
+## Street View By-Name List
 
-⚠️ **REVIEW NEEDED:** This section describes the governance structure. Please adapt to Santa Fe's actual oversight committee structure.
+### What Is the Street View BNL?
 
-The By-Name List Operations Manual is reviewed by the Santa Fe Coordinated Entry System Oversight Committee (managed through The Coalition). The primary responsibilities of the Oversight Committee are to:
+The Street View By-Name List (BNL) is a comprehensive tracking system that ensures we know everyone experiencing street homelessness in Santa Fe, especially those who have fallen out of other systems.
 
-- Develop the policies and procedures that ensure the coordinated entry process operates per the standards as designed by the community around the system's core elements: Access, Assessment, Prioritization, and Referral
-- Review system data and metrics to identify gaps and barriers and recommend adjustments accordingly
-- Monitor operations and reviewing and recommending policy additions and changes
-- Oversee all policies relative to coordinated entry operations, via group decisions, guiding principles, and core elements
-- All suggested changes will be presented and voted on at the Oversight Committee with a 50% +1 vote
-- Procedures will be reevaluated annually in February
+### Who Gets Tracked?
 
-📋 **PLACEHOLDER:** To offer feedback to the Oversight Committee, please contact: [Contact Name and Email]
+**Primary focus:** People experiencing street homelessness who are NOT currently in other tracking systems.
 
----
+This includes:
 
-## Current Lead Contacts
+- People living unsheltered (streets, camps, vehicles, public spaces)
+- People waiting for Life Link or other shelter (3-8 month wait times)
+- People transitioning out of UniteUS support into street homelessness
+- People who have lost ID, insurance, or Medicaid while unhoused
+- People who are in HMIS but we continue tracking for continuity of care
+- Anyone experiencing street homelessness in Santa Fe, regardless of:
+  - HUD category eligibility
+  - Shelter preferences
+  - Service acceptance
+  - Documentation status
 
-📋 **PLACEHOLDER:** Update this table with Santa Fe-specific contacts.
+**We track everyone, not just those who "qualify" for formal programs.**
 
-| Name                        | Position                                                                 | Contact |
-| --------------------------- | ------------------------------------------------------------------------ | ------- |
-| [Name] \| [Organization]    | Coordinated Entry Lead                                                   | [Email] |
-| [Name] \| [Organization]    | Housing Program Coordinator                                              | [Email] |
-| [Name] \| [Organization]    | Coordinated Entry Specialist                                             | [Email] |
-| [Name] \| HMIS Provider     | HMIS Technical Assistance/Data Analysis Lead                             | [Email] |
-| HMIS Provider Support Email | Can help with data issues, reporting questions, duplicate profiles, etc. | [Email] |
+### Information We Collect
 
----
+Street View tracks information needed for collective care coordination:
 
-## One-Stop Shop for BNL Guides + HMIS Trainings
+#### Basic Information
 
-⚠️ **REVIEW NEEDED:** Update these links and guides based on Santa Fe's actual resources and HMIS provider.
+- Name (or street name/alias if preferred)
+- Approximate age
+- Location(s) where person is typically found
+- Contact information (if available)
 
-| Guide                                        | Description                                                                                     | Link   |
-| -------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------ |
-| BNL Step-By-Step Guide                       | How to pull and organize BNL from HMIS                                                          | [Link] |
-| HMIS Exit Guide                              | HUD exits explained                                                                             | [Link] |
-| Service Transaction Step-by-Step             | How to make a Service Transaction in HMIS                                                       | [Link] |
-| Final Outflow Review Guide                   | Process for checking back in with enrolled participants before exit due to inactivity           | [Link] |
-| Built for Zero Reporting Guide               | How to pull data for BFZ monthly reporting (if applicable)                                      | [Link] |
-| Exit to Inactivity Policy/Process            | What to do if an individual or family has been auto-exited but has been unhoused the whole time | [Link] |
-| HMIS New User Training                       | Required training to get HMIS login                                                             | [Link] |
-| CE-Specific Training + Test Profile Creation | Required training to enter CE-data into HMIS                                                    | [Link] |
+#### Care Needs & Preferences
 
----
+- **Medical needs** - chronic conditions, medications, healthcare access
+- **Mental health support** - conditions, medications, current treatment
+- **Shelter preferences** - wants shelter, doesn't want shelter, seasonal preferences
+- **ID & Documentation** - has ID, lost ID, needs birth certificate, etc.
+- **Insurance status** - Medicaid, uninsured, pending application
+- **ADA accessibility** - mobility aids, sensory needs, accessible shelter requirements
+- **Other individual needs** - case-by-case
 
-## Table of Contents
+#### System Status
 
-1. [Introduction](#introduction)
-2. [BNL Definitions](#bnl-definitions)
-3. [BNL Data Security](#bnl-data-security)
-4. [BNL Roles + Responsibilities](#bnl-roles--responsibilities)
-5. [Appendix A: BNL Data Dictionary](#appendix-a-bnl-data-dictionary)
+- In UniteUS? (Yes/No)
+- On Life Link waitlist? (Yes/No/Position if known)
+- In HMIS? (Yes/No)
+- Last service interaction date
+- Current providers working with individual
 
----
-
-## BNL Definitions
-
-A BNL is intended to include everyone in a community experiencing homelessness, meaning that the list will most likely have a larger universe of people than who is included in HMIS. Instances may exist in which counts from adjacent systems (criminal justice, education, etc.) may need to be accounted for outside of HMIS. "BNL Definitions" describes data origin, program eligibility, and commonly used terms.
-
-### Populating the BNL
-
-Santa Fe's BNL is populated via the Homeless Management Information System (HMIS) and potentially domestic violence provider unique ID lists (managed externally to HMIS, for safety).
-
-### Who is included on the BNL
-
-To be added to the Santa Fe BNL (without redacted information), an individual or family must have both a Coordinated Entry Program Enrollment and NM CoC Release of Information signed. If a household does not have a NM CoC Release completed, they can still be enrolled, but Personally Identifiable Information (PII) will be removed from shared documents. Getting a completed ROI should be a priority.
-
-Currently, the system can serve those in HUD categories 1 and 4:
-
-#### Category 1: Literally Homeless
-
-Individual or family lacks a fixed, regular, and adequate nighttime residence, meaning:
-
-- Primary nighttime residence that is a public or private space not meant for human habitation
-- Is living in a publicly or privately operated shelter designated to provide temporary living arrangements (includes congregate shelters, transitional housing, and hotels/motels paid for by a nonprofit or governmental program)
-- Is exiting an institution where they have resided for 90 days or less and who was literal homeless prior to entering that institution
-
-#### Category 4: Fleeing or Attempting to Flee Domestic Violence
-
-An individual or family who:
-
-- Is fleeing, or attempting to flee, domestic violence
-- Has no other residence; and
-- Lacks the resources or support networks to obtain other permanent housing
-
-#### Currently NOT Serving Categories 2 and 3
-
-⚠️ **REVIEW NEEDED:** Verify which HUD categories Santa Fe is currently serving.
-
-**Category 2: Imminent Risk of Homelessness** - An individual or family who will imminently lose their primary nighttime residence, provided that:
-
-- Residence will be lost within 14 days of the date of application for homeless assistance
-- No subsequent residence has been identified; and
-- The individual or family lacks the resources or support networks needed to obtain other permanent housing
-- Note: Includes individuals and families who are within 14 days of losing their housing, including housing they own, rent, are sharing with others, or are living in without paying rent
-
-**Category 3: Homeless Under Other Federal Statutes** - Unaccompanied youth under 25 years of age, or families with Category 3 children and youth, who do not otherwise qualify as homeless under this definition, but who:
-
-- Are defined as homeless under the other listed federal statutes
-- Have not had a lease, ownership interest in permanent housing during the 60 days prior to the homeless assistance application
-- Have experienced persistent instability as measured by two moves or more during in the preceding 60 days; and
-- Can be expected to continue in such status for an extended period of time due to special needs or barriers
+📋 **PLACEHOLDER:** Customize data fields based on Santa Fe provider needs and case conferencing discussions.
 
 ---
 
-## BNL Common Terms + Explanations
+## Data Collection & Management
 
-### Household Types
+### How People Get Added to the List
 
-| Type                              | Definition                                                                                                |
-| --------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| **Family**                        | A household with children or dependent(s) under the age of 18 OR an individual who identifies as pregnant |
-| **Youth (Unhoused Young People)** | Individuals or heads of household who are aged 18-24 years                                                |
-| **Veterans**                      | Individuals who self-identify as veterans                                                                 |
-| **Singles**                       | Those that do not qualify under other populations of interest (over the age of 24 who are not families)   |
+People are added to the Street View BNL through:
 
-### Exits (no longer active in the system)
+1. **Street outreach** - encounters during outreach work
+2. **Provider referrals** - from agencies working with unhoused individuals
+3. **Community reports** - respectful reports from community members
+4. **Self-referral** - individuals seeking support
+5. **System gaps** - people falling out of UniteUS, waiting for Life Link, etc.
 
-A household is considered exited from the program when they:
+### Data Entry Standards
 
-- Find temporary (as defined by the Oversight Committee) or permanent housing
-- Move outside of Santa Fe County (or designated service area)
-- Enter an institution for 90 days or longer (\*If <90 days, will remain active)
-- Pass away
+⚠️ **REVIEW NEEDED:** Define specific data entry procedures for Santa Fe providers.
 
-### Inactive Status
+**Core principles:**
 
-**Definition:** Have not had a service transaction for 90+ days
+- Enter information within 48 hours of encounter
+- Update at least monthly (more frequently if actively working with individual)
+- Document all service interactions and outreach attempts
+- Respect privacy - use aliases if person prefers
+- Never share personally identifiable information publicly
+- Coordinate with other providers before making major updates
 
-**Process:** Reviewed on a monthly basis by Case Conferencing participants via the Outflow Process.
+### Privacy & Consent
 
-For a full list of Inactive Destinations, see Exit Destinations. Inactive destinations include all exits that are not permanent - Temporary or Institutional settings, Death, or Sober Living.
+**Release of Information (ROI):**
 
-### Outflow Process
+- Preferred but NOT required to be on the list
+- Without ROI: Use alias/street name, limit shareable information
+- With ROI: Full information can be shared among participating providers
+- Always respect individual preferences for privacy
 
-A list of participants reaching 90 days without a service transaction is shared with partners/access points to review every month.
+**For people who decline services:**
 
-**Initial Review:** For the first two weeks of the month, partnering staff review the list, adding service transactions for those they know are still unhoused/eligible.
+- Can still be tracked with minimal information (alias, general location, last contact)
+- Preserves ability to connect later if person becomes ready
+- Respects autonomy while maintaining awareness
 
-**Final Review:** In the second two weeks of the month, a fresh pull of the Outflow occurs, alerting the system to which households need targeted outreach. The remaining households with contact information are divided amongst providers who provide one final call/email to check in - Are they housed? Out of the area? Still unhoused and would like to remain active?
+### Relationship to Other Systems
 
-All outreach attempts are to be recorded in HMIS under each household's Client Notes.
+#### UniteUS
 
-Any households that do not have a service transaction added after the final Outflow review and outreach are auto-exited to the following destinations:
+- May overlap when housing-insecure becomes street homeless
+- Share information with consent
+- Track transition points
 
-- **Reason for Leaving:** Unknown/Disappeared
-- **Destination:** No Exit Interview Completed
+#### Life Link & Shelter Waitlists
 
-If they return, they will be re-enrolled in the program in HMIS, which triggers their reappearance on the BNL.
+- Track wait time and position if known
+- Monitor for lost documentation during wait period
+- Flag urgent needs that might expedite placement
 
-\*If unhoused the whole time and auto-exited, providers will create a new entry on existing client accounts with a backdate to the date of their auto-exit. For more information, see Inactivity Policy.
+#### HMIS (The Coalition)
 
-### Chronic Homelessness
+- Continue tracking after HMIS entry for continuity
+- Use to supplement coalition's statewide data (with permission)
+- Track exits from HMIS back to street homelessness
+- **Note:** Our data supplements, not replaces, HMIS reporting
 
-Literally homeless individuals or households with a disabling condition who have been continuously unhoused for a year or more OR have had at least four episodes of homelessness in the past three years.
+---
 
-Currently, this information is populated on the BNL via a self-reported data point in the pre-screener; chronicity is not verified until a specific resource requires it.
+## Collective Care Case Conferencing
+
+### Overview
+
+Case conferencing is the heart of the Street View collective care model. Participating providers meet regularly to review the By-Name List, coordinate responses, and ensure people get the support they need in a coordinated way.
+
+### Case Conferencing Process
+
+⚠️ **REVIEW NEEDED:** Establish Santa Fe-specific schedule and procedures.
+
+**Suggested structure:**
+
+**Frequency:** [Weekly/Bi-weekly/Monthly]
+
+**Participants:**
+
+- 📋 **PLACEHOLDER:** List participating provider organizations
+  - Street outreach teams
+  - Healthcare providers
+  - Mental health services
+  - Shelter providers
+  - Housing navigators
+  - [Other providers]
+
+**Agenda:**
+
+1. New additions to the list
+2. Active cases requiring coordination
+3. Successful connections/exits
+4. People losing connection (outflow review)
+5. System gaps and barriers identified
+6. Data review for public storytelling
+
+### Triage & Coordination
+
+During case conferencing, providers collaborate on:
+
+**Individual needs assessment:**
+
+- What does this person need right now?
+- What do they want (respecting their choices)?
+- Who is best positioned to help?
+
+**Coordinated response:**
+
+- Which provider(s) will reach out?
+- What resources can we offer?
+- How do we avoid duplicating efforts?
+- What's the timeline for follow-up?
+
+**Respecting autonomy:**
+
+- Some people don't want shelter - that's okay
+- Some prefer seasonal shelter (winter only, etc.)
+- Some need medical care before they're ready for housing
+- Some just need ID or Medicaid restored
+- Meet people where they are
+
+### Service Transactions & Contact Tracking
+
+**Service Transaction:** Any interaction with a person on the list that provides information about their status or needs.
+
+**When to log a service transaction:**
+
+- Any service provided (gear, food, medical, navigation, etc.)
+- Outreach contact (even if no service provided)
+- Any information that updates person's status
+- Confirmation person is still in the area and unhoused
+
+**Minimum frequency:** At least one service transaction per month for active individuals
+
+**Documentation:** Brief note in system describing:
+
+- What happened
+- What was provided/discussed
+- Person's current status
+- Next steps or follow-up needed
+
+### Outflow Review Process
+
+**Purpose:** Ensure we're not losing track of people who are still unhoused
+
+**Process:**
+
+1. **Monthly review** - Identify people without service transaction in 90+ days
+2. **Provider check-in** - Case conferencing participants check their knowledge
+   - Are they housed?
+   - Did they move out of Santa Fe?
+   - Are they in an institution (hospital, jail, treatment)?
+   - Still unhoused but lost contact?
+3. **Targeted outreach** - For people with contact info, attempt to reconnect
+4. **Status update** - Update list based on information gathered
+5. **Inactive marking** - Only mark inactive if confirmed housed, moved, or in institution
+
+**Important:** Don't remove someone just because we lost contact. Mark as "contact lost" and keep trying.
+
+---
+
+## Exit Definitions & Tracking
+
+### When Someone Is No Longer on the Active List
+
+A person is moved to inactive status when:
+
+- **Housed** - Found stable housing (temporary or permanent)
+- **Moved** - Relocated outside Santa Fe area
+- **Institution** - Entered hospital, treatment, jail for extended period (90+ days)
+- **Deceased**
+
+### When Someone Stays on the Active List
+
+**Important:** People remain active even if:
+
+- They're in UniteUS
+- They're on Life Link waitlist
+- They entered HMIS (we track for continuity)
+- They declined services
+- We temporarily lost contact (under 90 days)
+- They're in short-term institution (<90 days)
 
 ### Returns
 
-Re-entry into the program under existing client ID upon returning to homelessness from an inactive or housed destination.
-
-### Service Transaction
-
-A service transaction is an action in HMIS that populates "Date of Last Contact" on the By-Name List.
-
-Service transactions for actively unhoused participants should occur no less than once per month.
-
-**When to add a service transaction:**
-
-- Any time a service has been provided
-  - Examples: gear distributed to a household living unsheltered, housing navigation or care coordination provided, any interaction occurs that tells a provider an individual or family is still unhoused in our area
-- 📋 **PLACEHOLDER:** Shelter stays at [Emergency Shelter Name] are also tracked as service transactions
-- Aside from shelter stays, all service transactions should also include a corresponding Client Note to describe service provided (can be brief)
-
-See Making a Service Transaction step-by-step guide.
-
-### By-Name List Categories
-
-See Appendix A
-
-### Test Clients
-
-⚠️ **REVIEW NEEDED:** Verify if this applies to Santa Fe's HMIS platform.
-
-Some HMIS platforms do not allow for training profile creation for new users. As such, those completing initial HMIS training may create actual profiles within the system.
-
-- Test profiles typically have the last name "Test"
-- Every 6 months, test profiles should be wholly deleted from the system at the CE Lead's request to HMIS Provider
-- When test profiles are still active, they must be filtered out of the BNL:
-  - Organize by last name
-  - Remove test profiles from list
-  - Final search for "test" to ensure all have been removed
-
-### Other Community-Specific Definitions
-
-📋 **PLACEHOLDER:** Add links to Santa Fe-specific program eligibility and policies & procedures documents.
+If someone returns to street homelessness after being marked inactive (lost housing, released from institution, moved back), they are reactivated immediately.
 
 ---
 
-## BNL Data Security
+## Need Categories & Tracking
 
-The BNL is a flexible tool that assists service providers in helping clients in their housing journeys through Santa Fe's Coordinated Entry System. The information stored in this list is critical in forming housing solutions but is also composed of personal and sensitive information that needs to be protected. In specific circumstances, data may be shared with groups or publicly, with restrictions to protect privacy and confidentiality.
+### Key Need Categories
 
-### Access to BNL
+Track the following to enable collective care coordination:
 
-The CE Lead has access to BNL and Unique Identifier lists. Portions of the BNL may be requested by CE Partners on a case-by-case basis.
+| Need Category              | Examples                                                           | Why It Matters                                             |
+| -------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------- |
+| **Medical**                | Chronic conditions, medications, doctor appointments, wound care   | Health-based prioritization, medical respite               |
+| **Mental Health**          | Diagnosis, medications, treatment history, crisis status           | Appropriate support, crisis response, treatment connection |
+| **Shelter Preferences**    | Wants shelter, doesn't want shelter, seasonal only, specific needs | Respect autonomy, right-time offers                        |
+| **ID & Documentation**     | Has ID, lost ID, birth certificate needed, Social Security card    | Required for most services, Medicaid, shelter, housing     |
+| **Insurance/Benefits**     | Medicaid status, pending applications, denied, uninsured           | Access to healthcare, treatment, services                  |
+| **ADA Accessibility**      | Wheelchair, walker, vision/hearing, cognitive, other               | Accessible shelter, appropriate resources                  |
+| **Substance Use**          | Type, treatment interest, harm reduction needs                     | Appropriate support, treatment connection                  |
+| **Food Security**          | Regular access, preferred sites, dietary needs                     | Basic needs, health conditions                             |
+| **Income**                 | SSI/SSDI, work, pending applications                               | Housing readiness, benefit advocacy                        |
+| **Other Individual Needs** | Case-specific                                                      | Holistic support                                           |
 
-The HMIS provider and platform administrators are the only providers that have the ability to build custom advanced reports in HMIS.
-
-### Data Security
-
-The Santa Fe BNL is stored within the current HMIS system and as a password-protected Excel Spreadsheet with designated secure storage.
-
-Data Security is monitored and managed by the CE Lead and leaders within the system.
-
-**Procedures in place to ensure personally identifying information (PII) is secure:**
-
-- All extracted BNLs must be password-protected and are only shared with partnering organizations
-- PII is redacted from all shared documents if a Release of Information is invalid
-- All partnering and access point agencies have signed MOU, within which are specific expectations on confidentiality
-
-### Domestic Violence Providers
-
-⚠️ **REVIEW NEEDED:** Verify domestic violence provider procedures in Santa Fe.
-
-- 📋 **PLACEHOLDER:** [DV Provider Name]'s DV UI List is sent to the CE Lead as it is updated (~ 2 weeks)
-- Mirrors BNL for easy copy/paste
-- The DV provider utilizes coding for names; they are the only agency that knows the identities of those households
-
-### Unsheltered without Release
-
-For those unsheltered residents who are not in the system/HMIS, outreach teams may manage a "non-enrolled" spreadsheet. This tracking tool allows the Coordinated Entry System to understand all those experiencing homelessness, even if they have chosen not to consent to services or the assessment, or haven't yet had the opportunity. Only the most basic information will be tracked under an alias or street name to preserve anonymity.
+📋 **PLACEHOLDER:** Refine categories based on Santa Fe provider input and available resources.
 
 ---
 
-## Current Data Sharing Agreements
+## Data for Public Storytelling
 
-⚠️ **REVIEW NEEDED:** Update with Santa Fe/New Mexico-specific agreements and policies.
+### Purpose
 
-### For those experiencing homelessness
+One of Street View's core goals is to tell an accurate, compelling story to the public about homelessness in Santa Fe using real data, not the incomplete picture from HMIS alone.
 
-- NM CoC-HMIS Release of Information
-- NM Statewide Privacy Policy (if applicable)
+### What We Can Report
 
-### For the staff of partnering organizations
+⚠️ **REVIEW NEEDED:** Establish data sharing protocols and approval process for public reporting.
 
-- Santa Fe CE Memorandum of Understanding
-- HMIS Data Entry Agreement
-- HMIS Privacy Rules from HUD
-- Organization-specific confidentiality policies (varies)
+**Aggregated, anonymized data only:**
 
-### For volunteers
+- Total number of people experiencing street homelessness in Santa Fe
+- How this compares to HMIS counts (showing the gap)
+- Demographic breakdowns (age ranges, family vs. individual, veterans, etc.)
+- Need categories and unmet needs
+- Seasonal trends (winter vs. summer counts)
+- Wait times for shelter/housing
+- Success stories (connections made, housed, services provided)
+- System gaps and barriers
 
-- CE Volunteer Agreement
-- Organization-specific volunteer agreements (varies)
+**NEVER share:**
 
-### For public information sharing
+- Individual names or identifying information (without explicit permission)
+- Specific locations of camps/individuals
+- Personal health or mental health information
+- Any data that could put individuals at risk
 
-- Data must be aggregated and must not include any personally identifiable information unless an accompanying agreement or release has been signed by the participant
-- If an organization outside the primary coordinating organization would like to utilize CE aggregated data for public information sharing, it must be approved by the CE Lead to ensure accuracy
+### Monthly/Quarterly Reporting
+
+📋 **PLACEHOLDER:** Establish regular reporting schedule and format.
+
+Suggested reports:
+
+- Monthly count and trends
+- Quarterly comprehensive report
+- Annual state of homelessness in Santa Fe
+- Special reports for city council, funders, public awareness
+
+### Telling the Story
+
+Use data to communicate:
+
+1. **The gap** - "HMIS shows X people, but Street View found Y additional people on the streets"
+2. **Individual needs** - "Z% need medical care, W% are waiting for shelter, etc."
+3. **System barriers** - "Average wait time for Life Link is X months, during which people lose ID, insurance..."
+4. **Collective care success** - "Through coordination, we connected X people to Y services"
+5. **What's needed** - "To address homelessness in Santa Fe, we need..."
 
 ---
 
-## BNL Roles + Responsibilities
+## Roles & Responsibilities
 
-The coordinated entry system involves staff from many organizations working to functionally end homelessness. Cross-organizational collaboration is vital to progress on this goal. The BNL roles and responsibilities are broken down below.
+### Street View Lead/Coordinator
 
-### BNL Activities
+📋 **PLACEHOLDER:** Identify who will serve as Street View lead.
 
-⚠️ **REVIEW NEEDED:** Adjust timing and procedures based on Santa Fe's actual practices.
+**Responsibilities:**
 
-The BNL is pulled twice monthly, on the 2nd and 4th weeks of the month, by the Housing Programs Coordinator or Coordinated Entry Lead.
+- Maintain and update the By-Name List
+- Facilitate case conferencing meetings
+- Ensure data quality and privacy compliance
+- Generate reports for public storytelling
+- Coordinate among participating providers
+- Track system gaps and barriers
 
-All staff entering data contribute to the BNL.
+### Participating Providers
 
-Data from participant interactions are expected to be entered into HMIS within 48 hours by all partnering agencies with HMIS access.
+📋 **PLACEHOLDER:** List participating organizations and their roles.
 
-- For those without HMIS access, a paper tool may be utilized to gather information. The paper tool must then be entered by staff with HMIS access within 48 hours.
+**Responsibilities:**
 
-Service transactions must be added for active participants at least once monthly.
+- Add service transactions for all encounters
+- Participate in case conferencing
+- Share information (with consent) about people they're working with
+- Update status changes (housed, moved, etc.)
+- Respect collective care coordination decisions
+- Contribute to data quality
 
-The Unique ID (DV) BNL is sent to the CE Lead any time there has been an update (~ every two weeks).
+**Current participating providers:**
 
-### Programs Adding Data to BNL
-
-📋 **PLACEHOLDER:** Update with Santa Fe-specific organizations.
-
-1. Emergency Shelters ([Organization Names])
-2. Outreach Providers ([Organization Names])
-3. Community Health Workers ([Organization Names])
-4. Healthcare systems ([Organization Names])
-5. Educational Systems (if applicable)
-
-### End User Responsibilities
-
-- Service transactions added for eligible participants entered at least once per month
-- Information from participants entered within 48 hours
-- Inflow and Outflow reviewed and actionables completed speedily and on regular basis
-
-### CE Lead Responsibilities
-
-- Provide direct feedback to organizations on data quality issues
-- Manage BNL, creating a refreshed BNL twice monthly
-- CE-specific training offered on an ongoing basis
-  - Must have completed New User training with HMIS Provider first
-
-### Training Process
-
-⚠️ **REVIEW NEEDED:** Update training procedures based on Santa Fe's HMIS provider and processes.
-
-**HMIS New User Training:**
-
-- Required training to get HMIS login
-- 📋 **PLACEHOLDER:** Contact [HMIS Provider] for training schedule
-
-**CE-Specific HMIS Training:**
-
-- Offered ongoing, once HMIS New User Training is complete
-- Facilitated by CE Lead
-- Staff will create a test profile with all components of CE process documented
-- Upon completion, staff will meet for a brief test profile review with CE Lead
-
-### CE Specialists/Coordinators at CE Partnering Organizations Responsibilities
-
-- Data quality going into the system from organization
-- For organizations entering large amounts of data, the CE Lead will provide monthly insights on data directly to organizational leads. These meetings include information on data quality issues and celebrations related to assessments, enrollments, and outcomes. Additionally, these spaces allow dialogue around CE processes that aren't available or accessible because of organizational constraints.
-
-📋 **PLACEHOLDER:** CE Lead currently meets monthly with:
-
-- [Organization 1]
-- [Organization 2]
-- [Organization 3]
+- [Provider 1 - Role]
+- [Provider 2 - Role]
+- [Provider 3 - Role]
 - [etc.]
 
-### Quarterly Data Quality Reports
+### Street Outreach Teams
 
-⚠️ **REVIEW NEEDED:** Adjust reporting schedule and metrics based on Santa Fe's needs.
+**Special role:** Primary data collectors for people not in any system
 
-Each quarter (January, April, July, October), the CE Lead will pull a report in HMIS to identify missing data within CE profiles.
+**Responsibilities:**
 
-- Initially, focus on Universal Data Elements and Assessment data as the most important data points to monitor
-- These data quality reports will be sent out to identified leads at each access point organization, and any other partner regularly entering data in HMIS
-- As capacity for data management expands, additional data quality points should be added (Current Living Situation, Chronicity, and Service Transactions as future priorities)
-
-### Document Retention
-
-⚠️ **REVIEW NEEDED:** Verify New Mexico CoC document retention requirements.
-
-The New Mexico CoC document retention period should be followed. When paper documents cannot be immediately uploaded to HMIS, it is the organization holding the paper tools to apply standard organizational retention rates, which may be audited by HMIS administrators on annual visits.
+- Add new people encountered on the streets
+- Regular outreach to maintain contact
+- Document locations, needs, preferences
+- Build trust and relationships
+- Connect to appropriate services when ready
 
 ---
 
-## Appendix A: BNL Data Dictionary
+## Data Security & Privacy
 
-Outlined below are each of the data fields on the By-Name List and where corresponding data is pulled from in HMIS.
+### Who Has Access
 
-📋 **PLACEHOLDER:** Please refer to Santa Fe CE Policy and Procedures Glossary for further community definitions.
+**Full access to Street View BNL:**
 
-| Field                                    | Description                                                                                                                                                                                                                                                         |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Client ID**                            | Auto-populated unique ID given to each household entered into HMIS                                                                                                                                                                                                  |
-| **First Name/Last Name**                 | From Client Record 'Name'                                                                                                                                                                                                                                           |
-| **Active ROI**                           | Active ROI 'Yes' or 'No', as it exists in HMIS under ROI tab in HMIS                                                                                                                                                                                                |
-| **Assessment Score**                     | Aggregate assessment score pulled from assessment tool in HMIS (if completed)                                                                                                                                                                                       |
-| **Age (High/Moderate Risk)**             | Age, as reported in HMIS Client Record<br>- High Risk: Age 55+<br>- Moderate Risk: Age 50-54 or 18-24                                                                                                                                                               |
-| **Age of Children (High/Moderate Risk)** | Age of children, as reported in HMIS Households tab<br>- High Risk: Age 0-5<br>- Moderate Risk: Age 6-17<br><br>If a household member answers 'yes' to "Are you pregnant?" pre-screen question, that is quantified as a high risk child for prioritization purposes |
-| **Chronicity**                           | Pre-Screen question: "Does the person in the household who meets the CH length of time requirement also have a disabling condition?" 'Yes' or 'No'                                                                                                                  |
-| **Length of Time Unhoused**              | Earliest entry Date in CE program                                                                                                                                                                                                                                   |
-| **Active Domestic Violence**             | On DV provider's Unique Identifier list                                                                                                                                                                                                                             |
-| **Total CE Score**                       | See Prioritization Policy                                                                                                                                                                                                                                           |
-| **Household Type**                       | Pulled from Assessment drop-down<br>- Individual<br>- Household with Children (Family)<br>- Youth (aged 18-24)                                                                                                                                                      |
-| **Demographics**                         | Primary race, gender, and ethnicity pulled from Client Demographics in HMIS                                                                                                                                                                                         |
-| **Veteran Status**                       | Client Record, self-reported 'Yes' or 'No' in HMIS                                                                                                                                                                                                                  |
-| **Foster Care Involvement**              | Pre-screener question: "Have you ever been in foster care?"                                                                                                                                                                                                         |
+- Street View coordinator
+- [Other designated roles]
 
-### Common Abbreviations
+**Partial access (case conferencing):**
 
-| Abbreviation | Full Term                                        |
-| ------------ | ------------------------------------------------ |
-| **PII**      | Personally Identifiable Information              |
-| **ROI**      | Release of Information                           |
-| **CE**       | Coordinated Entry                                |
-| **BNL**      | By-Name List                                     |
-| **HMIS**     | Homeless Management Information System           |
-| **HUD**      | U.S. Department of Housing and Urban Development |
-| **CoC**      | Continuum of Care                                |
-| **DV**       | Domestic Violence                                |
+- Participating provider representatives
+- See only aggregated or anonymized data unless person has signed ROI
+
+**No access:**
+
+- General public
+- Media
+- Elected officials (unless aggregated data)
+- Law enforcement (without specific consent or court order)
+
+### Data Storage & Security
+
+⚠️ **REVIEW NEEDED:** Define specific data storage and security protocols.
+
+**Requirements:**
+
+- Password-protected system/spreadsheet
+- Secure storage location
+- Regular backups
+- Access logs
+- Annual security review
+
+### Release of Information (ROI)
+
+**With ROI:**
+
+- Full information shared among participating providers
+- Can coordinate comprehensively
+- Can share with other services as needed
+
+**Without ROI:**
+
+- Limited to alias, general location, minimal data
+- Can still track and offer services
+- Cannot share with non-participating providers
+
+**Process for obtaining ROI:**
+
+- Explain what Street View is and how data is used
+- Emphasize collective care coordination benefit
+- Respect if person declines
+- Re-offer periodically if situation changes
 
 ---
 
-## Notes for Implementation
+## Training & Onboarding
 
-⚠️ **REVIEW NEEDED:** The following sections require Santa Fe-specific updates before full implementation:
+### For New Participating Providers
 
-1. All organization names and contact information
-2. Committee structure and governance processes
-3. HMIS provider details and training procedures
-4. Data sharing agreements specific to New Mexico
-5. Service area boundaries (counties served)
-6. Built for Zero participation status
-7. Assessment tool names (MAP vs. other tools)
-8. Partner organization list
-9. Document retention requirements
-10. Monthly meeting schedules and procedures
+⚠️ **REVIEW NEEDED:** Develop formal training process.
 
-📋 All items marked with **PLACEHOLDER** need to be filled in with Santa Fe-specific information.
+**Suggested training topics:**
+
+1. Street View mission and collective care philosophy
+2. The system gap we're filling
+3. How to add/update people on the BNL
+4. Privacy and data security
+5. Case conferencing participation
+6. Service transaction documentation
+7. Outflow review process
+8. Data for public storytelling (aggregation only)
+
+### For Street Outreach Teams
+
+**Additional training on:**
+
+- Building trust with unsheltered individuals
+- Trauma-informed engagement
+- Documentation in the field
+- Safety protocols
+- De-escalation techniques
+
+---
+
+## Common Terms & Definitions
+
+### Key Terms
+
+| Term                    | Definition                                                                                   |
+| ----------------------- | -------------------------------------------------------------------------------------------- |
+| **Street View BNL**     | By-Name List tracking everyone experiencing street homelessness in Santa Fe                  |
+| **Collective Care**     | Coordinated provider response based on individual needs and preferences, respecting autonomy |
+| **Case Conferencing**   | Regular provider meetings to review BNL and coordinate care                                  |
+| **Service Transaction** | Any interaction that provides information about person's status/needs                        |
+| **Outflow Review**      | Monthly process to ensure we're not losing track of people still unhoused                    |
+| **The Gap**             | The period between UniteUS support and HMIS entry when people are invisible to systems       |
+| **Active**              | Currently experiencing street homelessness in Santa Fe                                       |
+| **Inactive**            | Housed, moved, in institution, or deceased                                                   |
+| **ROI**                 | Release of Information - consent to share data among providers                               |
+| **PII**                 | Personally Identifiable Information - must be protected                                      |
+
+### System Definitions
+
+| System               | What It Tracks                           | What It Misses                                                  |
+| -------------------- | ---------------------------------------- | --------------------------------------------------------------- |
+| **UniteUS**          | Housing-insecure, food-insecure          | People already on streets                                       |
+| **Street View**      | Street homelessness, the gap             | (We fill the gap)                                               |
+| **Life Link**        | People in shelter (after 3-8 month wait) | People on waitlist, people who lose documentation while waiting |
+| **HMIS (Coalition)** | People in shelters/programs              | Street homelessness, the gap, people on waitlists               |
+
+### Household Types
+
+| Type             | Definition                                              |
+| ---------------- | ------------------------------------------------------- |
+| **Family**       | Household with children under 18 OR pregnant individual |
+| **Youth**        | Individuals or heads of household aged 18-24            |
+| **Veteran**      | Self-identified veteran (any age)                       |
+| **Single Adult** | Individuals over 24, not families                       |
+
+---
+
+## Success Metrics
+
+### How We Measure Success
+
+**Collective care is working when:**
+
+1. **We know everyone** - Comprehensive list of people experiencing street homelessness
+2. **The gap is visible** - Data shows difference between HMIS and reality
+3. **Needs are known** - We understand what each person needs and wants
+4. **Coordination happens** - Providers work together, not in silos
+5. **People get support** - Connections made to appropriate services
+6. **Autonomy is respected** - People's choices are honored
+7. **Story is told** - Public and policymakers see accurate data
+
+### Tracking Outcomes
+
+📋 **PLACEHOLDER:** Define specific outcome metrics for Santa Fe.
+
+**Suggested metrics:**
+
+- Total people on active BNL
+- Number of new additions per month
+- Number of successful connections to services
+- Number of people housed
+- Average time on waitlists
+- Number of people who lost ID/insurance while waiting
+- Service transactions per person per month
+- Provider participation in case conferencing
+- Public reports generated
+
+---
+
+## Getting Started / Implementation Checklist
+
+⚠️ **REVIEW NEEDED:** Customize implementation steps for Santa Fe.
+
+### Phase 1: Foundation
+
+- [ ] Identify Street View coordinator/lead
+- [ ] Recruit participating providers
+- [ ] Set up data collection system (spreadsheet, database, software)
+- [ ] Establish data security protocols
+- [ ] Create ROI form
+- [ ] Schedule first case conferencing meeting
+
+### Phase 2: Data Collection
+
+- [ ] Train outreach teams on documentation
+- [ ] Begin adding people to BNL
+- [ ] Establish service transaction process
+- [ ] Test data entry and updates
+- [ ] Refine need categories based on Santa Fe context
+
+### Phase 3: Collective Care
+
+- [ ] Launch regular case conferencing
+- [ ] Establish triage and coordination protocols
+- [ ] Implement outflow review process
+- [ ] Begin tracking outcomes
+- [ ] Refine processes based on provider feedback
+
+### Phase 4: Public Storytelling
+
+- [ ] Establish data aggregation process
+- [ ] Create reporting templates
+- [ ] Generate first monthly/quarterly report
+- [ ] Present data to stakeholders
+- [ ] Use data for advocacy and resource requests
+
+---
+
+## Appendix A: Data Fields
+
+📋 **PLACEHOLDER:** Customize based on Santa Fe providers and case conferencing needs.
+
+### Suggested Minimum Data Fields
+
+| Field Category       | Specific Fields                                                         |
+| -------------------- | ----------------------------------------------------------------------- |
+| **Identification**   | Name/alias, approximate age, photo (with consent)                       |
+| **Contact**          | Phone, email, social media (if available)                               |
+| **Location**         | Primary location(s), secondary locations, last seen                     |
+| **System Status**    | In UniteUS?, On Life Link waitlist?, In HMIS?, Other                    |
+| **Documentation**    | Has ID?, Lost ID?, Birth certificate?, Social Security card?            |
+| **Insurance**        | Medicaid?, Uninsured?, Pending application?, Denied?                    |
+| **Medical**          | Chronic conditions, medications, medical needs                          |
+| **Mental Health**    | Conditions, medications, treatment status                               |
+| **Shelter**          | Wants shelter?, Seasonal preferences?, ADA needs?                       |
+| **Other Needs**      | Substance use treatment interest, food access, income, individual needs |
+| **Service Tracking** | Last contact date, last service transaction, active providers           |
+| **Privacy**          | ROI signed?, Date signed, Expires                                       |
+| **Status**           | Active/Inactive, Reason if inactive, Date of status change              |
+
+### Optional Enhanced Data Fields
+
+Based on capacity and case conferencing needs:
+
+- Family composition
+- Veteran status
+- Foster care history
+- Tribal affiliation
+- Language preferences
+- Service animals
+- Transportation access
+- Legal issues/court dates
+- Benefits status (SSI, SSDI, SNAP, etc.)
+- Employment status/interest
+- Education level/GED interest
+
+---
+
+## Notes for Santa Fe Customization
+
+**This manual should be adapted based on:**
+
+1. Participating provider organizations and their capacity
+2. Available technology/database systems
+3. Local privacy laws and requirements
+4. Case conferencing schedule and format preferences
+5. Specific need categories relevant to Santa Fe resources
+6. Data storytelling goals and audience
+7. Relationship with The Coalition and HMIS
+8. Integration with UniteUS and Life Link processes
+
+**Living document:** This manual will evolve as Street View develops. Regular review and updates are essential to ensure the system serves Santa Fe's collective care goals.
+
+---
+
+📋 **All items marked with PLACEHOLDER need to be filled in with Santa Fe-specific information.**
+
+⚠️ **All items marked with REVIEW NEEDED require discussion and decision-making by participating providers.**
