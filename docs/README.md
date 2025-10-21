@@ -61,6 +61,17 @@ The application uses `react-markdown` with GitHub Flavored Markdown (GFM) suppor
 - Task lists
 - And more!
 
+## Linking to PDFs
+
+You can link to PDF files stored in `/public/pdfs/` from your markdown documents:
+
+```markdown
+[Download Guidelines PDF](/pdfs/guidelines.pdf)
+```
+
+The PDFs will open in a new browser tab when clicked.
+
 ## Existing Documents
 
 - `mission.md` - The mission statement and values of the project
+- `manual.md` - By-Name List Operations Manual for Santa Fe's coordinated entry system (adapted from Missoula, Montana template with Santa Fe-specific placeholders)

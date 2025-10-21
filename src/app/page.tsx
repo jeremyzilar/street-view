@@ -66,15 +66,18 @@ export default function Home() {
             </p>
           </Link>
 
-          {/* Placeholder for future documents */}
-          <div className="block p-6 bg-gray-50 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 opacity-50">
+          <Link
+            href="/manual"
+            className="block p-6 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border border-gray-200 dark:border-gray-600"
+          >
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              More documents coming soon
+              By-Name List Operations Manual
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Additional resources and documentation will be added here.
+              Comprehensive guide to managing and maintaining the By-Name List
+              for Santa Fe's coordinated entry system.
             </p>
-          </div>
+          </Link>
         </div>
       </div>
 
