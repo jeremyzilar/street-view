@@ -1,4 +1,6 @@
-# Mission
+---
+title: Mission
+---
 
 ## Our Purpose
 

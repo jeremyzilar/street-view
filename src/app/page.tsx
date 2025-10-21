@@ -75,7 +75,8 @@ export default function Home() {
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
               Guide to collective care coordination and tracking street
-              homelessness in Santa Fe - filling the gap between existing systems.
+              homelessness in Santa Fe - filling the gap between existing
+              systems.
             </p>
           </Link>
         </div>

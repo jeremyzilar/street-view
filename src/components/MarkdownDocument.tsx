@@ -12,7 +12,7 @@ export function MarkdownDocument({
 }: MarkdownDocumentProps) {
   return (
     <div
-      className={`bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 prose prose-lg dark:prose-invert max-w-none ${className}`}
+      className={`p-4 prose prose-lg dark:prose-invert max-w-none ${className}`}
     >
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
     </div>

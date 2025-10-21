@@ -1,8 +1,8 @@
-# Street View Operations Manual
-
-**Santa Fe Collective Care Project**  
-**Last updated:** [PLACEHOLDER: Date]
-
+---
+title: Street View Operations Manual
+deck: Santa Fe Collective Care Project
+summary: TKTK
+updated:
 ---
 
 ## Introduction
@@ -11,7 +11,7 @@
 
 In Santa Fe, people experiencing homelessness move through various systems, but a critical gap exists that leaves many invisible to existing data collection:
 
-1. **UniteUS** - Serves housing-insecure and food-insecure individuals, but not those already on the streets
+1. [**UniteUS**](https://uniteus.com/) - Serves housing-insecure and food-insecure individuals, but not those already on the streets
 2. **THE GAP** ← _This is where Street View operates_
 3. **Life Link Shelter** - 3-8 month waitlist; people often lose ID, insurance, or Medicaid while waiting
 4. **HMIS (The Coalition)** - Only captures people once they enter shelters, creating grossly inaccurate total counts

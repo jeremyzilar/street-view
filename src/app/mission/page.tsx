@@ -1,15 +1,15 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { MarkdownDocument } from "@/components/MarkdownDocument";
+import matter from "gray-matter";
+import { DocumentPage } from "@/components/DocumentPage";
 
 export default async function MissionPage() {
   // Read the markdown file from the docs folder
   const filePath = path.join(process.cwd(), "docs", "mission.md");
   const fileContents = await fs.readFile(filePath, "utf8");
 
-  return (
-    <div className="max-w-4xl mx-auto">
-      <MarkdownDocument content={fileContents} />
-    </div>
-  );
+  // Parse front matter
+  const { data: frontMatter, content } = matter(fileContents);
+
+  return <DocumentPage frontMatter={frontMatter} content={content} />;
 }
