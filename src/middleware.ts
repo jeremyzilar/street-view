@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  const authCookie = request.cookies.get("streetview_auth");
+  const authCookie = request.cookies.get("many_paths_auth");
 
   console.log("Middleware - Auth cookie present:", !!authCookie);
   console.log("Middleware - Auth cookie value:", authCookie?.value);

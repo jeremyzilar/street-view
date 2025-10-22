@@ -12,8 +12,9 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Caminos SF",
-  description: "Collective care coordination for people experiencing street homelessness in Santa Fe",
+  title: "Many Paths SF",
+  description:
+    "Collective care coordination for people experiencing street homelessness in Santa Fe",
 };
 
 export default async function RootLayout({
@@ -22,7 +23,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const cookieStore = await cookies();
-  const isAuthenticated = cookieStore.has("streetview_auth");
+  const isAuthenticated = cookieStore.has("many_paths_auth");
 
   console.log("Root Layout - Is authenticated:", isAuthenticated);
   console.log("Root Layout - All cookies:", cookieStore.getAll());

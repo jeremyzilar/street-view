@@ -33,7 +33,7 @@ export function Header() {
           </button>
           <h1 className="font-bold font-display leading-[28px] text-white tracking-wide text-4xl dark:text-black whitespace-nowrap">
             <Link className="inline" href="/">
-              Caminos SF
+              Many Paths SF
             </Link>
           </h1>
         </div>

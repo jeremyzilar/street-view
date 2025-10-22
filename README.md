@@ -1,4 +1,4 @@
-# Caminos SF
+# The Many Paths Project
 
 **Collective care coordination for people experiencing street homelessness in Santa Fe**
 
@@ -6,16 +6,16 @@ _Many paths, one community._
 
 ---
 
-## About Caminos
+## About Many Paths
 
-Caminos fills the critical gap between existing systems—tracking people experiencing street homelessness who fall between UniteUS, Life Link waitlists, and HMIS. Through collective care coordination, we respect individual autonomy while ensuring providers work together.
+Many Paths fills the critical gap between existing systems—tracking people experiencing street homelessness who fall between UniteUS, Life Link waitlists, and HMIS. Through collective care coordination, we respect individual autonomy while ensuring providers work together.
 
 ### The Problem We're Solving
 
 In Santa Fe, people experiencing homelessness move through various systems, but a critical gap exists:
 
 1. **UniteUS** - Serves housing-insecure and food-insecure individuals, but not those already on the streets
-2. **THE GAP** ← _This is where Caminos operates_
+2. **THE GAP** ← _This is where Many Paths operates_
 3. **Life Link Shelter** - 3-8 month waitlist; people often lose ID, insurance, or Medicaid while waiting
 4. **HMIS (The Coalition)** - Only captures people once they enter shelters, creating grossly inaccurate total counts
 
@@ -51,22 +51,26 @@ This is a [Next.js](https://nextjs.org) application built with:
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/caminos-sf.git
 cd caminos-sf
 ```
 
 2. Install dependencies:
+
 ```bash
 yarn install
 ```
 
 3. Set up environment variables:
+
 ```bash
 cp .env.example .env.local
 ```
 
 Add your Airtable credentials to `.env.local`:
+
 ```
 AIRTABLE_API_KEY=your_api_key
 AIRTABLE_BASE_ID=your_base_id
@@ -74,6 +78,7 @@ AIRTABLE_PASSWORD=your_password
 ```
 
 4. Run the development server:
+
 ```bash
 yarn dev
 ```
@@ -125,22 +130,26 @@ yarn lint         # Run ESLint
 ## Key Features
 
 ### By-Name List Management
+
 - Track people experiencing street homelessness
 - Record individual needs and preferences
 - System status tracking (UniteUS, Life Link, HMIS)
 
 ### Encampment Tracking
+
 - Location documentation with geocoding
 - Population and condition tracking
 - Service coordination
 
 ### Collective Care Coordination
+
 - Case conferencing support
 - Provider coordination
 - Service transaction tracking
 - Outflow review process
 
 ### Documentation & Public Storytelling
+
 - Mission and operations manual built-in
 - Markdown-based content management
 - Front matter support for metadata
@@ -149,11 +158,11 @@ yarn lint         # Run ESLint
 
 ## Scalability
 
-Caminos is designed to be deployed in multiple cities:
+Many Paths is designed to be deployed in multiple cities:
 
-- **Caminos SF** - Santa Fe, New Mexico (this instance)
-- **Caminos ABQ** - Albuquerque (future)
-- **Caminos [City]** - Additional cities can adopt the system
+- **Many Paths SF** - Santa Fe, New Mexico (this instance)
+- **Many Paths ABQ** - Albuquerque (future)
+- **Many Paths [City]** - Additional cities can adopt the system
 
 Each instance maintains its own data while sharing the same core platform and approach.
 
@@ -170,7 +179,7 @@ Each instance maintains its own data while sharing the same core platform and ap
 
 ## Contributing
 
-This is a private project for Santa Fe providers. If you're interested in deploying Caminos in your city, please reach out.
+This is a private project for Santa Fe providers. If you're interested in deploying Many Paths in your city, please reach out.
 
 ---
 
@@ -182,8 +191,8 @@ This is a private project for Santa Fe providers. If you're interested in deploy
 
 ## Contact
 
-For more information about Caminos SF, please contact [contact information].
+For more information about Many Paths, please contact [contact information].
 
 ---
 
-Built with ❤️ for the Santa Fe community.
+Built with ❤️ for the people of the wider Santa Fe community.

@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="text-center space-y-6">
         <h1 className="text-5xl font-bold text-gray-900 dark:text-white">
-          Caminos SF
+          Many Paths SF
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           Collective care coordination for people experiencing street
@@ -22,7 +22,7 @@ export default function Home() {
           Our Mission
         </h2>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-          Caminos fills the critical gap between existing systems—tracking
+          Many Paths fills the critical gap between existing systems—tracking
           people experiencing street homelessness who fall between UniteUS, Life
           Link waitlists, and HMIS. Through collective care coordination, we
           respect individual autonomy while ensuring providers work together.
@@ -71,7 +71,7 @@ export default function Home() {
             className="block p-6 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border border-gray-200 dark:border-gray-600"
           >
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              Caminos Operations Manual
+              Many Paths Operations Manual
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
               Comprehensive guide to collective care coordination, case

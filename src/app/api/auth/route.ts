@@ -15,14 +15,11 @@ export async function POST(request: Request) {
     }
 
     // Debug log to verify environment variable
-    console.log(
-      "Expected password:",
-      process.env.NEXT_PUBLIC_STREETVIEW_PASSWORD
-    );
+    console.log("Expected password:", process.env.NEXT_PUBLIC_APP_PASSWORD);
     console.log("Received password:", password);
 
     // Check if the password matches the environment variable
-    if (password !== process.env.NEXT_PUBLIC_STREETVIEW_PASSWORD) {
+    if (password !== process.env.NEXT_PUBLIC_APP_PASSWORD) {
       console.log("Invalid password attempt");
       return NextResponse.json({ error: "Invalid password" }, { status: 401 });
     }
@@ -31,7 +28,7 @@ export async function POST(request: Request) {
     const response = NextResponse.json({ success: true });
 
     // Set the cookie in the response
-    response.cookies.set("streetview_auth", "true", {
+    response.cookies.set("many_paths_auth", "true", {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
       sameSite: "lax",

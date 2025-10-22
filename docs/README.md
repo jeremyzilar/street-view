@@ -1,6 +1,6 @@
 # Documentation Folder
 
-This folder contains markdown files that are rendered as pages in the Caminos application.
+This folder contains markdown files that are rendered as pages in the Many Paths application.
 
 ## How to Add a New Document
 

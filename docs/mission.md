@@ -1,11 +1,11 @@
 ---
 title: Mission
-deck: Caminos SF - Collective Care for Santa Fe
+deck: Many Paths SF - Collective Care for Santa Fe
 ---
 
 ## Our Purpose
 
-Caminos is dedicated to supporting people experiencing street homelessness in Santa Fe through collective care coordination. Our mission is to know everyone, coordinate provider response, and respect individual autonomy while filling the critical gap between existing systems.
+Many Paths is dedicated to supporting people experiencing street homelessness in Santa Fe through collective care coordination. Our mission is to know everyone, coordinate provider response, and respect individual autonomy while filling the critical gap between existing systems.
 
 ## What We Do
 

@@ -182,7 +182,7 @@ export function Map({
         zoom: 14,
         mapId: "street_view_map",
         mapTypeControl: false,
-        streetViewControl: false,
+        manyPathsControl: false,
       });
 
       mapInstanceRef.current = mapInstance;

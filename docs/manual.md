@@ -1,5 +1,5 @@
 ---
-title: Caminos Operations Manual
+title: Many Paths Operations Manual
 deck: Santa Fe Collective Care Project
 summary: Comprehensive guide to managing the By-Name List and coordinating collective care for people experiencing street homelessness in Santa Fe
 updated:
@@ -12,15 +12,15 @@ updated:
 In Santa Fe, people experiencing homelessness move through various systems, but a critical gap exists that leaves many invisible to existing data collection:
 
 1. [**UniteUS**](https://uniteus.com/) - Serves housing-insecure and food-insecure individuals, but not those already on the streets
-2. **THE GAP** ← _This is where Caminos operates_
+2. **THE GAP** ← _This is where Many Paths operates_
 3. **Life Link Shelter** - 3-8 month waitlist; people often lose ID, insurance, or Medicaid while waiting
 4. **HMIS (The Coalition)** - Only captures people once they enter shelters, creating grossly inaccurate total counts
 
-**Caminos fills this critical gap** by tracking people experiencing street homelessness who have fallen out of all formal systems. This creates an accurate, real-time picture of homelessness in Santa Fe that existing systems miss.
+**Many Paths fills this critical gap** by tracking people experiencing street homelessness who have fallen out of all formal systems. This creates an accurate, real-time picture of homelessness in Santa Fe that existing systems miss.
 
 ### Our Mission: Collective Care
 
-Caminos operates on a **collective care** model rather than a formal coordinated entry system. Our goals are to:
+Many Paths operates on a **collective care** model rather than a formal coordinated entry system. Our goals are to:
 
 - **Know everyone** experiencing street homelessness in Santa Fe in real time
 - **Understand individual needs and preferences** - medical, mental health, seasonal shelter, ID, ADA accessibility, and more
@@ -38,11 +38,11 @@ Without this information, we cannot:
 
 ---
 
-## Caminos By-Name List
+## Many Paths SF By-Name List
 
-### What Is the Caminos BNL?
+### What Is the Many Paths BNL?
 
-The Caminos By-Name List (BNL) is a comprehensive tracking system that ensures we know everyone experiencing street homelessness in Santa Fe, especially those who have fallen out of other systems.
+The Many Paths By-Name List (BNL) is a comprehensive tracking system that ensures we know everyone experiencing street homelessness in Santa Fe, especially those who have fallen out of other systems.
 
 ### Who Gets Tracked?
 
@@ -65,7 +65,7 @@ This includes:
 
 ### Information We Collect
 
-Caminos tracks information needed for collective care coordination:
+Many Paths tracks information needed for collective care coordination:
 
 #### Basic Information
 
@@ -100,7 +100,7 @@ Caminos tracks information needed for collective care coordination:
 
 ### How People Get Added to the List
 
-People are added to the Caminos BNL through:
+People are added to the Many Paths BNL through:
 
 1. **Street outreach** - encounters during outreach work
 2. **Provider referrals** - from agencies working with unhoused individuals
@@ -163,7 +163,7 @@ People are added to the Caminos BNL through:
 
 ### Overview
 
-Case conferencing is the heart of the Caminos collective care model. Participating providers meet regularly to review the By-Name List, coordinate responses, and ensure people get the support they need in a coordinated way.
+Case conferencing is the heart of the Many Paths collective care model. Participating providers meet regularly to review the By-Name List, coordinate responses, and ensure people get the support they need in a coordinated way.
 
 ### Case Conferencing Process
 
@@ -312,7 +312,7 @@ Track the following to enable collective care coordination:
 
 ### Purpose
 
-One of Caminos' core goals is to tell an accurate, compelling story to the public about homelessness in Santa Fe using real data, not the incomplete picture from HMIS alone.
+One of Many Paths' core goals is to tell an accurate, compelling story to the public about homelessness in Santa Fe using real data, not the incomplete picture from HMIS alone.
 
 ### What We Can Report
 
@@ -351,7 +351,7 @@ Suggested reports:
 
 Use data to communicate:
 
-1. **The gap** - "HMIS shows X people, but Caminos found Y additional people on the streets"
+1. **The gap** - "HMIS shows X people, but Many Paths found Y additional people on the streets"
 2. **Individual needs** - "Z% need medical care, W% are waiting for shelter, etc."
 3. **System barriers** - "Average wait time for Life Link is X months, during which people lose ID, insurance..."
 4. **Collective care success** - "Through coordination, we connected X people to Y services"
@@ -361,9 +361,9 @@ Use data to communicate:
 
 ## Roles & Responsibilities
 
-### Caminos Lead/Coordinator
+### Many Paths Lead/Coordinator
 
-📋 **PLACEHOLDER:** Identify who will serve as Caminos lead.
+📋 **PLACEHOLDER:** Identify who will serve as Many Paths lead.
 
 **Responsibilities:**
 
@@ -412,9 +412,9 @@ Use data to communicate:
 
 ### Who Has Access
 
-**Full access to Caminos BNL:**
+**Full access to Many Paths BNL:**
 
-- Caminos coordinator
+- Many Paths coordinator
 - [Other designated roles]
 
 **Partial access (case conferencing):**
@@ -457,7 +457,7 @@ Use data to communicate:
 
 **Process for obtaining ROI:**
 
-- Explain what Caminos is and how data is used
+- Explain what Many Paths is and how data is used
 - Emphasize collective care coordination benefit
 - Respect if person declines
 - Re-offer periodically if situation changes
@@ -472,7 +472,7 @@ Use data to communicate:
 
 **Suggested training topics:**
 
-1. Caminos mission and collective care philosophy
+1. Many Paths mission and collective care philosophy
 2. The system gap we're filling
 3. How to add/update people on the BNL
 4. Privacy and data security
@@ -499,7 +499,7 @@ Use data to communicate:
 
 | Term                    | Definition                                                                                   |
 | ----------------------- | -------------------------------------------------------------------------------------------- |
-| **Caminos BNL**         | By-Name List tracking everyone experiencing street homelessness in Santa Fe                  |
+| **Many Paths BNL**      | By-Name List tracking everyone experiencing street homelessness in Santa Fe                  |
 | **Collective Care**     | Coordinated provider response based on individual needs and preferences, respecting autonomy |
 | **Case Conferencing**   | Regular provider meetings to review BNL and coordinate care                                  |
 | **Service Transaction** | Any interaction that provides information about person's status/needs                        |
@@ -515,7 +515,7 @@ Use data to communicate:
 | System               | What It Tracks                           | What It Misses                                                  |
 | -------------------- | ---------------------------------------- | --------------------------------------------------------------- |
 | **UniteUS**          | Housing-insecure, food-insecure          | People already on streets                                       |
-| **Caminos**          | Street homelessness, the gap             | (We fill the gap)                                               |
+| **Many Paths**       | Street homelessness, the gap             | (We fill the gap)                                               |
 | **Life Link**        | People in shelter (after 3-8 month wait) | People on waitlist, people who lose documentation while waiting |
 | **HMIS (Coalition)** | People in shelters/programs              | Street homelessness, the gap, people on waitlists               |
 
@@ -568,7 +568,7 @@ Use data to communicate:
 
 ### Phase 1: Foundation
 
-- [ ] Identify Caminos coordinator/lead
+- [ ] Identify Many Paths coordinator/lead
 - [ ] Recruit participating providers
 - [ ] Set up data collection system (spreadsheet, database, software)
 - [ ] Establish data security protocols
@@ -654,7 +654,7 @@ Based on capacity and case conferencing needs:
 7. Relationship with The Coalition and HMIS
 8. Integration with UniteUS and Life Link processes
 
-**Living document:** This manual will evolve as Caminos develops. Regular review and updates are essential to ensure the system serves Santa Fe's collective care goals.
+**Living document:** This manual will evolve as Many Paths develops. Regular review and updates are essential to ensure the system serves Santa Fe's collective care goals.
 
 ---
 
