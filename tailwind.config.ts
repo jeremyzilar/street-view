@@ -22,14 +22,16 @@ const config = {
     },
     fontFamily: {
       sans: [
-        "Helvetica Neue", // Popular sans-serif, widely available on Mac and iOS
-        "Arial", // Default fallback sans-serif on Windows
-        "Segoe UI", // Common on Windows and Microsoft platforms
-        "Roboto", // Popular on Android and Google platforms
-        "system-ui", // Uses the system's default sans-serif
-        "-apple-system", // macOS and iOS system font
-        "BlinkMacSystemFont", // Fallback for WebKit-based browsers
-        "sans-serif", // Generic fallback
+        "Public Sans",
+        "var(--font-public-sans)",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif",
       ],
       serif: [
         "Georgia", // Well-regarded serif font, common across platforms
@@ -74,9 +76,6 @@ const config = {
         desktop: "1024px",
         "desktop-lg": "1256px",
         widescreen: "1400px",
-      },
-      fontFamily: {
-        sans: ["var(--font-inter)"],
       },
     },
   },

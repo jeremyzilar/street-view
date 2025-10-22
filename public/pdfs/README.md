@@ -1,6 +1,6 @@
 # PDFs Folder
 
-This folder contains PDF documents that are publicly accessible in the Street View application.
+This folder contains PDF documents that are publicly accessible in the Caminos application.
 
 ## Adding PDFs
 

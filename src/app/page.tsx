@@ -8,11 +8,11 @@ export default function Home() {
       {/* Hero Section */}
       <div className="text-center space-y-6">
         <h1 className="text-5xl font-bold text-gray-900 dark:text-white">
-          Street View
+          Caminos SF
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Supporting and documenting the unhoused community in Santa Fe with
-          compassion, dignity, and respect.
+          Collective care coordination for people experiencing street
+          homelessness in Santa Fe. Many paths, one community.
         </p>
       </div>
 
@@ -22,10 +22,10 @@ export default function Home() {
           Our Mission
         </h2>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-          We are dedicated to providing compassionate assistance while
-          maintaining accurate records to better serve those in need. Through
-          outreach, documentation, and community connection, we work to bridge
-          the gap between the unhoused community and available resources.
+          Caminos fills the critical gap between existing systems—tracking
+          people experiencing street homelessness who fall between UniteUS, Life
+          Link waitlists, and HMIS. Through collective care coordination, we
+          respect individual autonomy while ensuring providers work together.
         </p>
         <Link
           href="/mission"
@@ -71,12 +71,11 @@ export default function Home() {
             className="block p-6 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border border-gray-200 dark:border-gray-600"
           >
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              Street View Operations Manual
+              Caminos Operations Manual
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Guide to collective care coordination and tracking street
-              homelessness in Santa Fe - filling the gap between existing
-              systems.
+              Comprehensive guide to collective care coordination, case
+              conferencing, and managing the By-Name List in Santa Fe.
             </p>
           </Link>
         </div>

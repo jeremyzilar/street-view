@@ -1,18 +1,21 @@
 ---
 title: Mission
+deck: Caminos SF - Collective Care for Santa Fe
 ---
 
 ## Our Purpose
 
-Street View is dedicated to supporting and documenting the unhoused community in Santa Fe. Our mission is to provide compassionate, dignified assistance while maintaining accurate records to better serve those in need.
+Caminos is dedicated to supporting people experiencing street homelessness in Santa Fe through collective care coordination. Our mission is to know everyone, coordinate provider response, and respect individual autonomy while filling the critical gap between existing systems.
 
 ## What We Do
 
-- **Outreach and Support**: We conduct regular outreach to individuals experiencing homelessness, providing essential services and building trusting relationships.
+- **Fill the Gap**: We track people experiencing street homelessness who fall between UniteUS, Life Link waitlists, and HMIS—creating an accurate, real-time picture of homelessness in Santa Fe.
 
-- **Documentation**: We maintain respectful records of individuals and encampment locations to coordinate services effectively and track our impact.
+- **Collective Care Coordination**: Through regular case conferencing, providers coordinate responses based on individual needs and preferences, working together instead of in silos.
 
-- **Community Connection**: We work to bridge the gap between the unhoused community and available resources, ensuring people get the help they need.
+- **Respect Every Path**: We track diverse needs—medical, mental health, seasonal shelter, ID, ADA accessibility—and respect that some people don't want shelter, and that's okay.
+
+- **Tell the True Story**: We use aggregated data to advocate for resources and show the public the real scope of homelessness, not just who's in HMIS.
 
 ## Our Values
 

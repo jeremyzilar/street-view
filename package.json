@@ -1,9 +1,10 @@
 {
-  "name": "street-care",
+  "name": "caminos-sf",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next && next dev --experimental-https",
+    "dev": "next dev --experimental-https --turbopack",
+    "dev:clean": "rm -rf .next && next dev --experimental-https --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

@@ -1,22 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Public_Sans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Header } from "@/components/Header";
 import { PasswordProtection } from "@/components/PasswordProtection";
 import { cookies } from "next/headers";
-import Head from "next/head";
-import { Bebas_Neue } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-const bebasNeue = Bebas_Neue({
+const publicSans = Public_Sans({
   subsets: ["latin"],
-  weight: ["400"],
+  variable: "--font-public-sans",
 });
 
 export const metadata: Metadata = {
-  title: "Street View",
-  description: "Street View Application",
+  title: "Caminos SF",
+  description: "Collective care coordination for people experiencing street homelessness in Santa Fe",
 };
 
 export default async function RootLayout({
@@ -32,19 +29,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <body className={inter.className}>
+      <body className={publicSans.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

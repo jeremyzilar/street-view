@@ -23,7 +23,7 @@ export function DocumentPage({ frontMatter, content }: DocumentPageProps) {
           </h1>
         )}
         {frontMatter.deck && (
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-4">
+          <p className="text-2xl text-gray-600 dark:text-gray-300 mb-4">
             {frontMatter.deck}
           </p>
         )}

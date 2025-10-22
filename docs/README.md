@@ -1,6 +1,6 @@
 # Documentation Folder
 
-This folder contains markdown files that are rendered as pages in the Street View application.
+This folder contains markdown files that are rendered as pages in the Caminos application.
 
 ## How to Add a New Document
 
