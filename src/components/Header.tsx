@@ -34,21 +34,17 @@ export function Header() {
         </button>
 
         {/* Site title */}
-        <h1 className="font-black text-3xl">
+        <h1 className="font-black text-2xl">
           <Link className="inline" href="/">
             Many Paths SF
           </Link>
         </h1>
 
         {/* Desktop navigation - horizontal */}
-        <nav className="hidden tablet-lg:flex flex-1 items-center gap-6 px-6">
+        <nav className="hidden tablet-lg:flex gap-6">
           <NavLinks horizontal />
-        </nav>
-
-        {/* Theme toggle */}
-        <div className="ml-auto">
           <ThemeToggle />
-        </div>
+        </nav>
       </div>
 
       {/* Mobile menu overlay */}
@@ -108,6 +104,30 @@ const NavLinks = ({ horizontal = false }: { horizontal?: boolean }) => {
           href="/encampments"
         >
           All encampments
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
+          href="/who-we-are"
+        >
+          Who We Are
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
+          href="/mission"
+        >
+          Mission
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
+          href="/manual"
+        >
+          Manual
         </Link>
       </li>
     </ul>

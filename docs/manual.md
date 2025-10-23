@@ -1,5 +1,5 @@
 ---
-title: Many Paths Operations Manual
+title: Operations Manual
 deck: Santa Fe Collective Care Project
 summary: Comprehensive guide to managing the By-Name List and coordinating collective care for people experiencing street homelessness in Santa Fe
 updated:

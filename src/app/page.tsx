@@ -51,8 +51,8 @@ export default function Home() {
       </div>
 
       {/* Documents Section */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-6">
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 space-y-6">
+        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white">
           Documentation & Resources
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -73,13 +73,19 @@ export default function Home() {
             className="block p-6 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border border-gray-200 dark:border-gray-600"
           >
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              Many Paths Operations Manual
+              Who We Are
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Comprehensive guide to collective care coordination, case
-              conferencing, and managing the By-Name List in Santa Fe.
+              We are a group of providers who ...
             </p>
           </Link>
+        </div>
+        <div className="">
+          <p className="text-lg text-gray-900 dark:text-white">
+            <Link href="/mission" className="block ">
+              Our Operations Manual
+            </Link>
+          </p>
         </div>
       </div>
 
