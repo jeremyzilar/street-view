@@ -1,13 +1,9 @@
 ---
 title: Mission
-deck: Through collective care we help people experiencing street homelessness get the medical care, shelter, and support they need to get stable living.
+deck: Through collective care, we help the people in our community who are experiencing street homelessness get the medical help, supplies, shelter, and support they need to succeed on their path towards stable housing.
 ---
 
-The Many Paths Project fills the critical gap between existing systems
-for supporting people experiencing street homelessness. Through
-collective care we help people experiencing street homelessness who
-are needing medical help, shelter, and support on their way to stable
-housing.
+The Many Paths Project fills the critical gap between existing systems for supporting people experiencing street homelessness. Through collective care, we help the people in our community who are experiencing street homelessness get the medical help, supplies, shelter, and support they need to succeed on their path towards stable housing.
 
 ## Our Purpose
 
