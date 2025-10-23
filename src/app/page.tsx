@@ -4,28 +4,30 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-w-6xl mx-auto space-y-12">
+    <div className="p-4 py-12 tablet-lg:p-4 pb-24 h-full w-auto tablet-lg:w-desktop mx-auto space-y-12">
       {/* Hero Section */}
-      <div className="text-center space-y-6">
-        <h1 className="text-5xl font-bold text-gray-900 dark:text-white">
+      <div className="text-center space-y-6 pt-10">
+        <h1 className="text-5xl font-black text-gray-900 dark:text-white">
           Many Paths SF
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        <p className="text-2xl font-light text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           Collective care coordination for people experiencing street
-          homelessness in Santa Fe. Many paths, one community.
+          homelessness in Santa Fe
         </p>
       </div>
 
       {/* Mission Overview */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-        <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-4">
-          Our Mission
-        </h2>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-          Many Paths fills the critical gap between existing systems—tracking
-          people experiencing street homelessness who fall between UniteUS, Life
-          Link waitlists, and HMIS. Through collective care coordination, we
-          respect individual autonomy while ensuring providers work together.
+          The Many Paths Project fills the critical gap between the existing
+          support systems for people experiencing street homelessness in Santa
+          Fe.
+        </p>
+        <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+          Through organized collaboration and collective care we help the people
+          in our community who are experiencing street homelessness get the
+          medical help, supplies, shelter, and support they need on their path
+          to stable housing.
         </p>
         <Link
           href="/mission"

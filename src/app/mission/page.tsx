@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { DocumentPage } from "@/components/DocumentPage";
+import { PageLayout } from "@/components/PageLayout";
 
 export default async function MissionPage() {
   // Read the markdown file from the docs folder
@@ -11,5 +12,9 @@ export default async function MissionPage() {
   // Parse front matter
   const { data: frontMatter, content } = matter(fileContents);
 
-  return <DocumentPage frontMatter={frontMatter} content={content} />;
+  return (
+    <PageLayout>
+      <DocumentPage frontMatter={frontMatter} content={content} />
+    </PageLayout>
+  );
 }

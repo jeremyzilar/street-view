@@ -3,15 +3,86 @@
 
 @layer base {
   :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+    /* Legacy RGB variables */
+    --foreground-rgb: 28, 74, 95; /* primary */
+    --background-start-rgb: 240, 240, 240; /* off-white */
+    --background-end-rgb: 255, 255, 255; /* white */
+
+    /* Brand Color Palette - Light Mode */
+    /* Primary (Navy/Teal) - For headings, navigation, important text */
+    --color-primary: 28 74 95; /* #1C4A5F */
+    --color-primary-light: 102 165 189; /* #66a5bd */
+    --color-primary-dark: 11 28 38; /* #0b1e26 */
+
+    /* Peach - For hero sections, warm backgrounds */
+    --color-peach: 245 201 184; /* #F5C9B8 */
+    --color-peach-light: 253 241 235; /* #fdf1eb */
+    --color-peach-dark: 233 127 95; /* #e97f5f */
+
+    /* Teal - For links, underlines, secondary accents */
+    --color-teal: 91 163 184; /* #5BA3B8 */
+    --color-teal-light: 163 215 227; /* #a3d7e3 */
+    --color-teal-dark: 56 98 110; /* #38626e */
+
+    /* Accent Orange - For CTAs, important highlights */
+    --color-accent-orange: 230 57 70; /* #E63946 */
+    --color-accent-orange-light: 249 209 213; /* #f9d1d5 */
+    --color-accent-orange-dark: 151 29 39; /* #971d27 */
+
+    /* Accent Purple - For progress indicators, interactive elements */
+    --color-accent-purple: 168 85 247; /* #A855F7 */
+    --color-accent-purple-light: 215 183 251; /* #d7b7fb */
+    --color-accent-purple-dark: 109 35 172; /* #6d23ac */
+
+    /* Accent Yellow - For alerts, secondary highlights */
+    --color-accent-yellow: 252 211 77; /* #FCD34D */
+    --color-accent-yellow-light: 254 247 213; /* #fef7d5 */
+    --color-accent-yellow-dark: 196 156 13; /* #c49c0d */
+
+    /* Surfaces - For backgrounds, cards, sections */
+    --color-surface-white: 255 255 255; /* #FFFFFF */
+    --color-surface-off-white: 240 240 240; /* #F0F0F0 */
+    --color-surface-mint: 184 245 232; /* #B8F5E8 */
+    --color-surface-light-peach: 245 213 192; /* #F5D5C0 */
   }
 
   .dark {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* Legacy RGB variables */
+    --foreground-rgb: 240, 240, 240;
+    --background-start-rgb: 11, 28, 38;
+    --background-end-rgb: 6, 15, 19;
+
+    /* Brand Color Palette - Dark Mode */
+    /* Adjust colors for better contrast and readability in dark mode */
+    --color-primary: 163 215 227; /* Lighter teal for dark backgrounds */
+    --color-primary-light: 232 245 248;
+    --color-primary-dark: 91 163 184;
+
+    --color-peach: 233 127 95; /* Warmer, deeper peach */
+    --color-peach-light: 245 201 184;
+    --color-peach-dark: 196 60 31;
+
+    --color-teal: 163 215 227; /* Brighter teal for visibility */
+    --color-teal-light: 232 245 248;
+    --color-teal-dark: 91 163 184;
+
+    --color-accent-orange: 237 117 129; /* Softer orange for dark mode */
+    --color-accent-orange-light: 243 163 171;
+    --color-accent-orange-dark: 230 57 70;
+
+    --color-accent-purple: 195 147 249; /* Lighter purple */
+    --color-accent-purple-light: 235 219 253;
+    --color-accent-purple-dark: 168 85 247;
+
+    --color-accent-yellow: 253 223 129; /* Softer yellow */
+    --color-accent-yellow-light: 254 247 213;
+    --color-accent-yellow-dark: 252 211 77;
+
+    /* Surfaces - Dark mode backgrounds */
+    --color-surface-white: 17 44 57; /* Dark primary */
+    --color-surface-off-white: 11 28 38;
+    --color-surface-mint: 27 65 74; /* Darker mint-teal */
+    --color-surface-light-peach: 56 33 26; /* Dark warm tone */
   }
 }
 

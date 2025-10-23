@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { Header } from "@/components/Header";
 import { PasswordProtection } from "@/components/PasswordProtection";
 import { cookies } from "next/headers";
 
@@ -38,11 +37,8 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           {isAuthenticated ? (
-            <main className="relative min-h-screen bg-gray-100 dark:bg-gray-900 overflow-y-auto flex flex-col tablet-lg:flex-row">
-              <Header />
-              <div className="p-4 py-12 tablet-lg:p-4 tablet-lg:pl-12 pb-24 h-full w-auto tablet-lg:w-desktop tablet-lg:ml-[240px]">
-                {children}
-              </div>
+            <main className="relative min-h-screen bg-gray-100 dark:bg-gray-900 overflow-y-auto">
+              {children}
             </main>
           ) : (
             <PasswordProtection />
