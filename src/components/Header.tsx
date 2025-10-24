@@ -44,6 +44,7 @@ export function Header() {
         {/* Desktop navigation - horizontal */}
         <nav className="hidden tablet-lg:flex gap-4">
           <NavLinks horizontal />
+
           <ThemeToggle />
         </nav>
       </div>
@@ -108,6 +109,14 @@ const NavLinks = ({
           </Link>
         </li>
       ))}
+      <li key="by-name-list" className="hidden">
+        <Link
+          href="/by-name-list"
+          className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-colors hover:underline underline-offset-4"
+        >
+          Log in
+        </Link>
+      </li>
     </ul>
   );
 };

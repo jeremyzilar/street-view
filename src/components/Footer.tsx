@@ -26,7 +26,7 @@ export function Footer() {
                 href="https://santafenm.gov/chs/homelessness"
                 className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-colors underline underline-offset-4"
               >
-                City of Santa Fe
+                City of Santa Fe Homelessness Response
               </Link>{" "}
               and operated by the local network of service providers, outreach
               teams, healthcare workers, and community partners.

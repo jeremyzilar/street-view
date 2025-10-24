@@ -1,6 +1,6 @@
 ---
 title: Providers
-deck: Many Paths Santa Fe brings together a diverse network of service providers, outreach teams, healthcare workers, and community partners who coordinate their efforts to help people experiencing street homelessness.
+deck: The Many Paths Project brings together a diverse network of service providers, outreach teams, healthcare workers, and community partners who coordinate their efforts to help people experiencing street homelessness.
 ---
 
 ## How Providers Work Together
