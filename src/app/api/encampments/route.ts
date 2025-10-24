@@ -5,7 +5,7 @@ export async function GET() {
   try {
     const encampments = await getEncampmentsRecords();
     return NextResponse.json({ encampments });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to fetch encampments" },
       { status: 500 }

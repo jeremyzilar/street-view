@@ -19,6 +19,7 @@ export function PasswordProtection() {
       const response = await fetch("/api/auth", {
         method: "POST",
         headers: {
+          // eslint-disable-next-line @typescript-eslint/naming-convention
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ password }),

@@ -3,10 +3,13 @@
 import { useEffect, useRef } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
 import { getEncampmentsRecords, getPeopleRecords } from "@/lib/airtable";
-import { EncampmentsRecord, PeopleRecord } from "@/types/airtable";
+import { EncampmentsRecord } from "@/types/airtable";
 
-// Extend Loader type to include importLibrary method
+// Extend Loader type to include importLibrary method with proper overloads
 interface ExtendedLoader extends Loader {
+  importLibrary(library: "maps"): Promise<google.maps.MapsLibrary>;
+  importLibrary(library: "marker"): Promise<google.maps.MarkerLibrary>;
+  importLibrary(library: "geocoding"): Promise<google.maps.GeocodingLibrary>;
   importLibrary(library: string): Promise<google.maps.CoreLibrary>;
 }
 
@@ -43,7 +46,9 @@ export function Map({
     encampment: EncampmentsRecord,
     peopleCount: number
   ) => {
-    if (!encampment.fields.coordinates) return null;
+    if (!encampment.fields.coordinates) {
+      return null;
+    }
 
     const [lat, lng] = encampment.fields.coordinates.split(",").map(Number);
     const marker = new google.maps.marker.AdvancedMarkerElement({
@@ -80,13 +85,16 @@ export function Map({
       ]);
 
       // Count people per encampment
-      const peopleCountByEncampment = people.reduce((acc, person) => {
-        const encampmentId = person.fields.encampment;
-        if (encampmentId) {
-          acc[encampmentId] = (acc[encampmentId] || 0) + 1;
-        }
-        return acc;
-      }, {} as Record<string, number>);
+      const peopleCountByEncampment = people.reduce(
+        (acc, person) => {
+          const encampmentId = person.fields.encampment;
+          if (encampmentId) {
+            acc[encampmentId] = (acc[encampmentId] || 0) + 1;
+          }
+          return acc;
+        },
+        {} as Record<string, number>
+      );
 
       const activeEncampments = encampments.filter(
         (encampment) =>
@@ -114,7 +122,9 @@ export function Map({
 
   useEffect(() => {
     const initMap = async () => {
-      if (isInitializedRef.current) return;
+      if (isInitializedRef.current) {
+        return;
+      }
 
       const loader = new Loader({
         apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
@@ -176,7 +186,7 @@ export function Map({
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
-        } catch (error) {
+        } catch {
           center = { lat: 35.6869, lng: -105.9378 }; // Default to Santa Fe
         }
       }
@@ -187,7 +197,6 @@ export function Map({
         zoom: 14,
         mapId: "street_view_map",
         mapTypeControl: false,
-        manyPathsControl: false,
       });
 
       mapInstanceRef.current = mapInstance;
@@ -225,7 +234,9 @@ export function Map({
       // Add click listener to drop pin
       if (!readOnly) {
         mapInstance.addListener("click", (e: google.maps.MapMouseEvent) => {
-          if (!e.latLng) return;
+          if (!e.latLng) {
+            return;
+          }
 
           // Remove existing marker if any
           if (markerRef.current) {
@@ -280,12 +291,14 @@ export function Map({
       };
     };
 
-    initMap();
+    void initMap();
   }, [address, geocodeCache, initialCenter, onLocationSelect, readOnly]);
 
   // Update marker position when initialCoordinates changes
   useEffect(() => {
-    if (!mapInstanceRef.current || !initialCoordinates) return;
+    if (!mapInstanceRef.current || !initialCoordinates) {
+      return;
+    }
 
     const [lat, lng] = initialCoordinates.split(",").map(Number);
 

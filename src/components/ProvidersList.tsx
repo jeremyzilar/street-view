@@ -35,7 +35,7 @@ export function ProvidersList() {
       }
     };
 
-    fetchProviders();
+    void fetchProviders();
   }, []);
 
   if (loading) {

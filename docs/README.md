@@ -5,7 +5,6 @@ This folder contains markdown files that are rendered as pages in the Many Paths
 ## How to Add a New Document
 
 1. **Create a markdown file** in this `docs/` folder
-
    - Example: `about.md`, `privacy.md`, `guidelines.md`
 
 2. **Create a new page** in `src/app/[document-name]/page.tsx`

@@ -4,12 +4,10 @@ import { Map } from "@/components/Map";
 import { StatusMessage } from "@/components/StatusMessage";
 import { createEncampmentsRecord } from "@/lib/airtable";
 import { EncampmentsFormFields } from "@/types/airtable";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 
 export default function AddEncampment() {
-  const router = useRouter();
   const [formData, setFormData] = useState<EncampmentsFormFields>({
     name: "",
     notes: "",

@@ -1,8 +1,8 @@
-const eslint = require("@eslint/js")
-const tseslint = require("typescript-eslint")
-const reactRecommended = require("eslint-plugin-react/configs/recommended.js")
-const nextPlugin = require("@next/eslint-plugin-next")
-const prettier = require("eslint-config-prettier")
+const eslint = require("@eslint/js");
+const tseslint = require("typescript-eslint");
+const reactRecommended = require("eslint-plugin-react/configs/recommended.js");
+const nextPlugin = require("@next/eslint-plugin-next");
+const prettier = require("eslint-config-prettier");
 
 module.exports = tseslint.config(
   eslint.configs.recommended,
@@ -77,5 +77,5 @@ module.exports = tseslint.config(
         },
       ],
     },
-  },
-)
+  }
+);

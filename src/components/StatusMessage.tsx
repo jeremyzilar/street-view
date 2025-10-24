@@ -4,7 +4,9 @@ type StatusMessageProps = {
 };
 
 export function StatusMessage({ type, message }: StatusMessageProps) {
-  if (!message) return null;
+  if (!message) {
+    return null;
+  }
 
   const styles = {
     success:

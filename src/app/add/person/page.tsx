@@ -38,7 +38,7 @@ export default function AddPersonPage() {
         console.error("Failed to fetch encampments:", error);
       }
     };
-    fetchEncampments();
+    void fetchEncampments();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {

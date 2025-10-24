@@ -15,16 +15,18 @@ export function EncampmentsList() {
       setError("");
       try {
         const res = await fetch("/api/encampments");
-        if (!res.ok) throw new Error("Failed to fetch encampments");
+        if (!res.ok) {
+          throw new Error("Failed to fetch encampments");
+        }
         const data = await res.json();
         setEncampments(data.encampments || []);
-      } catch (err) {
+      } catch {
         setError("Failed to load encampments.");
       } finally {
         setLoading(false);
       }
     };
-    fetchEncampments();
+    void fetchEncampments();
   }, []);
 
   const formatDate = (dateString: string) => {
@@ -46,7 +48,12 @@ export function EncampmentsList() {
   return (
     <>
       <div className="mb-8">
-        <Map onLocationSelect={() => {}} readOnly={true} />
+        <Map
+          onLocationSelect={() => {
+            // Read-only map, no location selection
+          }}
+          readOnly={true}
+        />
       </div>
       {loading ? (
         <p className="text-gray-600">Loading encampments...</p>

@@ -5,7 +5,7 @@ export async function GET() {
   try {
     const people = await getPeopleRecords();
     return NextResponse.json({ people });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to fetch people" },
       { status: 500 }

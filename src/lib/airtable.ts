@@ -1,10 +1,9 @@
-import Airtable, { FieldSet, Record as AirtableRecord } from "airtable";
+import Airtable, { FieldSet } from "airtable";
 import { PeopleRecord, PeopleTableFields } from "@/types/airtable";
 import {
   EncampmentsRecord,
   EncampmentsTableFields,
   EncampmentsFormFields,
-  encampmentsFieldMapping,
 } from "@/types/airtable";
 import { ProvidersRecord, ProvidersTableFields } from "@/types/airtable";
 

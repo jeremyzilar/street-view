@@ -20,25 +20,31 @@ export function PeopleTable() {
           fetch("/api/encampments"),
         ]);
 
-        if (!peopleRes.ok) throw new Error("Failed to fetch people");
-        if (!encampmentsRes.ok) throw new Error("Failed to fetch encampments");
+        if (!peopleRes.ok) {
+          throw new Error("Failed to fetch people");
+        }
+        if (!encampmentsRes.ok) {
+          throw new Error("Failed to fetch encampments");
+        }
 
         const peopleData = await peopleRes.json();
         const encampmentsData = await encampmentsRes.json();
 
         setPeople(peopleData.people || []);
         setEncampments(encampmentsData.encampments || []);
-      } catch (err) {
+      } catch {
         setError("Failed to load data.");
       } finally {
         setLoading(false);
       }
     };
-    fetchData();
+    void fetchData();
   }, []);
 
   const getEncampmentName = (encampmentId: string | string[] | undefined) => {
-    if (!encampmentId) return "-";
+    if (!encampmentId) {
+      return "-";
+    }
     // Handle case where encampmentId is an array (from Airtable)
     const id = Array.isArray(encampmentId) ? encampmentId[0] : encampmentId;
     const encampment = encampments.find((e) => e.id === id);
