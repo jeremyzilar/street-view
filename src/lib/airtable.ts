@@ -85,7 +85,9 @@ export async function createEncampmentsRecord(
 ): Promise<void> {
   try {
     const base = getBase();
-    await base("Encampments").create(fields);
+    await base("Encampments").create([
+      { fields: fields as unknown as FieldSet },
+    ]);
   } catch (error) {
     console.error("Error creating encampment record:", error);
     throw new Error("Failed to create encampment record");

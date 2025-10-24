@@ -21,9 +21,15 @@ export function Footer() {
               </Link>
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Paid for by the City of Santa Fe and operated by the local network
-              of service providers, outreach teams, healthcare workers, and
-              community partners.
+              Paid for by the{" "}
+              <Link
+                href="https://santafenm.gov/chs/homelessness"
+                className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+              >
+                City of Santa Fe
+              </Link>{" "}
+              and operated by the local network of service providers, outreach
+              teams, healthcare workers, and community partners.
             </p>
           </div>
 
