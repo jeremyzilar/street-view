@@ -1,44 +1,19 @@
 // Airtable field names as they appear in the Airtable interface
 export interface PeopleTableFields {
-  full_name: string;
-  mothers_name: string;
-  year_of_birth: string;
-  gender: string;
-  chronicity: string;
-  veteran: boolean;
-  vi_6months: boolean;
-  notes: string;
-  encampment?: string;
+  "Full Name"?: string;
+  "Date of Birth"?: string;
+  Phone?: string;
+  "Person ID"?: string;
+  "Date Added"?: string;
+  Status?: string;
+  Notes?: string;
+  "Bed Types Needed"?: string[];
+  Providers?: string[];
+  Waitlist?: string[];
 }
 
-// Our code-friendly field names (snake_case)
-export interface PeopleFormFields {
-  full_name: string;
-  mothers_name: string;
-  year_of_birth: string;
-  gender: string[];
-  chronicity: string;
-  veteran: boolean;
-  vi_6months: boolean;
-  notes: string;
-  encampment: string;
-}
-
-// Mapping between our form fields and Airtable fields for the People table
-export const peopleFieldMapping: Record<
-  keyof PeopleFormFields,
-  keyof PeopleTableFields
-> = {
-  full_name: "full_name",
-  mothers_name: "mothers_name",
-  year_of_birth: "year_of_birth",
-  gender: "gender",
-  chronicity: "chronicity",
-  veteran: "veteran",
-  vi_6months: "vi_6months",
-  notes: "notes",
-  encampment: "encampment",
-} as const;
+// Form fields type (for future use when adding people)
+export type PeopleFormFields = PeopleTableFields;
 
 // Type for the Airtable record response from the People table
 export interface PeopleRecord {
@@ -128,5 +103,36 @@ export interface ProvidersTableFields {
 export interface ProvidersRecord {
   id: string;
   fields: ProvidersTableFields;
+  createdTime: string;
+}
+
+// Interface for Bed Types table
+export interface BedTypesTableFields {
+  Name?: string;
+  Description?: string;
+}
+
+export interface BedTypesRecord {
+  id: string;
+  fields: BedTypesTableFields;
+  createdTime: string;
+}
+
+// Interface for Donations/Needs table
+export interface DonationsTableFields {
+  "Item needed"?: string;
+  "Quantity needed"?: number;
+  "Who needs it"?: string[]; // Linked record - array of provider IDs
+  "Date needed by"?: string;
+  Description?: string;
+  Notes?: string;
+  "How to donate"?: string;
+  Phone?: string;
+  "Buy URL"?: string;
+}
+
+export interface DonationsRecord {
+  id: string;
+  fields: DonationsTableFields;
   createdTime: string;
 }

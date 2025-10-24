@@ -9,7 +9,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="">
+    <div className="bg-white dark:bg-gray-800 py-2">
       {/* Main header bar - horizontal layout */}
       <div className="flex items-center justify-between gap-4 py-2 px-4">
         {/* Mobile menu button */}
@@ -35,9 +35,10 @@ export function Header() {
         </button>
 
         {/* Site title */}
-        <h1 className="font-black text-2xl">
+        <h1 className="font-black text-xl">
           <Link className="inline" href="/">
-            Many Paths <span className="text-peach-800">Santa Fe</span>
+            The Many Paths Project{" "}
+            <span className="text-peach-800">Santa Fe</span>
           </Link>
         </h1>
 

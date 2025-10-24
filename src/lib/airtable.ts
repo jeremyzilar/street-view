@@ -5,7 +5,14 @@ import {
   EncampmentsTableFields,
   EncampmentsFormFields,
 } from "@/types/airtable";
-import { ProvidersRecord, ProvidersTableFields } from "@/types/airtable";
+import {
+  ProvidersRecord,
+  ProvidersTableFields,
+  BedTypesRecord,
+  BedTypesTableFields,
+  DonationsRecord,
+  DonationsTableFields,
+} from "@/types/airtable";
 
 // Initialize Airtable
 const getBase = () => {
@@ -28,7 +35,8 @@ const getBase = () => {
 export const getPeopleRecords = async (): Promise<PeopleRecord[]> => {
   try {
     const base = getBase();
-    const records = await base("People").select().all();
+    // Use table ID directly: tblgfLcOI1iViWkun
+    const records = await base("tblgfLcOI1iViWkun").select().all();
     return records.map((record) => ({
       id: record.id,
       fields: record.fields as unknown as PeopleTableFields,
@@ -50,7 +58,8 @@ export const createPeopleRecord = async (
       ...fields,
       encampment: fields.encampment ? [fields.encampment] : undefined,
     };
-    const records = await base("People").create([
+    // Use table ID directly: tblgfLcOI1iViWkun
+    const records = await base("tblgfLcOI1iViWkun").create([
       { fields: airtableFields as unknown as FieldSet },
     ]);
     const createdRecord = records[0];
@@ -106,6 +115,38 @@ export const getProvidersRecords = async (): Promise<ProvidersRecord[]> => {
     }));
   } catch (error) {
     console.error("Error fetching providers records:", error);
+    return [];
+  }
+};
+
+export const getBedTypesRecords = async (): Promise<BedTypesRecord[]> => {
+  try {
+    const base = getBase();
+    // Use table ID directly: tblTI5lFeTTGozx5q
+    const records = await base("tblTI5lFeTTGozx5q").select().all();
+    return records.map((record) => ({
+      id: record.id,
+      fields: record.fields as unknown as BedTypesTableFields,
+      createdTime: record._rawJson.createdTime,
+    }));
+  } catch (error) {
+    console.error("Error fetching bed types records:", error);
+    return [];
+  }
+};
+
+export const getDonationsRecords = async (): Promise<DonationsRecord[]> => {
+  try {
+    const base = getBase();
+    // Use table ID directly: tblkPblJxjB8XsE0c
+    const records = await base("tblkPblJxjB8XsE0c").select().all();
+    return records.map((record) => ({
+      id: record.id,
+      fields: record.fields as unknown as DonationsTableFields,
+      createdTime: record._rawJson.createdTime,
+    }));
+  } catch (error) {
+    console.error("Error fetching donations records:", error);
     return [];
   }
 };
