@@ -5,6 +5,11 @@ import { Loader } from "@googlemaps/js-api-loader";
 import { getEncampmentsRecords, getPeopleRecords } from "@/lib/airtable";
 import { EncampmentsRecord, PeopleRecord } from "@/types/airtable";
 
+// Extend Loader type to include importLibrary method
+interface ExtendedLoader extends Loader {
+  importLibrary(library: string): Promise<google.maps.CoreLibrary>;
+}
+
 interface MapProps {
   onLocationSelect: (lat: number, lng: number) => void;
   initialCenter?: { lat: number; lng: number };
@@ -115,7 +120,7 @@ export function Map({
         apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
         version: "weekly",
         libraries: ["maps", "marker", "geocoding"],
-      });
+      }) as ExtendedLoader;
 
       const { Map } = await loader.importLibrary("maps");
       const { AdvancedMarkerElement } = await loader.importLibrary("marker");
