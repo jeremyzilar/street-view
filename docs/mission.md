@@ -7,11 +7,11 @@ The Many Paths Project fills the critical gap between existing systems for suppo
 
 ## Our Purpose
 
-Many Paths is dedicated to supporting people experiencing street homelessness in Santa Fe through collective care coordination. Our mission is to know everyone, coordinate provider response, and respect individual autonomy while filling the critical gap between existing systems.
+The Many Paths Project is dedicated to supporting people experiencing street homelessness in Santa Fe through collective care coordination. Our mission is to know everyone, coordinate provider response, and respect individual autonomy while filling the critical gap between existing systems.
 
 ## What We Do
 
-- **Fill the Gap**: We track people experiencing street homelessness who fall between UniteUS, Life Link waitlists, and HMIS—creating an accurate, real-time picture of homelessness in Santa Fe.
+- **Fill the Gap**: We track people experiencing street homelessness who fall between UniteUS, shelter waitlists, and HMIS—creating an accurate, real-time picture of homelessness in Santa Fe.
 
 - **Collective Care Coordination**: Through regular case conferencing, providers coordinate responses based on individual needs and preferences, working together instead of in silos.
 
@@ -24,6 +24,10 @@ Many Paths is dedicated to supporting people experiencing street homelessness in
 ### Dignity and Respect
 
 Every person deserves to be treated with dignity and respect, regardless of their housing status. We approach our work with compassion and without judgment.
+
+### Accessibility
+
+Accessibility affects everybody, We make it easier for everyone to do the right thing for people in need. We work to remove barriers and make it easier for providers to do the right thing and for people experiencing homelessness to access the services they need. By streamlining coordination and reducing bureaucratic obstacles, we ensure that help reaches those who need it most.
 
 ### Privacy and Security
 

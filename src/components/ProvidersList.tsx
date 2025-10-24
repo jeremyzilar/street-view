@@ -167,45 +167,44 @@ export function ProvidersList() {
             {(provider.fields.Website ||
               provider.fields.Phone ||
               provider.fields["Donate URL"]) && (
-              <div className="bg-gray-50 dark:bg-gray-900 px-6 py-4 border-t border-gray-200 dark:border-gray-700 space-y-2">
-                {provider.fields.Website && (
-                  <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Website:{" "}
-                    <Link
-                      href={provider.fields.Website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      {getDomain(provider.fields.Website)}
-                    </Link>
-                  </p>
-                )}
+              <div className="bg-slate-100 dark:bg-gray-900 px-6 py-4 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between gap-4">
+                <div className="space-y-2 flex-1">
+                  {provider.fields.Website && (
+                    <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      Website:{" "}
+                      <Link
+                        href={provider.fields.Website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                      >
+                        {getDomain(provider.fields.Website)}
+                      </Link>
+                    </p>
+                  )}
 
-                {provider.fields.Phone && (
-                  <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Phone:{" "}
-                    <Link
-                      href={`tel:${provider.fields.Phone}`}
-                      className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      {provider.fields.Phone}
-                    </Link>
-                  </p>
-                )}
+                  {provider.fields.Phone && (
+                    <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      Phone:{" "}
+                      <Link
+                        href={`tel:${provider.fields.Phone}`}
+                        className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                      >
+                        {provider.fields.Phone}
+                      </Link>
+                    </p>
+                  )}
+                </div>
 
                 {provider.fields["Donate URL"] && (
-                  <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Donate:{" "}
-                    <Link
-                      href={provider.fields["Donate URL"]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      {getDomain(provider.fields["Donate URL"])}
-                    </Link>
-                  </p>
+                  <Link
+                    href={provider.fields["Donate URL"]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-3 py-1 text-sm font-medium text-green-700 dark:text-green-300 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors whitespace-nowrap"
+                  >
+                    Donate
+                  </Link>
                 )}
               </div>
             )}
