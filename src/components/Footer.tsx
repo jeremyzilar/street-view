@@ -24,7 +24,7 @@ export function Footer() {
               Paid for by the{" "}
               <Link
                 href="https://santafenm.gov/chs/homelessness"
-                className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                className="text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-colors underline underline-offset-4"
               >
                 City of Santa Fe
               </Link>{" "}
