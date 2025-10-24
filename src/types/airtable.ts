@@ -118,6 +118,10 @@ export interface ProvidersTableFields {
   "Capacity / Layout"?: string;
   "Entry / Referral Process"?: string;
   "Entry Criteria"?: string;
+  Website?: string;
+  Phone?: string;
+  "Donate URL"?: string;
+  Publish?: boolean;
 }
 
 // Type for the Airtable record response from the Providers table
