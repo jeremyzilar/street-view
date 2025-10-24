@@ -119,7 +119,14 @@ export function DonationsList() {
           }`}
         >
           <div className="p-6">
-            <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-3">
+            {donation.fields["Who needs it"] && (
+              <div className="flex items-center gap-2 text-sm mb-3">
+                <span className="font-semibold text-accent-purple-600 dark:text-accent-purple-400">
+                  {getProviderName(donation.fields["Who needs it"])}
+                </span>
+              </div>
+            )}
+            <h3 className="font-semibold text-xl text-gray-900 dark:text-white mb-3">
               {donation.fields["Item needed"]}
             </h3>
 
@@ -139,27 +146,12 @@ export function DonationsList() {
                 {donation.fields.Description}
               </p>
             )}
-
-            {donation.fields.Notes && (
-              <p className="text-sm text-gray-600 dark:text-gray-400 mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
-                {donation.fields.Notes}
-              </p>
-            )}
           </div>
 
           {/* Bottom Bar with Provider, Date, and Contact Info */}
           <div className="bg-slate-100 dark:bg-gray-900 px-6 py-4 border-t border-gray-200 dark:border-gray-700">
             {/* Top row: Provider and Date */}
             <div className="flex items-center justify-between gap-4 flex-wrap mb-3">
-              {donation.fields["Who needs it"] && (
-                <div className="flex items-center gap-2 text-sm">
-                  <span className="text-gray-600 dark:text-gray-400">For:</span>
-                  <span className="font-semibold text-gray-900 dark:text-white">
-                    {getProviderName(donation.fields["Who needs it"])}
-                  </span>
-                </div>
-              )}
-
               {donation.fields["Date needed by"] && (
                 <div
                   className={`flex items-center gap-2 text-sm font-medium ${
