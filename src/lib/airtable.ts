@@ -6,6 +6,7 @@ import {
   EncampmentsFormFields,
   encampmentsFieldMapping,
 } from "@/types/airtable";
+import { ProvidersRecord, ProvidersTableFields } from "@/types/airtable";
 
 // Initialize Airtable
 const getBase = () => {
@@ -85,25 +86,27 @@ export async function createEncampmentsRecord(
 ): Promise<void> {
   try {
     const base = getBase();
-    // Convert form fields to Airtable fields
-    const airtableFields: Partial<EncampmentsTableFields> = {};
-
-    // Handle fields
-    Object.entries(encampmentsFieldMapping).forEach(
-      ([formField, airtableField]) => {
-        if (formField in fields) {
-          airtableFields[airtableField] = fields[
-            formField as keyof EncampmentsFormFields
-          ] as any;
-        }
-      }
-    );
-
-    await base("Encampments").create(airtableFields);
+    await base("Encampments").create(fields);
   } catch (error) {
     console.error("Error creating encampment record:", error);
     throw new Error("Failed to create encampment record");
   }
 }
+
+export const getProvidersRecords = async (): Promise<ProvidersRecord[]> => {
+  try {
+    const base = getBase();
+    // Use table ID directly: tblTQpGt9Th8ETHPh
+    const records = await base("tblTQpGt9Th8ETHPh").select().all();
+    return records.map((record) => ({
+      id: record.id,
+      fields: record.fields as unknown as ProvidersTableFields,
+      createdTime: record._rawJson.createdTime,
+    }));
+  } catch (error) {
+    console.error("Error fetching providers records:", error);
+    return [];
+  }
+};
 
 export default getBase();

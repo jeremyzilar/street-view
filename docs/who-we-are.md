@@ -1,11 +1,7 @@
 ---
 title: Who We Are
-deck: The people and organizations behind Many Paths SF
+deck: Many Paths SF is a collaborative initiative bringing together service providers, outreach teams, healthcare workers, and community partners in Santa Fe to create a coordinated response to street homelessness.
 ---
-
-## About Many Paths
-
-Many Paths SF is a collaborative initiative bringing together service providers, outreach teams, healthcare workers, and community partners in Santa Fe to create a coordinated response to street homelessness.
 
 ## Our Approach
 

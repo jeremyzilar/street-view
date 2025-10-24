@@ -71,18 +71,8 @@ export interface EncampmentsTableFields {
   created_by: string;
 }
 
-// Our code-friendly field names for the form
-export interface EncampmentsFormFields {
-  name: string;
-  notes?: string;
-  coordinates?: string;
-  active: boolean;
-  geocode_cache?: string;
-  count: number;
-  last_updated: string;
-  created: string;
-  created_by: string;
-}
+// Form fields use the same structure as table fields
+export type EncampmentsFormFields = EncampmentsTableFields;
 
 // Mapping between our form fields and Airtable fields for the Encampments table
 export const encampmentsFieldMapping: Record<
@@ -112,3 +102,27 @@ export type CreateEncampmentsRecord = Omit<
   EncampmentsRecord,
   "id" | "createdTime"
 >;
+
+// Providers table field types
+export interface ProvidersTableFields {
+  Name?: string;
+  Notes?: string;
+  Operator?: string;
+  "Population served"?: string;
+  "Services & Amenities"?: string;
+  "Total beds"?: number;
+  "Bed Types"?: string[];
+  "Beds filled"?: number;
+  "Beds open now"?: number;
+  "Beds upcoming"?: number;
+  "Capacity / Layout"?: string;
+  "Entry / Referral Process"?: string;
+  "Entry Criteria"?: string;
+}
+
+// Type for the Airtable record response from the Providers table
+export interface ProvidersRecord {
+  id: string;
+  fields: ProvidersTableFields;
+  createdTime: string;
+}

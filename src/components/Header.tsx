@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
 import { useState } from "react";
+import { getAllNavLinks } from "@/config/navigation";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,12 +37,12 @@ export function Header() {
         {/* Site title */}
         <h1 className="font-black text-2xl">
           <Link className="inline" href="/">
-            Many Paths SF
+            Many Paths <span className="text-peach-800">Santa Fe</span>
           </Link>
         </h1>
 
         {/* Desktop navigation - horizontal */}
-        <nav className="hidden tablet-lg:flex gap-6">
+        <nav className="hidden tablet-lg:flex gap-4">
           <NavLinks horizontal />
           <ThemeToggle />
         </nav>
@@ -87,49 +88,26 @@ export function Header() {
   );
 }
 
-const NavLinks = ({ horizontal = false }: { horizontal?: boolean }) => {
+const NavLinks = ({
+  horizontal = false,
+}: {
+  horizontal?: boolean;
+}): React.JSX.Element => {
+  const navLinks = getAllNavLinks();
+
   return (
     <ul className={horizontal ? "flex items-center gap-6" : "pb-4 space-y-2"}>
-      <li>
-        <Link
-          className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
-          href="/people"
-        >
-          All people
-        </Link>
-      </li>
-      <li>
-        <Link
-          className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
-          href="/encampments"
-        >
-          All encampments
-        </Link>
-      </li>
-      <li>
-        <Link
-          className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
-          href="/who-we-are"
-        >
-          Who We Are
-        </Link>
-      </li>
-      <li>
-        <Link
-          className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
-          href="/mission"
-        >
-          Mission
-        </Link>
-      </li>
-      <li>
-        <Link
-          className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
-          href="/manual"
-        >
-          Manual
-        </Link>
-      </li>
+      {navLinks.map((link) => (
+        <li key={link.path}>
+          <Link
+            className="text-gray-900 dark:text-white hover:underline underline-offset-4 flex items-center gap-1"
+            href={link.path}
+            title={link.description}
+          >
+            {link.label}
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 };
