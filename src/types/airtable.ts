@@ -10,6 +10,7 @@ export interface PeopleTableFields {
   "Bed Types Needed"?: string[];
   Providers?: string[];
   Waitlist?: string[];
+  encampment?: string;
 }
 
 // Form fields type (for future use when adding people)
