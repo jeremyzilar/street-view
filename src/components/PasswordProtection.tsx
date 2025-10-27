@@ -42,9 +42,6 @@ export function PasswordProtection() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
       <div className="max-w-md w-full p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
-          The Many Paths Project
-        </h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label
