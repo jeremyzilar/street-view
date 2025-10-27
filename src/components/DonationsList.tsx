@@ -32,7 +32,9 @@ export function DonationsList() {
 
   // Format date
   const formatDate = (dateString: string | undefined) => {
-    if (!dateString) return "";
+    if (!dateString) {
+      return "";
+    }
     const date = new Date(dateString);
     return date.toLocaleDateString("en-US", {
       year: "numeric",
@@ -43,7 +45,9 @@ export function DonationsList() {
 
   // Check if date is past due
   const isPastDue = (dateString: string | undefined) => {
-    if (!dateString) return false;
+    if (!dateString) {
+      return false;
+    }
     const date = new Date(dateString);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -78,7 +82,9 @@ export function DonationsList() {
 
   // Get provider name from linked record ID
   const getProviderName = (providerIds: string[] | undefined) => {
-    if (!providerIds || providerIds.length === 0) return null;
+    if (!providerIds || providerIds.length === 0) {
+      return null;
+    }
 
     // Get the first provider by ID
     const providerId = providerIds[0];
