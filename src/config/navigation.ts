@@ -51,12 +51,6 @@ export const navigation: NavigationConfig = {
       description: "The providers in Santa Fe who are part of Many Paths SF",
     },
     {
-      label: "By-Name List",
-      path: "/by-name-list",
-      description:
-        "Comprehensive roster of individuals experiencing homelessness",
-    },
-    {
       label: "Donations",
       path: "/donations",
       description: "See what items our providers urgently need",

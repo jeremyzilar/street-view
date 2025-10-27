@@ -6,7 +6,7 @@ import { PageLayout } from "@/components/PageLayout";
 
 export default function Home() {
   return (
-    <PageLayout>
+    <PageLayout showHeader={false}>
       <div className="space-y-12">
         {/* Hero Section */}
         <div className="text-center space-y-6 pt-10">
@@ -17,7 +17,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-2xl font-light text-gray-600 dark:text-gray-300 mx-auto">
-            Coordinated care for people experiencing street homelessness.
+            Coordinated care for people experiencing street homelessness
           </p>
           {/* Navigation buttons */}
           <div className="pt-4 flex justify-center gap-6 flex-wrap">
