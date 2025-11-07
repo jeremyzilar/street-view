@@ -1,7 +1,6 @@
-# About The Many Paths Project
-
-**Building public infrastructure for coordinated homeless services**
-
+---
+title: About
+deck: Building public infrastructure for coordinated homeless services
 ---
 
 ## What We're Building
