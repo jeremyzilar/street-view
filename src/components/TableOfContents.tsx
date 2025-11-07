@@ -14,11 +14,28 @@ export function TableOfContents() {
   useEffect(() => {
     // Extract all H2 headings from the document
     const h2Elements = Array.from(document.querySelectorAll("h2"));
-    const items = h2Elements.map((heading) => ({
-      id: heading.id,
-      text: heading.textContent || "",
-    }));
-    setHeadings(items);
+    const items = h2Elements.map((heading, index) => {
+      // Ensure we have a valid ID, generate one if missing
+      let id = heading.id;
+      if (!id) {
+        // Generate ID from text content
+        const text = heading.textContent || "";
+        id = text
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "");
+        // Add index to ensure uniqueness
+        id = id ? `${id}-${index}` : `heading-${index}`;
+        heading.id = id; // Set the ID on the element
+      }
+      return {
+        id,
+        text: heading.textContent || "",
+      };
+    });
+    // Filter out any headings without text
+    const filteredItems = items.filter((item) => item.text.trim() !== "");
+    setHeadings(filteredItems);
 
     // Set up intersection observer for active state
     const observer = new IntersectionObserver(
@@ -73,4 +90,3 @@ export function TableOfContents() {
     </nav>
   );
 }
-
