@@ -1,24 +1,11 @@
 ---
-title: By-Name List Pilot for Case Conferencing
-deck: A Collaborative Tool to Support Your Work with High-Risk Clients
-date: November 6, 2025
-for: HUGS, MIHO, and SouthWest Cares
-from: Many Paths Project
+title: By-Name List Pilot
+deck: A collaborative tool to support your work with people experiencing street homelessness
 ---
-
-# By-Name List Pilot for Case Conferencing
-
-## A Collaborative Tool to Support Your Work with High-Risk Clients
-
-**For:** HUGS, MIHO, and SouthWest Cares  
-**From:** Many Paths Project  
-**Date:** November 6, 2025
-
----
-
-## Overview
 
 You're already doing critical work through your bi-weekly case conferencing meetings—bringing providers together to coordinate care for people experiencing homelessness with complex needs. **The Many Paths Project is here to support and amplify that work**.
+
+## Overview
 
 The Many Paths Project is a collective care coordination platform designed to:
 
@@ -243,11 +230,15 @@ We know that trust is essential when sharing sensitive client information. Here'
 
 ### Core Governance Principles
 
-1. **Individual Consent First**
-   - Clients must provide informed consent before their information is shared
-   - They can say yes to some providers and no to others
-   - They can revoke consent at any time
-   - We document consent clearly
+1. **Individual Rights and Consent**
+   
+   We need to design a consent approach that respects individual autonomy while being practical for real-world coordination. In the workshop, we'll discuss:
+   - What consent processes are realistic given your work?
+   - How can we inform people about data sharing?
+   - What protections matter most to you and your clients?
+   - Are there situations where coordination needs to happen without prior consent?
+   
+   Options might include opt-out approaches, tiered access levels, provider-level consent, or other models. We'll design this together based on what actually works.
 
 2. **Collect Only What's Needed**
    - We'll only track information that actually supports coordination
@@ -305,10 +296,11 @@ Access is carefully controlled to protect privacy while enabling coordination.
 
 **Participating Case Conferencing Providers (HUGS, MIHO, SouthWest Cares):**
 
-- See full information for individuals where you have consent
-- See limited information (name, basic demographics) for individuals on your organization's list without consent to coordinate
-- Can add, update, and document services for your clients
-- Can add case notes visible to other providers with consent
+- Access levels and consent requirements will be designed in the workshop
+- Likely includes ability to see and update information about people your organization serves
+- Coordination information may be visible across providers (specific rules to be determined)
+- Can add case notes and document services
+- The workshop will determine what level of consent or notification is practical
 
 **System Administrator (Many Paths):**
 
@@ -323,21 +315,22 @@ Access is carefully controlled to protect privacy while enabling coordination.
 
 ### What You Cannot See
 
-Even with access, there are boundaries:
+Even with access, there will be boundaries (specifics to be determined in workshop):
 
-- You cannot see detailed case notes from other providers unless they choose to share
-- You cannot access information about individuals who have not consented to data sharing with your organization
-- You cannot export bulk data without authorization
+- Certain case notes may be private to individual organizations
+- Bulk data export will be controlled
+- Access levels will be designed to enable coordination while protecting privacy
 
-### Individual Control
+### Individual Rights
 
-Individuals experiencing homelessness have rights regarding their data:
+We'll design a system that respects individual rights while enabling effective coordination:
 
-- Right to know what information is collected
-- Right to access their own information
-- Right to request corrections to inaccurate information
-- Right to revoke consent and have their information removed
-- Right to consent to some providers but not others
+- People should know what information is being collected
+- People should be able to access their own information
+- People should be able to request corrections to inaccurate information
+- Clear process for opting out or limiting data sharing
+
+The workshop will determine how these rights are practically implemented given the realities of your work
 
 ### Audit and Accountability
 
@@ -558,9 +551,9 @@ We hear you. The goal is to save time, not add burden. A shared list means:
 
 But we'll only know if it achieves that by trying it. If it's adding work without value, we need to hear that and adjust.
 
-### "What if our clients don't consent to data sharing?"
+### "How will consent and data sharing work?"
 
-That's their right, and we respect it. You can still use the system to track your own organization's clients. The coordination benefits are greatest with consent, but the tool is useful even without complete information sharing.
+That's one of the key things we'll design together in the workshop. We need to find an approach that respects individual rights while being practical for real-world coordination. Options might include opt-out approaches, provider-level consent, or other models. The important thing is that it actually works for how you operate.
 
 ### "What about people we serve who aren't experiencing homelessness?"
 
