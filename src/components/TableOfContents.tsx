@@ -59,7 +59,7 @@ export function TableOfContents() {
   if (headings.length === 0) return null;
 
   return (
-    <nav className="hidden laptop:block sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
+    <nav className="hidden desktop:block sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
       <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-3">
         On this page
       </h3>

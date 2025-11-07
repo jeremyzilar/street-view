@@ -53,7 +53,7 @@ export function DocumentPage({
         </div>
 
         {/* Table of Contents - Sidebar */}
-        <aside className="hidden laptop:block w-64 shrink-0">
+        <aside className="hidden desktop:block w-64 shrink-0">
           <TableOfContents />
         </aside>
       </div>
