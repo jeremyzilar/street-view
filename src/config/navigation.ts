@@ -36,14 +36,14 @@ export const navigation: NavigationConfig = {
   // Documentation links
   nav: [
     {
-      label: "About",
-      path: "/about",
-      description: "Building public infrastructure for coordinated homeless services",
-    },
-    {
       label: "Who We Are",
       path: "/who-we-are",
       description: "Meet the people and organizations behind Many Paths SF",
+    },
+    {
+      label: "By-Name List",
+      path: "/by-name-list",
+      description: "What a by-name list is and how it enables coordinated care",
     },
     {
       label: "Mission",
