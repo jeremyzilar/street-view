@@ -1,3 +1,11 @@
+---
+title: By-Name List Pilot for Case Conferencing
+deck: A Collaborative Tool to Support Your Work with High-Risk Clients
+date: November 6, 2025
+for: HUGS, MIHO, and SouthWest Cares
+from: Many Paths Project
+---
+
 # By-Name List Pilot for Case Conferencing
 
 ## A Collaborative Tool to Support Your Work with High-Risk Clients

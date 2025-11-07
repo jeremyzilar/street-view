@@ -1,3 +1,8 @@
+---
+title: About The Many Paths Project
+deck: Coordinating care for people experiencing homelessness in Santa Fe
+---
+
 # About The Many Paths Project
 
 **Coordinating care for people experiencing homelessness in Santa Fe**
@@ -21,6 +26,7 @@ When no one has the full picture, people get lost in the gaps. Efforts get dupli
 The Many Paths Project helps service providers coordinate care by maintaining a **shared by-name list** of everyone experiencing street homelessness in Santa Fe.
 
 This shared list helps providers:
+
 - Know who is currently on the streets and what support they need
 - Coordinate services without duplicating efforts
 - Track what's been tried and what's working

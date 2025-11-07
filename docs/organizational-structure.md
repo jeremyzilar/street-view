@@ -1,3 +1,8 @@
+---
+title: Organizational Structure
+deck: Mutual Aid Framework and fiscal sponsorship approach for The Many Paths Project
+---
+
 # Organizational Structure: Mutual Aid Framework
 
 ## What is Mutual Aid?
@@ -331,3 +336,50 @@ The mutual aid framework can strengthen this project by centering community voic
 The key is maintaining mutual aid **principles** (solidarity, reciprocity, community leadership) regardless of your legal structure. You can operate as a formal nonprofit and still embody mutual aid values through inclusive governance, transparent operations, and horizontal relationships.
 
 Start with the simplest structure that meets your needs, and evolve as the project grows.
+
+---
+
+## Decision and Implementation (October 2025)
+
+**Decision Made:** Pursue Fiscal Sponsorship (Model C)
+
+This structure provides:
+
+- Legal entity for HIPAA compliance and provider trust
+- Sustainable City contracting mechanism
+- Operational independence for project director
+- Access to grants and tax-deductible donations
+- Flexibility to evolve structure over time
+
+### Implementation Resources
+
+Complete implementation materials are available in `/docs/fiscal-sponsorship/`:
+
+**Getting Started:**
+
+- **[decision-summary.md](./fiscal-sponsorship/decision-summary.md)** - 2-page overview of the decision and rationale
+- **[README.md](./fiscal-sponsorship/README.md)** - How to use all the implementation materials
+
+**Core Documents:**
+
+- **[project-brief.md](./fiscal-sponsorship/project-brief.md)** - 6-page brief for potential fiscal sponsors
+- **[implementation-checklist.md](./fiscal-sponsorship/implementation-checklist.md)** - Step-by-step tracking checklist
+
+**Templates for Agreements:**
+
+- **[data-governance.md](./fiscal-sponsorship/data-governance.md)** - Data governance framework for providers
+- **[city-contract-template.md](./fiscal-sponsorship/city-contract-template.md)** - Contract proposal template for City
+- **[provider-data-sharing-agreement-template.md](./fiscal-sponsorship/provider-data-sharing-agreement-template.md)** - Provider agreement template
+
+**Implementation Plan:**
+
+- See `/fiscal-sponsorship-setup-plan.plan.md` in project root for complete 16-step implementation plan
+
+**Timeline:** 16-20 weeks from initial outreach to full operation
+
+**Next Steps:**
+
+1. Identify 3-5 potential fiscal sponsors in Santa Fe
+2. Customize project brief
+3. Begin conversations this week
+4. Target signed agreement within 6-8 weeks

@@ -1,3 +1,8 @@
+---
+title: Many Paths Product Vision
+deck: Technology platform that coordinates homeless services and supports people's diverse paths to stable, safe, and healthy lives
+---
+
 # Many Paths: Product Vision
 
 ## Mission
