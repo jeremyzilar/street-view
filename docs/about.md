@@ -1,70 +1,31 @@
----
-title: About
-deck: Building public infrastructure for coordinated homeless services
----
+# About The Many Paths Project
 
-## What We're Building
-
-The Many Paths Project is creating a replicable, open platform for coordinated homeless services—a "public option" for cities that want to know everyone experiencing street homelessness by name and coordinate care effectively.
-
-Instead of every city paying consultants millions to build the same systems over and over, we're creating infrastructure that can be deployed anywhere:
-
-- **Many Paths SF** - Santa Fe, New Mexico (pilot)
-- **Many Paths ABQ** - Albuquerque (planned)
-- **Many Paths [Your City]** - Replicable model for any community
-
-This isn't proprietary software owned by vendors. It's civic infrastructure that cities can own, adapt, and maintain.
+**Coordinating care for people experiencing homelessness in Santa Fe**
 
 ---
 
-## Our Approach
+## The Problem
 
-### Decentralized Eligibility Verification
-
-We don't believe in distant agencies determining who needs help. The Many Paths Project empowers **trusted community providers** to serve as decentralized verifiers of need—like notaries for eligibility.
-
-Organizations like HUGS, MIHO, SouthWest Cares, and The Life Link work directly with people experiencing homelessness every day. They know who needs support. Our platform amplifies their expertise rather than replacing it with bureaucracy.
-
-This decentralized model:
-
-- Keeps decision-making close to communities
-- Respects provider knowledge and relationships
-- Prevents the creation of sprawling, vulnerable centralized databases
-- Enables coordination without creating surveillance systems
-
-### People, Process, Collaboration—Not AI Magic
-
-The Many Paths Project is grounded in a simple belief: **technology serves people, not the other way around.**
-
-We're not building AI systems that claim to predict who will become homeless or algorithmically rank people's worthiness for services. We're building tools that help real people—outreach workers, case managers, housing navigators—do their jobs better through better coordination.
-
-Our focus is on:
-
-- **People**: Training, supporting, and empowering service providers
-- **Process**: Collaborative case conferencing and shared protocols
-- **Collaboration**: Breaking down silos between organizations
-
-Technology is the infrastructure that makes collaboration possible, not a replacement for human relationships and judgment.
-
-### Data Minimization by Design
-
-We collect only what's necessary for coordination. No more, no less.
-
-When someone achieves stability, we purge identifying information. We design for data ephemerality, not permanent records. We ask providers: "What's the minimum data we need?" not "What data could we collect?"
-
-This isn't just about privacy—it's about security, trust, and building systems that are resilient against abuse by design.
-
----
-
-## Why This Matters
-
-Right now, people experiencing street homelessness are largely invisible to existing systems:
+Right now in Santa Fe, people experiencing street homelessness often fall through the cracks between systems:
 
 - **UniteUS** doesn't capture people living on the streets
-- **HMIS** only captures people once they enter shelters
-- **The gap in between** is where people fall through the cracks
+- **HMIS** only tracks people once they enter shelters
+- Each provider organization only sees their own piece of the picture
 
-That gap is where The Many Paths Project operates. We help providers track everyone by name, coordinate services in real time, and ensure no one gets lost in the shuffle.
+When no one has the full picture, people get lost in the gaps. Efforts get duplicated. Critical information doesn't make it from one provider to another.
+
+---
+
+## What We Do
+
+The Many Paths Project helps service providers coordinate care by maintaining a **shared by-name list** of everyone experiencing street homelessness in Santa Fe.
+
+This shared list helps providers:
+- Know who is currently on the streets and what support they need
+- Coordinate services without duplicating efforts
+- Track what's been tried and what's working
+- Make case conferencing meetings more effective
+- Ensure no one falls through the cracks
 
 ---
 
@@ -72,18 +33,48 @@ That gap is where The Many Paths Project operates. We help providers track every
 
 ### For Service Providers (Private)
 
-- **Shared by-name list** across participating organizations
-- **Case conferencing tools** for coordinated care planning
-- **Activity tracking** for transparency and accountability
-- **Mobile-friendly** access for outreach workers
-- **HIPAA-compliant** with clear data governance
+Participating organizations share information through a secure platform:
+
+- **By-name list** showing everyone currently experiencing street homelessness
+- **Case notes and coordination** visible to providers with consent
+- **Mobile-friendly** so outreach workers can update information in the field
+- **HIPAA-compliant** with clear data governance and security
+- **Case conferencing tools** to support your regular coordination meetings
 
 ### For the Community (Public)
 
-- **Transparent dashboard** showing aggregate data (never individual information)
-- **Donation coordination** connecting community resources to real needs
-- **Provider directory** helping people find services
-- **Real stories** (with consent) about paths to stability
+Transparency matters. The public website shows:
+
+- **Aggregate data** about homelessness in Santa Fe (never individual information)
+- **Current needs** for donations (clothing, food, supplies)
+- **Provider directory** so people can find help
+- **Real progress** toward supporting people on their paths to stability
+
+---
+
+## Our Approach
+
+### Human-Centered, Not Algorithm-Driven
+
+We're not building AI to predict homelessness or algorithms to rank people. We're building practical tools to help outreach workers, case managers, and housing navigators do their jobs better through better coordination.
+
+Technology supports people—it doesn't replace them.
+
+### Providers Know Best
+
+Organizations like HUGS, MIHO, SouthWest Cares, and The Life Link work directly with people experiencing homelessness every day. They know who needs help and what kind of support works.
+
+Our platform amplifies their expertise and helps them work together more effectively. We're not replacing their judgment with bureaucracy.
+
+### Collect Only What's Needed
+
+We only track information that's actually necessary for coordination. When someone achieves stability and services end, we remove their identifying information.
+
+This isn't just about privacy—it's about building trust and creating systems that don't become surveillance tools.
+
+### Built to Last
+
+This isn't a short-term grant project. We're building sustainable infrastructure that Santa Fe can own and maintain long-term, with proper governance through fiscal sponsorship.
 
 ---
 
@@ -93,32 +84,8 @@ That gap is where The Many Paths Project operates. We help providers track every
 2. **Dignity and consent** - Individuals control their information and participate in decisions
 3. **Many paths, not one path** - Success looks different for different people
 4. **Transparency** - Communities deserve to see reality and progress
-5. **Sustainability** - Technology and operations must be sustainable long-term
-6. **Scalability** - Solutions should work in multiple communities
-7. **Privacy and security** - Secure, HIPAA-compliant, respectful of sensitive data
-
----
-
-## Replicating Many Paths in Your City
-
-If you're a city, provider network, or community organization interested in deploying The Many Paths Project in your area, we want to help.
-
-**What we provide:**
-
-- Open platform and infrastructure
-- Implementation guidance and support
-- Training and onboarding
-- Best practices from Santa Fe pilot
-- Community of practice across cities
-
-**What you need:**
-
-- Willing provider partners (minimum 3-5 organizations)
-- Local nonprofit or government entity to operate
-- Commitment to collaborative, human-centered approach
-- Funding for operations and support
-
-[Contact us to learn more]
+5. **Privacy and security** - Secure, HIPAA-compliant, respectful of sensitive data
+6. **Sustainability** - Built to last, not dependent on a single person or short-term funding
 
 ---
 
@@ -128,7 +95,18 @@ If you're a city, provider network, or community organization interested in depl
 EAD Design  
 Santa Fe, New Mexico
 
-The Many Paths Project is currently establishing fiscal sponsorship with a local nonprofit to provide institutional structure while maintaining operational independence.
+The Many Paths Project is establishing fiscal sponsorship with a local nonprofit to provide institutional structure while maintaining operational independence.
+
+---
+
+## Sharing What We Learn
+
+While we're focused on Santa Fe, we're documenting what we learn so other communities don't have to start from scratch:
+
+- Implementation guides for by-name lists
+- Data governance frameworks that balance coordination with privacy
+- Best practices from case conferencing
+- Lessons learned - what worked and what didn't
 
 ---
 
@@ -140,4 +118,4 @@ The Many Paths Project is currently establishing fiscal sponsorship with a local
 
 ---
 
-_The Many Paths Project is building the future of coordinated homeless services—one city at a time._
+_Building infrastructure for coordinated homeless services in Santa Fe._
