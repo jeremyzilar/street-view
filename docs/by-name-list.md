@@ -3,13 +3,9 @@ title: By-Name List
 deck: Knowing everyone experiencing street homelessness by name to ensure coordinated care and support
 ---
 
-# By-Name List
-
-## What is a By-Name List?
-
 A by-name list is exactly what it sounds like: a real-time list of everyone experiencing street homelessness in Santa Fe, tracked **by name** so that service providers can coordinate care and ensure no one falls through the cracks.
 
-Instead of relying on rough estimates or each organization maintaining their own scattered records, a by-name list gives all participating providers a shared, up-to-date view of who needs support, what services they're receiving, and how we can work together to help them achieve stability.
+Instead of relying on rough estimates or each organization maintaining their own records, a by-name list gives all participating providers a shared, up-to-date view of who needs support, what services they're receiving, and how we can work together to help them achieve stability.
 
 ---
 
@@ -50,8 +46,8 @@ The by-name list is maintained through The Many Paths Project platform, where pa
 - **Use in case conferencing** to discuss complex cases with complete information
 
 All information is:
+
 - **Secure and HIPAA-compliant** with proper safeguards
-- **Consent-based** - individuals control who sees their information
 - **Private to participating providers** - not visible to the public
 - **Mobile-friendly** for outreach workers in the field
 
@@ -65,22 +61,23 @@ The by-name list captures only what's necessary for effective coordination:
 - **Goals and barriers**: What they're working toward and what's in the way
 - **Consent and preferences**: Who can access their information
 
-The exact data fields are designed collaboratively with providers to ensure we collect what's actually needed, not just what sounds useful.
+We collect only the data thats actually needed, not just what sounds useful.
 
 ---
 
 ## The By-Name List Pilot
 
-The Many Paths Project is currently piloting the by-name list with case conferencing providers in Santa Fe, including HUGS, MIHO, and SouthWest Cares.
+The Many Paths Project is currently piloting the by-name list with a handful of providers in Santa Fe.
 
-This pilot will:
+**This pilot will:**
+
 - Test the by-name list approach with providers who coordinate complex cases
 - Design the data structure collaboratively with participating organizations
 - Establish data governance and consent practices
 - Refine the tool based on real-world use
 - Demonstrate value before expanding to additional providers
 
-[Learn more about the pilot →](/case-conferencing-pilot-proposal.md)
+[Learn more about the pilot →](/by-name-list/pilot)
 
 ---
 
@@ -185,4 +182,3 @@ Yes! The pilot phase specifically includes collaborative design of data fields w
 ---
 
 _The by-name list is the foundation of coordinated care in Santa Fe—ensuring everyone is known, no one is forgotten, and providers can work together effectively._
-
