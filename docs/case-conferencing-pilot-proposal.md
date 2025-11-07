@@ -2,31 +2,37 @@
 
 ## A Collaborative Tool to Support Your Work with High-Risk Clients
 
-**For:** HUGS, MICO, and SouthWest Cares  
+**For:** HUGS, MIHO, and SouthWest Cares  
 **From:** Many Paths Project  
 **Date:** November 6, 2025
 
 ---
 
-## Overview of the Project
+## Overview
 
-You're already doing critical work through your bi-weekly case conferencing meetings—bringing providers together to coordinate care for people experiencing homelessness with complex needs. **Many Paths is here to support and amplify that work.**
+You're already doing critical work through your bi-weekly case conferencing meetings—bringing providers together to coordinate care for people experiencing homelessness with complex needs. **The Many Paths Project is here to support and amplify that work**.
 
-Many Paths is a collective care coordination platform designed specifically for the gap between existing systems in Santa Fe. Right now, people experiencing street homelessness often fall between the cracks:
+The Many Paths Project is a collective care coordination platform designed to:
 
-- **UniteUS** serves those who are housing-insecure but not yet on the streets
-- **Life Link** has a 3-8 month waitlist where people can lose ID, insurance, or stability while waiting
-- **HMIS** only captures people once they enter shelters, missing everyone living unsheltered
+- Help service providers log and share critical information about people experiencing street homelessness who need shelter, services, or support. This information is private to providers in the network, enabling coordinated care while protecting privacy.
+- Make it easier to coordinate donations and services from organizations, donors, and the public—everything from home goods to food to other essential items.
 
-**That gap in the middle—where your clients live—is where Many Paths operates.**
+### The Problem We're Solving
 
-Our platform provides a **shared by-name list** that helps all providers know who is experiencing street homelessness in real time, what support they're receiving, what their goals are, and how we can work together to help them achieve stability, safety, and health.
+Right now, people living on the streets are largely invisible to the systems designed to help them. They're not tracked, not counted, and their needs aren't documented anywhere. This creates several critical gaps:
 
-### Why Now?
+- **We don't know who is on the streets** experiencing homelessness at any given time
+- **We don't have data on what they need** to achieve stable, healthy lives
+- **Providers can't coordinate effectively** when each organization only sees their own piece of the puzzle
+- **People fall through the cracks** when there's no shared visibility across providers
 
-Your case conferencing meetings demonstrate that coordination works. When providers come together to discuss complex cases, better solutions emerge. But without a shared system to track who you're discussing, what's been tried, and who's following up, critical information can get lost between meetings.
+Existing systems don't capture this population:
 
-A by-name list turns good case conferencing into great case conferencing by ensuring everyone has the same real-time information and nothing falls through the cracks.
+**UniteUS** is designed to connect people with critical services, but it doesn't capture people living on the streets.
+
+**HMIS** (Homeless Management Information System) only captures people once they've entered shelters like The Life Link, completely missing everyone living unsheltered on the streets.
+
+**That gap—tracking people on the streets before they access these systems—is where The Many Paths Project operates.** Your clients are in this gap right now, and you're working hard to help them navigate these barriers. The Many Paths Project is designed to support that coordination work.
 
 ---
 
@@ -42,6 +48,7 @@ When each organization maintains their own records:
 - **Case conferencing relies on memory** rather than comprehensive, up-to-date information
 - **New staff can't quickly understand** the history and complexity of each case
 - **Coordination happens reactively** rather than proactively
+- We lack the data needed to truly engage with the City and fundraising supporters
 
 ### The Power of a Shared By-Name List
 
@@ -66,13 +73,13 @@ This approach isn't new—it's proven. **Built for Zero**, a national initiative
 - More efficient use of limited resources
 - Stronger cases for funding based on real data
 
-The difference is that Many Paths is designed specifically for smaller cities like Santa Fe, with features tailored to bi-weekly case conferencing for high-risk populations.
+The difference is that Many Paths is designed specifically for the city of Santa Fe, with features tailored to their providers.
 
 ---
 
 ## The Ask
 
-We're inviting HUGS, MICO, and SouthWest Cares to pilot this tool together. Here's what we're asking:
+We're inviting HUGS, MIHO, and SouthWest Cares to pilot this tool together. Here's what we're asking:
 
 ### 1. Participate in Collaborative Design
 
@@ -160,7 +167,7 @@ Together we'll work through:
    - Who updates what, and when?
    - How do we maintain data quality?
 
-### Phase 2: Setup and Training (Late November)
+### Phase 2: Setup and Training (Early December)
 
 Once we've designed the system together:
 
@@ -288,7 +295,7 @@ Access is carefully controlled to protect privacy while enabling coordination.
 
 ### Access Levels
 
-**Participating Case Conferencing Providers (HUGS, MICO, SouthWest Cares):**
+**Participating Case Conferencing Providers (HUGS, MIHO, SouthWest Cares):**
 
 - See full information for individuals where you have consent
 - See limited information (name, basic demographics) for individuals on your organization's list without consent to coordinate
@@ -338,7 +345,7 @@ To build trust and accountability among partners, the system includes a visible 
 **What You'll See:**
 
 - "James (HUGS) added a new person to the list"
-- "Maria (MICO) updated contact information for John Doe"
+- "Maria (MIHO) updated contact information for John Doe"
 - "Sarah (SouthWest Cares) added a case note"
 - "System Administrator updated access permissions"
 
