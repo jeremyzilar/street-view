@@ -7,7 +7,7 @@ export function Footer() {
   const navLinks = getAllNavLinks();
 
   return (
-    <footer className="w-full bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-auto">
+    <footer className="w-full bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-12">
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="text-center space-y-6">
           {/* Title and description */}
@@ -50,7 +50,7 @@ export function Footer() {
           </nav>
 
           {/* Copyright */}
-          <div className="pt-6 border-t border-gray-200 dark:border-gray-800">
+          <div className="pt-4">
             <p className="text-sm text-gray-500 dark:text-gray-500">
               © {new Date().getFullYear()} The Many Paths Project. All rights
               reserved.

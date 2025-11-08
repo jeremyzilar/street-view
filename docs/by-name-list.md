@@ -1,6 +1,6 @@
 ---
 title: By-Name List
-deck: Knowing everyone experiencing street homelessness by name to ensure coordinated care and support
+deck: We are aiming to know everyone experiencing street homelessness by name to ensure they get the care and support they need
 ---
 
 ## Why It Matters
