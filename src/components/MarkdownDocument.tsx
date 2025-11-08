@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { TableOfContents } from "./TableOfContents";
 
 interface MarkdownDocumentProps {
   content: string;
@@ -11,9 +12,7 @@ export function MarkdownDocument({
   className = "",
 }: MarkdownDocumentProps) {
   return (
-    <div
-      className={`p-4 prose prose-lg dark:prose-invert max-w-none ${className}`}
-    >
+    <div className="prose prose-lg dark:prose-invert max-w-none">
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
     </div>
   );

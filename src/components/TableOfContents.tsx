@@ -56,21 +56,23 @@ export function TableOfContents() {
     return () => observer.disconnect();
   }, []);
 
-  if (headings.length === 0) return null;
+  if (headings.length === 0) {
+    return null;
+  }
 
   return (
-    <nav className="hidden desktop:block sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
-      <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-3">
+    <nav className="sticky top-24">
+      <h3 className="text-md font-bold text-gray-900 dark:text-white mb-3">
         On this page
       </h3>
-      <ul className="space-y-2 text-sm border-l-2 border-gray-200 dark:border-gray-700">
+      <ul className="space-y-2 text-md list-none p-0">
         {headings.map((heading) => (
           <li key={heading.id}>
             <a
               href={`#${heading.id}`}
               className={`block py-1 px-3 -ml-px border-l-2 transition-colors ${
                 activeId === heading.id
-                  ? "border-peach-600 text-peach-600 dark:border-peach-400 dark:text-peach-400 font-medium"
+                  ? "border-peach-600 text-peach-700 dark:border-peach-400 dark:text-peach-400 font-medium"
                   : "border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 hover:border-gray-400 dark:hover:border-gray-500"
               }`}
               onClick={(e) => {

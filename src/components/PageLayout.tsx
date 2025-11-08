@@ -8,11 +8,9 @@ interface PageLayoutProps {
 
 export function PageLayout({ children, showHeader = true }: PageLayoutProps) {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div>
       {showHeader && <Header />}
-      <main className="flex-1 p-4 py-12 pb-24 w-auto tablet-lg:w-desktop mx-auto">
-        {children}
-      </main>
+      {children}
       <Footer />
     </div>
   );

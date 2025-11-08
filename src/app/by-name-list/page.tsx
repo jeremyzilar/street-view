@@ -14,7 +14,11 @@ export default async function ByNameListPage() {
 
   return (
     <PageLayout>
-      <DocumentPage frontMatter={frontMatter} content={content} showToc={true} />
+      <DocumentPage
+        frontMatter={frontMatter}
+        content={content}
+        showToc={true}
+      />
     </PageLayout>
   );
 }

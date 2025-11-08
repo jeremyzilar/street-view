@@ -3,23 +3,11 @@ title: By-Name List
 deck: Knowing everyone experiencing street homelessness by name to ensure coordinated care and support
 ---
 
-A by-name list is exactly what it sounds like: a real-time list of everyone experiencing street homelessness in Santa Fe, tracked **by name** so that service providers can coordinate care and ensure no one falls through the cracks.
-
-Instead of relying on rough estimates or each organization maintaining their own records, a by-name list gives all participating providers a shared, up-to-date view of who needs support, what services they're receiving, and how we can work together to help them achieve stability.
-
----
-
 ## Why It Matters
 
-### The Problem Without a By-Name List
+A by-name list is exactly what it sounds like: a real-time list of everyone experiencing street homelessness in Santa Fe, tracked by name so that service providers can coordinate care and ensure no one falls through the cracks.
 
-When providers don't have a shared view:
-
-- **People get lost in the gaps** between organizations and systems
-- **Efforts get duplicated** when multiple providers don't know others are already engaged
-- **Critical information doesn't transfer** when someone moves between service areas
-- **We can't measure progress** because we don't know who we're actually serving
-- **Case conferencing relies on memory** instead of comprehensive data
+Instead of relying on rough estimates or each organization maintaining their own records, a by-name list gives all participating providers a shared, up-to-date view of who needs support, what services they're receiving, and how we can work together to help them achieve stability.
 
 ### The Power of Knowing Everyone
 
@@ -31,13 +19,23 @@ With a shared by-name list:
 - **Resources are allocated better** - We can identify gaps and prioritize support
 - **Case conferencing becomes more effective** - Meetings are based on complete, current information
 
+### The Problem Without a By-Name List
+
+When providers don't have a shared view:
+
+- **People get lost in the gaps** between organizations and systems
+- **Efforts get duplicated** when multiple providers don't know others are already engaged
+- **Critical information doesn't transfer** when someone moves between service areas
+- **We can't measure progress** because we don't know who we're actually serving
+- **Case conferencing relies on memory** instead of comprehensive data
+
 ---
 
 ## How It Works in Santa Fe
 
 ### For Service Providers
 
-The by-name list is maintained through The Many Paths Project platform, where participating organizations can:
+The by-name list will be maintained through **The Many Paths Project**, where participating organizations and street outreach teams can:
 
 - **Add people** they encounter during outreach or services
 - **Update information** about current living situations, needs, and services received
@@ -146,7 +144,7 @@ While the by-name list itself is private to providers (to protect individuals' p
 
 ---
 
-## Principles of Our By-Name List
+## Guiding Principles
 
 1. **Know everyone** - Real-time data on everyone experiencing street homelessness
 2. **Respect autonomy** - Individual consent and control over information
