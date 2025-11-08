@@ -37,7 +37,7 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           {isAuthenticated ? (
-            <main className="relative min-h-screen bg-gray-100 dark:bg-gray-900 overflow-y-auto">
+            <main className="relative min-h-screen bg-gray-100 dark:bg-gray-900">
               {children}
             </main>
           ) : (
