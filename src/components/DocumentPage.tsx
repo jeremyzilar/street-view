@@ -22,23 +22,21 @@ export function DocumentPage({
   if (showToc) {
     return (
       <>
-        <main>
-          <section className="max-w-desktop-lg mx-auto px-4">
-            <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
-              <PageHeader frontMatter={frontMatter} />
+        <section>
+          <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
+            <PageHeader frontMatter={frontMatter} />
+          </div>
+        </section>
+        <section>
+          <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
+            <div className="desktop:block hidden col-span-4 tablet-lg:col-span-3">
+              <TableOfContents />
             </div>
-          </section>
-          <section className="max-w-desktop-lg mx-auto px-4">
-            <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
-              <div className="desktop:block hidden col-span-4 tablet-lg:col-span-3">
-                <TableOfContents />
-              </div>
-              <div className="col-span-4 tablet-lg:col-span-9">
-                <MarkdownDocument content={content} />
-              </div>
+            <div className="col-span-4 tablet-lg:col-span-9">
+              <MarkdownDocument content={content} />
             </div>
-          </section>
-        </main>
+          </div>
+        </section>
       </>
     );
   }

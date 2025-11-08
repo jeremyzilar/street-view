@@ -10,7 +10,9 @@ export function PageLayout({ children, showHeader = true }: PageLayoutProps) {
   return (
     <div>
       {showHeader && <Header />}
-      {children}
+      <main className="min-h-screen max-w-desktop-lg mx-auto px-4">
+        {children}
+      </main>
       <Footer />
     </div>
   );
