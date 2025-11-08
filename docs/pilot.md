@@ -231,13 +231,13 @@ We know that trust is essential when sharing sensitive client information. Here'
 ### Core Governance Principles
 
 1. **Individual Rights and Consent**
-   
+
    We need to design a consent approach that respects individual autonomy while being practical for real-world coordination. In the workshop, we'll discuss:
    - What consent processes are realistic given your work?
    - How can we inform people about data sharing?
    - What protections matter most to you and your clients?
    - Are there situations where coordination needs to happen without prior consent?
-   
+
    Options might include opt-out approaches, tiered access levels, provider-level consent, or other models. We'll design this together based on what actually works.
 
 2. **Collect Only What's Needed**
@@ -315,7 +315,7 @@ Access is carefully controlled to protect privacy while enabling coordination.
 
 ### What You Cannot See
 
-Even with access, there will be boundaries (specifics to be determined in workshop):
+Even with access, there are boundaries:
 
 - Certain case notes may be private to individual organizations
 - Bulk data export will be controlled
@@ -325,12 +325,11 @@ Even with access, there will be boundaries (specifics to be determined in worksh
 
 We'll design a system that respects individual rights while enabling effective coordination:
 
-- People should know what information is being collected
-- People should be able to access their own information
-- People should be able to request corrections to inaccurate information
-- Clear process for opting out or limiting data sharing
-
-The workshop will determine how these rights are practically implemented given the realities of your work
+- Right to know what information is collected
+- Right to access their own information
+- Right to request corrections to inaccurate information
+- Right to revoke consent and have their information removed
+- Right to consent to some providers but not others
 
 ### Audit and Accountability
 
@@ -553,7 +552,7 @@ But we'll only know if it achieves that by trying it. If it's adding work withou
 
 ### "How will consent and data sharing work?"
 
-That's one of the key things we'll design together in the workshop. We need to find an approach that respects individual rights while being practical for real-world coordination. Options might include opt-out approaches, provider-level consent, or other models. The important thing is that it actually works for how you operate.
+We need to find an approach that respects individual rights while being practical for real-world coordination. Options might include opt-out approaches, provider-level consent, or other models. The important thing is that it actually works for how you operate.
 
 ### "What about people we serve who aren't experiencing homelessness?"
 
