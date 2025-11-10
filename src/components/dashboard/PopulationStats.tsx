@@ -6,7 +6,7 @@ interface PopulationStatsProps {
 
 export function PopulationStats({ stats }: PopulationStatsProps) {
   // Calculate people on the streets (unhoused but not in shelter)
-  const onTheStreets = stats.currentlyUnhoused - stats.currentlyPlaced;
+  const onTheStreets = stats.currentlyUnhoused - stats.currentlyInShelter;
 
   const statItems = [
     {
@@ -17,7 +17,7 @@ export function PopulationStats({ stats }: PopulationStatsProps) {
     },
     {
       label: "In Shelter",
-      value: stats.currentlyPlaced,
+      value: stats.currentlyInShelter,
       color: "text-blue-600 dark:text-blue-400",
       description: "Currently placed in shelter",
     },

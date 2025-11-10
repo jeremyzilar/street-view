@@ -113,10 +113,10 @@ export default async function Home() {
             <div className="col-span-4 tablet-lg:col-span-12">
               <DashboardSummary
                 currentlyUnhoused={dashboardData.population.currentlyUnhoused}
-                inShelter={dashboardData.population.currentlyPlaced}
+                inShelter={dashboardData.population.currentlyInShelter}
                 onTheStreets={
                   dashboardData.population.currentlyUnhoused -
-                  dashboardData.population.currentlyPlaced
+                  dashboardData.population.currentlyInShelter
                 }
                 seekingShelter={dashboardData.needs.seekingShelter}
                 lastUpdated={dashboardData.lastUpdated}

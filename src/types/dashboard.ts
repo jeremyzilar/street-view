@@ -3,7 +3,7 @@
 export interface PopulationStats {
   totalPeople: number;
   currentlyUnhoused: number;
-  currentlyPlaced: number;
+  currentlyInShelter: number;
   exitedToHousing: number;
   otherExits: number;
 }
@@ -54,7 +54,7 @@ export interface DashboardOverviewFields {
   "Dashboard Overview Name": string;
   "Total People": number;
   "Currently Unhoused": number;
-  "Currently Placed": number;
+  "Currently In Shelter": number;
   "Exited to Housing": number;
   "Other Exits": number;
   "Seeking Shelter (Unhoused)": number;
@@ -242,7 +242,7 @@ export function transformDashboardData(
     population: {
       totalPeople: fields["Total People"],
       currentlyUnhoused: fields["Currently Unhoused"],
-      currentlyPlaced: fields["Currently Placed"],
+      currentlyInShelter: fields["Currently In Shelter"],
       exitedToHousing: fields["Exited to Housing"],
       otherExits: fields["Other Exits"],
     },
