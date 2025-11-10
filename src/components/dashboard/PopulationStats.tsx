@@ -5,15 +5,15 @@ interface PopulationStatsProps {
 }
 
 export function PopulationStats({ stats }: PopulationStatsProps) {
-  // Calculate people on the streets (unhoused but not in shelter)
-  const onTheStreets = stats.currentlyUnhoused - stats.currentlyInShelter;
+  // Total people experiencing homelessness (both unhoused and in shelter)
+  const totalHomeless = stats.currentlyUnhoused + stats.currentlyInShelter;
 
   const statItems = [
     {
-      label: "Currently Unhoused",
-      value: stats.currentlyUnhoused,
+      label: "Experiencing Homelessness",
+      value: totalHomeless,
       color: "text-red-600 dark:text-red-400",
-      description: "Not in permanent housing",
+      description: "Total unhoused + in shelter",
     },
     {
       label: "In Shelter",
@@ -23,7 +23,7 @@ export function PopulationStats({ stats }: PopulationStatsProps) {
     },
     {
       label: "On the Streets",
-      value: onTheStreets,
+      value: stats.currentlyUnhoused,
       color: "text-orange-600 dark:text-orange-400",
       description: "Unsheltered, living outside",
     },

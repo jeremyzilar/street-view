@@ -33,7 +33,7 @@
         "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
       },
       "id": "fldyWRpDj9fa7iw9U",
-      "name": "Currently Placed"
+      "name": "Currently In Shelter"
     },
     {
       "type": "count",
@@ -209,13 +209,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldDBe1GWkRFgAlOD",
       "name": "Adult Men – Dormitory Beds Available"
@@ -223,13 +221,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldNGJPkCT6PqOrna",
       "name": "Women's Beds Available"
@@ -237,13 +233,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldYBwa1QDPrH2iXI",
       "name": "Medical Respite – Men Beds Available"
@@ -251,13 +245,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldqOvDdYYPOhUDfg",
       "name": "Medical Respite – Women Beds Available"
@@ -265,13 +257,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldNz6VZDks4k9bKM",
       "name": "General Adult Beds Available"
@@ -279,13 +269,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldrrGeQZAGbIplFu",
       "name": "Adult Singles & Couples Beds Available"
@@ -293,13 +281,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldT4GoMeYDCEjGZX",
       "name": "Family Suites (High Barrier) Beds Available"
@@ -307,13 +293,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fld6Zg0RRqcjUQTOe",
       "name": "Family Suites (Low Barrier) Beds Available"
@@ -321,13 +305,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "flddgjiTC8wfU5vCP",
       "name": "Family Rooms (Units) Beds Available"
@@ -335,13 +317,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldHJbKG6YcRKULK6",
       "name": "DV Shelter Beds Available"
@@ -349,13 +329,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldPnCZp1NPsR8n8B",
       "name": "Non-Congregate Units Beds Available"
@@ -363,13 +341,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "singleLineText"
-        }
+        "result": null
       },
       "id": "fldhX3kszbRluWvqF",
       "name": "Congregate Overflow Beds Available"
@@ -377,16 +353,11 @@
     {
       "type": "rollup",
       "options": {
-        "isValid": true,
+        "isValid": false,
         "recordLinkFieldId": "fldaUXpGDHXkz6knW",
-        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "fieldIdInLinkedTable": null,
         "referencedFieldIds": [],
-        "result": {
-          "type": "number",
-          "options": {
-            "precision": 0
-          }
-        }
+        "result": null
       },
       "id": "fldn328wHWBEbZUiS",
       "name": "TOTAL Beds Available"

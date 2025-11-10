@@ -1,5 +1,5 @@
 interface DashboardSummaryProps {
-  currentlyUnhoused: number;
+  totalHomeless: number;
   inShelter: number;
   onTheStreets: number;
   seekingShelter: number;
@@ -7,7 +7,7 @@ interface DashboardSummaryProps {
 }
 
 export function DashboardSummary({
-  currentlyUnhoused,
+  totalHomeless,
   inShelter,
   onTheStreets,
   seekingShelter,
@@ -34,12 +34,12 @@ export function DashboardSummary({
 
         <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4 gap-6 mb-8">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-5xl font-black mb-2">{currentlyUnhoused}</div>
+            <div className="text-5xl font-black mb-2">{totalHomeless}</div>
             <div className="text-lg font-medium text-blue-100">
-              Currently Unhoused
+              Experiencing Homelessness
             </div>
             <div className="text-sm text-blue-200 mt-1">
-              Not in permanent housing
+              Total unhoused + in shelter
             </div>
           </div>
 
