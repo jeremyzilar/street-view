@@ -1,12 +1,81 @@
-"use client";
-
 import Link from "next/link";
 import { navigation } from "@/config/navigation";
 import { PageLayout } from "@/components/PageLayout";
+import { DashboardSummary } from "@/components/dashboard/DashboardSummary";
+import { PopulationStats } from "@/components/dashboard/PopulationStats";
+import { CurrentNeedsCard } from "@/components/dashboard/CurrentNeedsCard";
+import { BedAvailability } from "@/components/dashboard/BedAvailability";
+import { SystemCoverage } from "@/components/dashboard/SystemCoverage";
+import type { DashboardData } from "@/types/dashboard";
 
-export default function Home() {
+async function getDashboardData(): Promise<DashboardData | null> {
+  try {
+    // Use absolute URL for server-side fetch
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+    const response = await fetch(`${baseUrl}/api/dashboard`, {
+      next: { revalidate: 300 }, // Revalidate every 5 minutes
+    });
+
+    if (!response.ok) {
+      console.error("Failed to fetch dashboard data:", response.status);
+      return null;
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error("Error fetching dashboard data:", error);
+    return null;
+  }
+}
+
+export default async function Home() {
+  const dashboardData = await getDashboardData();
+
   return (
     <PageLayout showHeader={false}>
+      {/* Dashboard Summary Hero */}
+      {dashboardData && (
+        <section className="py-8">
+          <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <DashboardSummary
+                currentlyUnhoused={dashboardData.population.currentlyUnhoused}
+                totalBedsAvailable={dashboardData.totalBedsAvailable}
+                seekingShelter={dashboardData.needs.seekingShelter}
+                lastUpdated={dashboardData.lastUpdated}
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Dashboard Stats Grid */}
+      {dashboardData && (
+        <section className="py-6">
+          <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-6">
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <PopulationStats stats={dashboardData.population} />
+            </div>
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <CurrentNeedsCard needs={dashboardData.needs} />
+            </div>
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <BedAvailability
+                bedTypes={dashboardData.bedTypes}
+                totalAvailable={dashboardData.totalBedsAvailable}
+              />
+            </div>
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <SystemCoverage
+                coverage={dashboardData.systemCoverage}
+                totalPeople={dashboardData.population.totalPeople}
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* About Section */}
       <section className="py-12">
         <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
           <div className="desktop:block hidden col-span-4 tablet-lg:col-span-12 space-y-12">

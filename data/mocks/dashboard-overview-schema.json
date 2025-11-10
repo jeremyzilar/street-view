@@ -1,0 +1,478 @@
+{
+  "id": "tblyqwTuZAkdk08WL",
+  "name": "Dashboard Overview",
+  "primaryFieldId": "flduZkwQKdjqKevvE",
+  "fields": [
+    {
+      "type": "singleLineText",
+      "id": "flduZkwQKdjqKevvE",
+      "name": "Dashboard Overview Name"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldrkdkJsrAuxZm52",
+      "name": "Total People"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fld4ZHr9x4382N2Ep",
+      "name": "Currently Unhoused"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldyWRpDj9fa7iw9U",
+      "name": "Currently Placed"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldmWc86Hj3WYr9a3",
+      "name": "Exited to Housing"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldlOe1pcdGBfQDAo",
+      "name": "Other Exits"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fld6ubZqMa4bAloPm",
+      "name": "Seeking Shelter (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldNiswEjV22xO2Ce",
+      "name": "Needs Medical Respite (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldPBDCvM7GbKgROh",
+      "name": "Has Pets (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fld5r9aKx1NzRwq1H",
+      "name": "Has Vehicle (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldbpHdm4tspnDPIY",
+      "name": "Needs ADA (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldpSvM4B8CuD7Fk2",
+      "name": "Adult Men – Dormitory Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldzhIrA8Rbi8bJ1b",
+      "name": "Women's Beds Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldZEXFtsi5ebNZk8",
+      "name": "Medical Respite – Men Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldIY36O9f1ki1080",
+      "name": "Medical Respite – Women Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldYtf9Mer6OOcJqj",
+      "name": "General Adult Beds Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldNfYPQ7Hw5V37dT",
+      "name": "Adult Singles & Couples Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fld1i43gRBkw4KXqs",
+      "name": "Family Suites (High Barrier) Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldrGT4DbCV8Pidc5",
+      "name": "Family Suites (Low Barrier) Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldMvVrX8bh2N9mqq",
+      "name": "Family Rooms (Units) Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fld9LZdjuCn8rA1BP",
+      "name": "DV Shelter Beds Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldYCbksiJOj5fEfZ",
+      "name": "Non-Congregate Units Demand (Unhoused)"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldXgfz8Gb3xkwEO0",
+      "name": "Congregate Overflow Demand (Unhoused)"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldDBe1GWkRFgAlOD",
+      "name": "Adult Men – Dormitory Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldNGJPkCT6PqOrna",
+      "name": "Women's Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldYBwa1QDPrH2iXI",
+      "name": "Medical Respite – Men Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldqOvDdYYPOhUDfg",
+      "name": "Medical Respite – Women Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldNz6VZDks4k9bKM",
+      "name": "General Adult Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldrrGeQZAGbIplFu",
+      "name": "Adult Singles & Couples Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldT4GoMeYDCEjGZX",
+      "name": "Family Suites (High Barrier) Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fld6Zg0RRqcjUQTOe",
+      "name": "Family Suites (Low Barrier) Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "flddgjiTC8wfU5vCP",
+      "name": "Family Rooms (Units) Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldHJbKG6YcRKULK6",
+      "name": "DV Shelter Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldPnCZp1NPsR8n8B",
+      "name": "Non-Congregate Units Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fldhX3kszbRluWvqF",
+      "name": "Congregate Overflow Beds Available"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldaUXpGDHXkz6knW",
+        "fieldIdInLinkedTable": "fld7Klry5RLbSs2Hl",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "number",
+          "options": {
+            "precision": 0
+          }
+        }
+      },
+      "id": "fldn328wHWBEbZUiS",
+      "name": "TOTAL Beds Available"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fld1XKli2IwrwW4pb",
+      "name": "In UniteUs"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fld9jRJ2QG3Uz36Q0",
+      "name": "In HMIS"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldWhJeU4ud53EdSm",
+      "name": "Has Mailing Address"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldWVKEu3Sm2jFqgZ"
+      },
+      "id": "fldQCR4i2GMPbfDLe",
+      "name": "Employed"
+    },
+    {
+      "type": "lastModifiedTime",
+      "options": {
+        "isValid": true,
+        "referencedFieldIds": [],
+        "result": {
+          "type": "date",
+          "options": {
+            "dateFormat": {
+              "name": "us",
+              "format": "M/D/YYYY"
+            }
+          }
+        }
+      },
+      "id": "fldNpqG0hxt1CcIR2",
+      "name": "Last Updated"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblgfLcOI1iViWkun",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldtLmCZdunywlZHG"
+      },
+      "id": "fldWVKEu3Sm2jFqgZ",
+      "name": "People"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblTI5lFeTTGozx5q",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldKVrQMrLheGA33A"
+      },
+      "id": "fldaUXpGDHXkz6knW",
+      "name": "Bed Types + Capacity"
+    }
+  ],
+  "views": [
+    {
+      "id": "viw7gMx0q4RuFkEzm",
+      "name": "All",
+      "type": "grid"
+    }
+  ]
+}

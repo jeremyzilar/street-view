@@ -8,7 +8,8 @@ This directory contains mock data for the People table in Airtable.
 - **`people-mock-data.csv`** - 485 mock records in CSV format (ready for Airtable import)
 - **`people-schema.json`** - The actual schema from your Airtable People table
 - **`bed-types.json`** - The bed types from your Airtable "Bed Types + Capacity" table
-- **`AIRTABLE-AI-PROMPT.md`** - Prompt for Airtable AI to assign bed types (if needed)
+- **`dashboard-overview-schema.json`** - Schema from the Dashboard Overview table
+- **`dashboard-overview-data.json`** - Aggregate statistics from the Dashboard Overview table
 
 ## Data Overview
 
@@ -108,6 +109,23 @@ people.forEach(async (person) => {
   await peopleTable.create(person);
 });
 ```
+
+## Dashboard Overview Data
+
+The `dashboard-overview-data.json` file contains aggregate statistics pulled from Airtable's Dashboard Overview table:
+
+- **Population Stats**: Total people, currently unhoused, placed, exited to housing, other exits
+- **Current Needs**: Seeking shelter, needs medical respite, has pets, has vehicle, needs ADA
+- **Bed Availability**: Supply vs demand for each bed type
+- **System Coverage**: In UniteUs, in HMIS, has mailing address, employed
+
+To refresh the dashboard data:
+
+```bash
+node scripts/fetch-dashboard-overview.js
+```
+
+This data is automatically fetched in the Next.js app via the `/api/dashboard` route and displayed on the homepage.
 
 ## Regenerating Mock Data
 
