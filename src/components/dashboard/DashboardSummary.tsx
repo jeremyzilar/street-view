@@ -1,17 +1,18 @@
 interface DashboardSummaryProps {
   currentlyUnhoused: number;
-  totalBedsAvailable: number;
+  inShelter: number;
+  onTheStreets: number;
   seekingShelter: number;
   lastUpdated: string;
 }
 
 export function DashboardSummary({
   currentlyUnhoused,
-  totalBedsAvailable,
+  inShelter,
+  onTheStreets,
   seekingShelter,
   lastUpdated,
 }: DashboardSummaryProps) {
-  const shortage = currentlyUnhoused - totalBedsAvailable;
   const lastUpdatedDate = new Date(lastUpdated);
   const formattedDate = lastUpdatedDate.toLocaleString("en-US", {
     month: "short",
@@ -23,7 +24,7 @@ export function DashboardSummary({
 
   return (
     <div className="bg-gradient-to-br from-blue-600 to-blue-800 dark:from-blue-800 dark:to-blue-950 rounded-lg shadow-lg p-8 tablet:p-12 text-white">
-      <div className="max-w-4xl">
+      <div className="max-w-5xl">
         <h1 className="text-3xl tablet:text-4xl desktop:text-5xl font-black mb-4">
           Real-Time Homeless Services Data
         </h1>
@@ -31,18 +32,32 @@ export function DashboardSummary({
           Santa Fe, New Mexico
         </p>
 
-        <div className="grid grid-cols-1 tablet:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4 gap-6 mb-8">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
             <div className="text-5xl font-black mb-2">{currentlyUnhoused}</div>
             <div className="text-lg font-medium text-blue-100">
               Currently Unhoused
             </div>
+            <div className="text-sm text-blue-200 mt-1">
+              Not in permanent housing
+            </div>
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-5xl font-black mb-2">{totalBedsAvailable}</div>
+            <div className="text-5xl font-black mb-2">{inShelter}</div>
+            <div className="text-lg font-medium text-blue-100">In Shelter</div>
+            <div className="text-sm text-blue-200 mt-1">
+              Currently placed
+            </div>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div className="text-5xl font-black mb-2">{onTheStreets}</div>
             <div className="text-lg font-medium text-blue-100">
-              Beds Available Now
+              On the Streets
+            </div>
+            <div className="text-sm text-blue-200 mt-1">
+              Unsheltered, living outside
             </div>
           </div>
 
@@ -51,18 +66,11 @@ export function DashboardSummary({
             <div className="text-lg font-medium text-blue-100">
               Seeking Shelter
             </div>
+            <div className="text-sm text-blue-200 mt-1">
+              Actively looking for placement
+            </div>
           </div>
         </div>
-
-        {shortage > 0 && (
-          <div className="bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-lg p-4 mb-6">
-            <p className="text-lg font-semibold">
-              ⚠️ Current shortage:{" "}
-              <span className="text-2xl font-black">{shortage}</span> more beds
-              needed
-            </p>
-          </div>
-        )}
 
         <div className="text-sm text-blue-200">
           Last updated: {formattedDate}

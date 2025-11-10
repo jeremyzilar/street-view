@@ -13,48 +13,6 @@ export default async function Home() {
 
   return (
     <PageLayout showHeader={false}>
-      {/* Dashboard Summary Hero */}
-      {dashboardData && (
-        <section className="py-8">
-          <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
-            <div className="col-span-4 tablet-lg:col-span-12">
-              <DashboardSummary
-                currentlyUnhoused={dashboardData.population.currentlyUnhoused}
-                totalBedsAvailable={dashboardData.totalBedsAvailable}
-                seekingShelter={dashboardData.needs.seekingShelter}
-                lastUpdated={dashboardData.lastUpdated}
-              />
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Dashboard Stats Grid */}
-      {dashboardData && (
-        <section className="py-6">
-          <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-6">
-            <div className="col-span-4 tablet-lg:col-span-12">
-              <PopulationStats stats={dashboardData.population} />
-            </div>
-            <div className="col-span-4 tablet-lg:col-span-12">
-              <CurrentNeedsCard needs={dashboardData.needs} />
-            </div>
-            <div className="col-span-4 tablet-lg:col-span-12">
-              <BedAvailability
-                bedTypes={dashboardData.bedTypes}
-                totalAvailable={dashboardData.totalBedsAvailable}
-              />
-            </div>
-            <div className="col-span-4 tablet-lg:col-span-12">
-              <SystemCoverage
-                coverage={dashboardData.systemCoverage}
-                totalPeople={dashboardData.population.totalPeople}
-              />
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* About Section */}
       <section className="py-12">
         <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
@@ -148,6 +106,51 @@ export default async function Home() {
           </div>
         </div>
       </section>
+      {/* Dashboard Summary Hero */}
+      {dashboardData && (
+        <section className="py-8">
+          <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-3">
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <DashboardSummary
+                currentlyUnhoused={dashboardData.population.currentlyUnhoused}
+                inShelter={dashboardData.population.currentlyPlaced}
+                onTheStreets={
+                  dashboardData.population.currentlyUnhoused -
+                  dashboardData.population.currentlyPlaced
+                }
+                seekingShelter={dashboardData.needs.seekingShelter}
+                lastUpdated={dashboardData.lastUpdated}
+              />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Dashboard Stats Grid */}
+      {dashboardData && (
+        <section className="py-6">
+          <div className="grid grid-cols-4 tablet-lg:grid-cols-12 gap-6">
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <PopulationStats stats={dashboardData.population} />
+            </div>
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <CurrentNeedsCard
+                needs={dashboardData.needs}
+                totalUnhoused={dashboardData.population.currentlyUnhoused}
+              />
+            </div>
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <BedAvailability bedTypes={dashboardData.bedTypes} />
+            </div>
+            <div className="col-span-4 tablet-lg:col-span-12">
+              <SystemCoverage
+                coverage={dashboardData.systemCoverage}
+                totalPeople={dashboardData.population.totalPeople}
+              />
+            </div>
+          </div>
+        </section>
+      )}
     </PageLayout>
   );
 }
