@@ -29,6 +29,26 @@ In Santa Fe, people experiencing homelessness move through various systems, but 
 
 ---
 
+## Documentation
+
+### Platform Vision & Strategy
+
+- **[Product Vision](./docs/product-vision.md)** - Complete platform overview, feature catalog, and roadmap
+- **[Presentation Outline](./docs/presentation-outline.md)** - Community talk outline using pyramid principle
+
+### Project Documentation
+
+- **[Mission](./docs/mission.md)** - Why Many Paths exists
+- **[Operations Manual](./docs/manual.md)** - How to use the system
+- **[Organizational Structure](./docs/organizational-structure.md)** - Governance and operational model
+- **[Who We Are](./docs/who-we-are.md)** - Team and stakeholders
+
+### Implementation Resources
+
+- **[Fiscal Sponsorship](./docs/fiscal-sponsorship/)** - Complete implementation package for establishing fiscal sponsorship structure
+
+---
+
 ## Tech Stack
 
 This is a [Next.js](https://nextjs.org) application built with:

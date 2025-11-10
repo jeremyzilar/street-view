@@ -1,0 +1,685 @@
+[
+  {
+    "id": "rec5rstKxttDwp71g",
+    "createdTime": "2025-09-02T17:47:43.000Z",
+    "fields": {
+      "Bed Group Name": "Family Suites (High Barrier)",
+      "Provider": [
+        "recqVEVaTTdv9kBxY"
+      ],
+      "Bed Type(s)": [
+        "rectMJePjBXLeuJR1",
+        "recJELnDzIWtNzaxm",
+        "recp5pYlqAQ8dEZg7"
+      ],
+      "Total Beds": 15,
+      "Notes": "For parents/guardians with children.",
+      "Active": true,
+      "Availability Reports": [
+        "recdLbaiI5LnKgucl"
+      ],
+      "Beds Open Now": 2,
+      "Beds Upcoming": 0,
+      "Beds Filled": 13,
+      "Date available": [
+        "2025-09-15"
+      ],
+      "People": [
+        "recpw9SkrRKLdL6bD",
+        "rec8f1XAbVbPd9aEg",
+        "rec0lyJZ7V64J7Bxt",
+        "rec0sRW2mkaNUR2os",
+        "rec281IS053f3mu9N",
+        "rec36HdWIQtLjbpEv",
+        "rec3IYjwccGPaUzTi",
+        "rec4AUlaSOYE2Ovw0",
+        "rec4qCzCZ3G0LVeJ8",
+        "rec5SdB1jygZ7k2Wn",
+        "rec6gCM7qY4J1Fdbs",
+        "rec7kW56HSdCmiJPj",
+        "rec7rgDQLE3Mcnm9y",
+        "rec8ArdBdMRjJMSwY",
+        "rec9TVFIZO50Bvq7e",
+        "rec9afM4FHFtVuPHm",
+        "recB6IbUnR1EHAIm7",
+        "recDfBuOt4qMh8zIA",
+        "recH4Gcv5Jz3srgS0",
+        "recKCoyKtJCgS6Hm5",
+        "recLN1yKuveCNWlPF",
+        "recLNd2o5V6MFWDDy"
+      ]
+    }
+  },
+  {
+    "id": "rec6BYXTiszjS4Fiy",
+    "createdTime": "2025-09-01T19:06:04.000Z",
+    "fields": {
+      "Bed Group Name": "Adult Men – Dormitory",
+      "Provider": [
+        "recKrlSdBu8hD1K8B"
+      ],
+      "Bed Type(s)": [
+        "rec71UB1C5gM9Yw2U",
+        "recoCcuqhor9su5Nb",
+        "recp5pYlqAQ8dEZg7"
+      ],
+      "Total Beds": 28,
+      "Notes": "Walk-ins at 3pm; separate referral scheduling; high-barrier (alcohol/drug test required; no detox); sex offenders accepted; ESAs allowed with documentation; 2 meals/day; showers & laundry for guests; case management + therapy; in-reach (food, clothing, hygiene, mail).",
+      "Active": true,
+      "Beds Open Now": 0,
+      "Beds Upcoming": 0,
+      "Beds Filled": 28,
+      "People": [
+        "recp6B9Tl0bywgU71",
+        "rec02ibPWSsJTHpwB",
+        "rec0nfkHzBOZCUHVl",
+        "rec17AlBiSd3i24Kx",
+        "rec18xXxDie4ffheP",
+        "rec1bsvt9wvQmfAEv",
+        "rec1tToReSK6W35uZ",
+        "rec21ZALGLFKSMUdq",
+        "rec327lFpITJapXG9",
+        "rec39bAnCUnMFPkeo",
+        "rec3ZZLlYti1E0z5N",
+        "rec3kXmFWAv6WU3SW",
+        "rec4DrS5SMSNexLt5",
+        "rec4Z8KpNcZ7eYcpk",
+        "rec4jDqts74109NeS",
+        "rec53rjQFhoCvUPTH",
+        "rec5AYXDzsQyLXVYo",
+        "rec5OZVpNFp9QIctu",
+        "rec5d1W6HU1jayMb5",
+        "rec61V5FjCuL1Wy1h",
+        "rec7CDLGHL1IfCeLz",
+        "rec7KSETFOFThpFJB",
+        "rec8XHDhji2H45Dn4",
+        "rec9g4qWd3mr1RTpB",
+        "rec9n9RM3oNvYsQIb",
+        "recAJItA0ZJLvll9M",
+        "recAtNcsXlLe3GDqi",
+        "recBfpPvmIJk8lPAT",
+        "recC62dySlLxFsZxF",
+        "recDdcq9F0QV9eOh1",
+        "recEKpL5B5Lud8ljL"
+      ]
+    }
+  },
+  {
+    "id": "rec9b2J2UTwKTpD5C",
+    "createdTime": "2025-09-01T18:53:26.000Z",
+    "fields": {
+      "Bed Group Name": "Medical Respite – Men",
+      "Provider": [
+        "recpD8WGAmSWmMVGA"
+      ],
+      "Bed Type(s)": [
+        "rec71UB1C5gM9Yw2U",
+        "recy7IzNAy80llPoX",
+        "recqADKc2HLRKcwha",
+        "recoCcuqhor9su5Nb"
+      ],
+      "Total Beds": 2,
+      "Notes": "Medical respite subset of total 85 beds.",
+      "Active": true,
+      "Beds Open Now": 0,
+      "Beds Upcoming": 0,
+      "Beds Filled": 2
+    }
+  },
+  {
+    "id": "recA1mxPROScNTAD6",
+    "createdTime": "2025-09-01T18:58:46.000Z",
+    "fields": {
+      "Bed Group Name": "Women’s Beds",
+      "Provider": [
+        "rec91J0d2eJjQLN3W"
+      ],
+      "Bed Type(s)": [
+        "rec71UB1C5gM9Yw2U",
+        "rec5ZpPnqZ1EsC7tl",
+        "recqADKc2HLRKcwha"
+      ],
+      "Total Beds": 20,
+      "Notes": "Call to join waitlist; intake required; must respond within 24 hours if contacted.",
+      "Active": true,
+      "Beds Open Now": 0,
+      "Beds Upcoming": 0,
+      "Beds Filled": 20,
+      "People": [
+        "recInMcOYr2nN3Q1P",
+        "recBaUYzlcQpyndfR",
+        "recRXjSJz2qnXtyk4",
+        "rec00edsiUNaVmdoM",
+        "rec0LXyXb5q0stzqg",
+        "rec0lyJZ7V64J7Bxt",
+        "rec0sRW2mkaNUR2os",
+        "rec18KZqQn2yBNfkV",
+        "rec1A83D81TOHQMv8",
+        "rec1CD3TqGEHrvG9K",
+        "rec1Z8XbWlP1aDu8W",
+        "rec1dWbQgpt0C2LlG",
+        "rec2XtNwzfMMrqKpz",
+        "rec36HdWIQtLjbpEv",
+        "rec3AFIe6JLjxNn1b",
+        "rec3IYjwccGPaUzTi",
+        "rec4AUlaSOYE2Ovw0",
+        "rec4ORxBW8TteaWh5",
+        "rec4WPolBHOPBHu8K",
+        "rec4aSw0Sm9ZLkCJt",
+        "rec4eSown4UzECEix",
+        "rec4j9QuTSnE8ai5M",
+        "rec50g7viPTz3o1Nk",
+        "rec5S6UYwEtBowKpN",
+        "rec5SdB1jygZ7k2Wn",
+        "rec5yrxOQBzGGPROq",
+        "rec6ANm5VJa0S6RB5",
+        "rec6InDzhYeybOeUs",
+        "rec7CNEqvbC1FTuW2",
+        "rec7QEjfYZkcRSI0P",
+        "rec7jnR7IE0pjSjIt",
+        "rec7kW56HSdCmiJPj",
+        "rec7qScmwBgt0k3E9",
+        "rec7rgDQLE3Mcnm9y",
+        "rec83543lRI2ATXVI",
+        "rec8ArdBdMRjJMSwY",
+        "rec8OCeMtnP8mvVby",
+        "rec8btmdasLOYTSRY",
+        "rec8cISg1Pb5k5U9x",
+        "rec8efOHAPTodMWn2",
+        "rec8swTkUO1HZlhvf",
+        "rec9EDf2TwiOJJ0xD",
+        "rec9IlZYpV7xJafLg",
+        "rec9R14ABJ11FpswH",
+        "rec9XAE1U730QJ3gH",
+        "rec9bfVo96mYdSTEu",
+        "rec9rI8pxy56M9kjk",
+        "recA9vwdZfiSPDkJO",
+        "recAAJm4URybrSvB7",
+        "recApmHobn9D7aazT",
+        "recApusuqdg1ZWr4i",
+        "recB6IbUnR1EHAIm7",
+        "recBBHn0VAk1lKsWy",
+        "recBHHlDlEZSbRjLc",
+        "recBvdyH6M9ipzlMv",
+        "recBy6cXVjX96yEKN",
+        "recCRhxcr66lXFEwa",
+        "recCSIvWu0JNPbAqV",
+        "recCWA4yzYKW55QeR",
+        "recCkv7WSbcwxuAxY",
+        "recCqIzEDxsQ7fcf8",
+        "recCtF5PibE7gA50W",
+        "recCxUOIWi6SBF39V",
+        "recDCsuOIYhB6Irpo",
+        "recDfBuOt4qMh8zIA",
+        "recDikscw2ZgNNiTo",
+        "recDnpyITasA17KgH",
+        "recDtLC5melvCic9s",
+        "recE5tVoErIPYnJ8o",
+        "recE6xU8oafApgM9c",
+        "recENSh8SY04Kg8kd",
+        "recES9S7LdvFHk8c9",
+        "recESP6mnp54Axl4D",
+        "recF550WXnh7VOudi",
+        "recFpKPG5GmoBrzZY",
+        "recFqkDAWwcg7EZMR",
+        "recG9MJbvkZ9na0QM",
+        "recGee73JGVxFdlCz",
+        "recGrD6VB0CApKQU9",
+        "recGrcQ5oV5QAxy9L",
+        "recM5VL3ly268URHO",
+        "recMRSW5he75H3kCk",
+        "recH4O9z9ueHY9OlD",
+        "recHiDtX6J0zD9MVh",
+        "recHoHUS7PZo9iDQo",
+        "recIXJbgqC5ElEBK8",
+        "recIjvdW6g53nsU8Z",
+        "recIx6rDy7W2rG40o",
+        "recJ4zy2CwjAa4asm",
+        "recJAs23ZuIaGq919",
+        "recJCpOKYyoY5uxGf",
+        "recJIfi0SDrToFEss",
+        "recJLv48AWmTDZBY7",
+        "recJeoLBht3KRP9dO",
+        "recJi0sj10XraWbL6",
+        "recJpBkyq2xv6oKeg",
+        "recK9IYMN0G9Ht5y7",
+        "recKGyh7b9ZeeH5em",
+        "recKJYGM8JFlvqfpt",
+        "recKM4oSW28epKJOb",
+        "recKcdzjCXlZvI4qK",
+        "recKidy5j0C8XnaZh",
+        "recKqNIABfPM3uRLZ",
+        "recKsJ6FVX70wCf5A",
+        "recKwBqKTT5eF9CL5",
+        "recL45V2JHOXU79m0",
+        "recL8niRyrNA0JE29",
+        "recLJRFr18Wq4TwvP",
+        "recLMmaSuqLxHTuPG",
+        "recLMou924mvRWnT8",
+        "recLN1yKuveCNWlPF",
+        "recLNd2o5V6MFWDDy",
+        "recLO8SPgxzYzhoUs",
+        "recLQVZQzKhBb9gF9",
+        "recLTxnSP3cRImHWw",
+        "recLiBBJdWMGgQRFC",
+        "recLvpQSd1kmmU9Eb",
+        "recMfi7ESL6KgUZzw",
+        "recNLeO1tHkcF4heX",
+        "recNOroiGjnH0wZ8W",
+        "recNRdLB4U6FCrDQE",
+        "recNU9T7piyKAQ0lb",
+        "recNUgL6QzGusX1AE"
+      ]
+    }
+  },
+  {
+    "id": "recA2HEjmy46Zz5KE",
+    "createdTime": "2025-09-01T19:02:05.000Z",
+    "fields": {
+      "Bed Group Name": "Medical Respite – Women",
+      "Provider": [
+        "rec91J0d2eJjQLN3W"
+      ],
+      "Bed Type(s)": [
+        "rectMJePjBXLeuJR1",
+        "rec5ZpPnqZ1EsC7tl",
+        "recy7IzNAy80llPoX"
+      ],
+      "Total Beds": 2,
+      "Notes": "Medical respite subset; testing used (breathalyzer + drug test); dirty UA acceptable if trending down.",
+      "Active": true,
+      "Availability Reports": [
+        "recRlGlSiiEQuJZaW"
+      ],
+      "Beds Open Now": 4,
+      "Beds Upcoming": 0,
+      "Beds Filled": -2,
+      "Date available": [
+        "2025-09-15"
+      ]
+    }
+  },
+  {
+    "id": "recBTyhWRG9EJWm0V",
+    "createdTime": "2025-09-01T18:41:27.000Z",
+    "fields": {
+      "Bed Group Name": "Non-Congregate Units",
+      "Provider": [
+        "recFy1oAT87eRU6KX"
+      ],
+      "Bed Type(s)": [
+        "reccFNfuViqZIfBkU",
+        "recIdcIRnhiO2Av6O",
+        "recqADKc2HLRKcwha",
+        "recZ7JG8Qqy33ZXZs"
+      ],
+      "Total Beds": 10,
+      "Notes": "10 individual units (each 1–2 people); adults only; referrals only via street outreach; not publicly advertised; pets allowed (max 2 per unit); detached restroom/hygiene units; 2 meals/day for residents; no services for non-residents; not ADA accessible; outreach team transports.",
+      "Active": true,
+      "Availability Reports": [
+        "recBUpiPWgpHMp4Ms"
+      ],
+      "Beds Open Now": 2,
+      "Beds Upcoming": 0,
+      "Beds Filled": 8,
+      "Date available": [
+        "2025-09-19"
+      ],
+      "People": [
+        "recpw9SkrRKLdL6bD",
+        "rec00edsiUNaVmdoM",
+        "rec0KTy8Uam4vZIkj",
+        "rec0lyJZ7V64J7Bxt",
+        "rec0yF7rVvMYl6aoc",
+        "rec1bsvt9wvQmfAEv",
+        "rec1tToReSK6W35uZ",
+        "rec21ZALGLFKSMUdq",
+        "rec281IS053f3mu9N",
+        "rec2ePCl9xZfGrvhG",
+        "rec39bAnCUnMFPkeo",
+        "rec3AFIe6JLjxNn1b",
+        "rec3IYjwccGPaUzTi",
+        "rec3ZZLlYti1E0z5N",
+        "rec3kXmFWAv6WU3SW",
+        "rec4ORxBW8TteaWh5",
+        "rec4WPolBHOPBHu8K",
+        "rec4aSw0Sm9ZLkCJt",
+        "rec4j9QuTSnE8ai5M",
+        "rec4jDqts74109NeS",
+        "rec4qCzCZ3G0LVeJ8",
+        "rec50g7viPTz3o1Nk",
+        "rec5S6UYwEtBowKpN",
+        "rec5yrxOQBzGGPROq",
+        "rec61V5FjCuL1Wy1h",
+        "rec6ANm5VJa0S6RB5",
+        "rec6GHJlsV1ixox9Z",
+        "rec6InDzhYeybOeUs",
+        "rec6czNOF1BkqxC2Q",
+        "rec6gCM7qY4J1Fdbs",
+        "rec7CDLGHL1IfCeLz",
+        "rec7CNEqvbC1FTuW2",
+        "rec7QEjfYZkcRSI0P",
+        "rec7qScmwBgt0k3E9",
+        "rec7zWNXUFllb2Bcj",
+        "rec7zZJNej3FrZIb6",
+        "rec83543lRI2ATXVI",
+        "rec8OCeMtnP8mvVby",
+        "rec8btmdasLOYTSRY",
+        "rec8efOHAPTodMWn2",
+        "rec8swTkUO1HZlhvf",
+        "rec8yRIbpPqEVzgLF",
+        "rec9EDf2TwiOJJ0xD",
+        "rec9IlZYpV7xJafLg",
+        "rec9R14ABJ11FpswH",
+        "rec9TVFIZO50Bvq7e",
+        "rec9XAE1U730QJ3gH",
+        "rec9Yz3oU4aqvZ0ym",
+        "rec9afM4FHFtVuPHm",
+        "rec9n9RM3oNvYsQIb",
+        "rec9rI8pxy56M9kjk",
+        "recAAJm4URybrSvB7",
+        "recAJItA0ZJLvll9M",
+        "recAdIY7uWxmrbThq",
+        "recApmHobn9D7aazT",
+        "recAtNcsXlLe3GDqi",
+        "recBBHn0VAk1lKsWy",
+        "recBHHlDlEZSbRjLc",
+        "recBfpPvmIJk8lPAT",
+        "recBvdyH6M9ipzlMv",
+        "recC62dySlLxFsZxF",
+        "recCRhxcr66lXFEwa",
+        "recCYAxtjjIdiia1a",
+        "recCZPRmVYnuKbz1Q",
+        "recCkv7WSbcwxuAxY",
+        "recCtF5PibE7gA50W",
+        "recCxUOIWi6SBF39V",
+        "recD7UVkaBR5NcNvK",
+        "recDdcq9F0QV9eOh1",
+        "recDikscw2ZgNNiTo",
+        "recDtLC5melvCic9s",
+        "recE5tVoErIPYnJ8o",
+        "recEKpL5B5Lud8ljL",
+        "recENSh8SY04Kg8kd",
+        "recES9S7LdvFHk8c9",
+        "recF8fDvi46uMVD0m",
+        "recFpKPG5GmoBrzZY",
+        "recFqkDAWwcg7EZMR",
+        "recG9MJbvkZ9na0QM",
+        "recGee73JGVxFdlCz",
+        "recGrD6VB0CApKQU9",
+        "recGrcQ5oV5QAxy9L",
+        "recM5VL3ly268URHO",
+        "recMRSW5he75H3kCk",
+        "recMdnS6baMKw2RSv",
+        "recGvLVAIvFHoHc8j",
+        "recH4Gcv5Jz3srgS0",
+        "recH4O9z9ueHY9OlD",
+        "recHiDtX6J0zD9MVh",
+        "recHoHUS7PZo9iDQo",
+        "recI4WO6HizWt6jCt",
+        "recIXJbgqC5ElEBK8",
+        "recIdum0MileHLOPx",
+        "recIjvdW6g53nsU8Z",
+        "recIx6rDy7W2rG40o",
+        "recJ4zy2CwjAa4asm",
+        "recJAs23ZuIaGq919",
+        "recJCpOKYyoY5uxGf",
+        "recJLv48AWmTDZBY7",
+        "recJeoLBht3KRP9dO",
+        "recJgMN0wECZR3Fiw",
+        "recJi0sj10XraWbL6",
+        "recJpBkyq2xv6oKeg",
+        "recK9IYMN0G9Ht5y7",
+        "recKCoyKtJCgS6Hm5",
+        "recKGyh7b9ZeeH5em",
+        "recKJYGM8JFlvqfpt",
+        "recKM4oSW28epKJOb",
+        "recKcdzjCXlZvI4qK",
+        "recKidy5j0C8XnaZh",
+        "recKqNIABfPM3uRLZ",
+        "recKsJ6FVX70wCf5A",
+        "recKuVOeXaJ9cE29W",
+        "recKwBqKTT5eF9CL5",
+        "recL45V2JHOXU79m0",
+        "recL8niRyrNA0JE29",
+        "recLJRFr18Wq4TwvP",
+        "recLMmaSuqLxHTuPG",
+        "recLMou924mvRWnT8",
+        "recLO8SPgxzYzhoUs",
+        "recLQVZQzKhBb9gF9",
+        "recLTxnSP3cRImHWw",
+        "recLiBBJdWMGgQRFC",
+        "recMfi7ESL6KgUZzw",
+        "recMgQvihUcJv8Rs7",
+        "recMrsU7VhjGDSyKO",
+        "recNLeO1tHkcF4heX",
+        "recNOroiGjnH0wZ8W",
+        "recNRdLB4U6FCrDQE",
+        "recNU9T7piyKAQ0lb",
+        "recNUgL6QzGusX1AE"
+      ]
+    }
+  },
+  {
+    "id": "recJQ852bannc7UuF",
+    "createdTime": "2025-09-01T19:03:30.000Z",
+    "fields": {
+      "Bed Group Name": "Family Rooms (Units)",
+      "Provider": [
+        "rec91J0d2eJjQLN3W"
+      ],
+      "Bed Type(s)": [
+        "rectMJePjBXLeuJR1",
+        "recJELnDzIWtNzaxm",
+        "recqADKc2HLRKcwha"
+      ],
+      "Total Beds": 25,
+      "Notes": "5 family rooms (up to 5 each; capacity varies by family size). ESAs allowed if safe. Shared kitchen (staples provided); laundry; case management + therapy; van transport Mon–Fri 9–2; services for non-guests (food, clothing).",
+      "Active": true,
+      "Availability Reports": [
+        "recBLhPFQeSQ3QSKr"
+      ],
+      "Beds Open Now": 3,
+      "Beds Upcoming": 0,
+      "Beds Filled": 22,
+      "Date available": [
+        "2025-09-04"
+      ]
+    }
+  },
+  {
+    "id": "recSKAwnyMFB1N2qK",
+    "createdTime": "2025-09-01T18:18:12.000Z",
+    "fields": {
+      "Bed Group Name": "Adult Singles & Couples",
+      "Provider": [
+        "recqVEVaTTdv9kBxY"
+      ],
+      "Bed Type(s)": [
+        "rectMJePjBXLeuJR1",
+        "recIdcIRnhiO2Av6O",
+        "recqADKc2HLRKcwha"
+      ],
+      "Total Beds": 30,
+      "Notes": "Mix of single rooms and doubles for couples.",
+      "Active": true,
+      "Availability Reports": [
+        "recwWixAAxKR4K46H"
+      ],
+      "Beds Open Now": 30,
+      "Beds Upcoming": 0,
+      "Beds Filled": 0,
+      "Date available": [
+        "2025-09-03"
+      ],
+      "People": [
+        "recInMcOYr2nN3Q1P",
+        "recq2GPkbwX9NKyed",
+        "recp6B9Tl0bywgU71",
+        "recTmk1Tpur8h2lzi",
+        "rec5uEOn89gBr0qDN"
+      ]
+    }
+  },
+  {
+    "id": "recWhJHWlxhJCUUc8",
+    "createdTime": "2025-09-01T18:54:48.000Z",
+    "fields": {
+      "Bed Group Name": "DV Shelter Beds (Shared Bedrooms)",
+      "Provider": [
+        "recAjEAlCIqhQsCku"
+      ],
+      "Bed Type(s)": [
+        "rec71UB1C5gM9Yw2U",
+        "rec5ZpPnqZ1EsC7tl",
+        "recx1ObCYnc1o7XqH"
+      ],
+      "Total Beds": 30,
+      "Notes": "9 bedrooms (~4 beds each) with some single rooms; survivors of domestic violence (high-lethality cases); hotline only; beds may be held up to 24 hours; service animals only (vaccines required); no detoxing, drugs, alcohol, or paraphernalia; ADA-accessible bathrooms/showers; laundry; onsite clinical services, legal advocacy, and case management; no services for non-guests.",
+      "Active": true,
+      "Availability Reports": [
+        "reckmV2JXZgUmzI01",
+        "recp8QUPXJaKHlckg"
+      ],
+      "Beds Open Now": 6,
+      "Beds Upcoming": 0,
+      "Beds Filled": 24,
+      "Date available": [
+        "2025-09-22",
+        "2025-09-05"
+      ],
+      "People": [
+        "rec0KTy8Uam4vZIkj",
+        "rec2XtNwzfMMrqKpz",
+        "rec2ePCl9xZfGrvhG",
+        "rec3kXmFWAv6WU3SW",
+        "rec4qCzCZ3G0LVeJ8",
+        "rec6GHJlsV1ixox9Z",
+        "rec6InDzhYeybOeUs",
+        "rec6gCM7qY4J1Fdbs",
+        "rec7KSETFOFThpFJB",
+        "rec7jnR7IE0pjSjIt",
+        "rec7qScmwBgt0k3E9",
+        "rec8cISg1Pb5k5U9x",
+        "rec9R14ABJ11FpswH",
+        "recAAJm4URybrSvB7",
+        "recCqIzEDxsQ7fcf8",
+        "recJIfi0SDrToFEss",
+        "recLvpQSd1kmmU9Eb"
+      ]
+    }
+  },
+  {
+    "id": "recciLDFYDBYcFnYm",
+    "createdTime": "2025-09-01T18:46:03.000Z",
+    "fields": {
+      "Bed Group Name": "General Adult Beds",
+      "Provider": [
+        "recpD8WGAmSWmMVGA"
+      ],
+      "Bed Type(s)": [
+        "rec71UB1C5gM9Yw2U",
+        "recIdcIRnhiO2Av6O",
+        "recqADKc2HLRKcwha"
+      ],
+      "Total Beds": 80,
+      "Notes": "Part of 85 total; 24/7 access; low-barrier; pets allowed (non-violent, muzzles if required); drug-free zone; sobriety not required; only exit violent guests; 3 meals/day for guests; Oasis serves ~100 meals/day to non-guests; laundry; transportation; weekly case management/care coordination.",
+      "Active": true,
+      "Beds Open Now": 0,
+      "Beds Upcoming": 0,
+      "Beds Filled": 80,
+      "People": [
+        "recq2GPkbwX9NKyed",
+        "recTmk1Tpur8h2lzi",
+        "rec5uEOn89gBr0qDN",
+        "rec00edsiUNaVmdoM",
+        "rec0LXyXb5q0stzqg",
+        "rec0nfkHzBOZCUHVl",
+        "rec18xXxDie4ffheP",
+        "rec1A83D81TOHQMv8",
+        "rec1Z8XbWlP1aDu8W",
+        "rec1dWbQgpt0C2LlG",
+        "rec1tToReSK6W35uZ",
+        "rec327lFpITJapXG9",
+        "rec4DrS5SMSNexLt5",
+        "rec4eSown4UzECEix",
+        "rec53rjQFhoCvUPTH",
+        "rec5AYXDzsQyLXVYo",
+        "rec5d1W6HU1jayMb5",
+        "rec8XHDhji2H45Dn4",
+        "rec9g4qWd3mr1RTpB"
+      ]
+    }
+  },
+  {
+    "id": "reclIU5ZYnCmzhB8b",
+    "createdTime": "2025-09-01T18:19:46.000Z",
+    "fields": {
+      "Bed Group Name": "Family Suites (Low Barrier)",
+      "Provider": [
+        "recqVEVaTTdv9kBxY"
+      ],
+      "Bed Type(s)": [
+        "rectMJePjBXLeuJR1",
+        "recJELnDzIWtNzaxm",
+        "recqADKc2HLRKcwha"
+      ],
+      "Total Beds": 15,
+      "Notes": "For parents/guardians with children.",
+      "Active": true,
+      "Availability Reports": [
+        "recdLbaiI5LnKgucl"
+      ],
+      "Beds Open Now": 2,
+      "Beds Upcoming": 0,
+      "Beds Filled": 13,
+      "Date available": [
+        "2025-09-15"
+      ]
+    }
+  },
+  {
+    "id": "recqysbkrelgYADCo",
+    "createdTime": "2025-09-01T18:22:41.000Z",
+    "fields": {
+      "Bed Group Name": "Congregate Overflow",
+      "Provider": [
+        "recqVEVaTTdv9kBxY"
+      ],
+      "Bed Type(s)": [
+        "recaToUbYVb0Frr4H"
+      ],
+      "Total Beds": 10,
+      "Notes": "Only opened in emergencies (e.g., cold weather).",
+      "Active": true,
+      "Beds Open Now": 0,
+      "Beds Upcoming": 0,
+      "Beds Filled": 10,
+      "People": [
+        "recnMczu9OaqgyWzS"
+      ]
+    }
+  },
+  {
+    "id": "rectXD3HXYmYP016w",
+    "createdTime": "2025-09-01T18:50:13.000Z",
+    "fields": {
+      "Bed Group Name": "Medical Respite – Women",
+      "Provider": [
+        "recpD8WGAmSWmMVGA"
+      ],
+      "Bed Type(s)": [
+        "rec71UB1C5gM9Yw2U",
+        "rec5ZpPnqZ1EsC7tl",
+        "recy7IzNAy80llPoX",
+        "recqADKc2HLRKcwha"
+      ],
+      "Total Beds": 3,
+      "Notes": "Medical respite subset of total 85 beds.",
+      "Active": true,
+      "Beds Open Now": 0,
+      "Beds Upcoming": 0,
+      "Beds Filled": 3
+    }
+  }
+]

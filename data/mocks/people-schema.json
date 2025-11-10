@@ -1,0 +1,322 @@
+{
+  "id": "tblgfLcOI1iViWkun",
+  "name": "People",
+  "primaryFieldId": "fldMlON7atwGEDFAN",
+  "fields": [
+    {
+      "type": "singleLineText",
+      "id": "fldMlON7atwGEDFAN",
+      "name": "Full Name"
+    },
+    {
+      "type": "date",
+      "options": {
+        "dateFormat": {
+          "name": "local",
+          "format": "l"
+        }
+      },
+      "id": "fldrVRHE9JR1b9F9v",
+      "name": "Date of Birth"
+    },
+    {
+      "type": "formula",
+      "options": {
+        "isValid": true,
+        "formula": "LOWER(\n  SUBSTITUTE({fldMlON7atwGEDFAN}, \" \", \"-\") & \"-\" & DATETIME_FORMAT({fldrVRHE9JR1b9F9v}, 'YYYYMMDD')\n)",
+        "referencedFieldIds": [
+          "fldMlON7atwGEDFAN",
+          "fldrVRHE9JR1b9F9v"
+        ],
+        "result": {
+          "type": "singleLineText"
+        }
+      },
+      "id": "fld9b1fIVEeekmTcr",
+      "name": "Person ID",
+      "description": "Lowercase full name with spaces replaced by dashes, dash, and birthdate as YYYYMMDD."
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblTI5lFeTTGozx5q",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldxP9rWsZApHnaOh"
+      },
+      "id": "fld10m3FhXPGOYf0M",
+      "name": "Bed Types Needed"
+    },
+    {
+      "type": "multipleLookupValues",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fld10m3FhXPGOYf0M",
+        "fieldIdInLinkedTable": "fld7rHX2Giyph1DRL",
+        "result": {
+          "type": "multipleRecordLinks",
+          "options": {
+            "isReversed": false,
+            "prefersSingleRecordLink": false
+          }
+        }
+      },
+      "id": "fld4Gh5Uhukc1uYye",
+      "name": "Providers"
+    },
+    {
+      "type": "singleSelect",
+      "options": {
+        "choices": [
+          {
+            "id": "selnZMQ4MYdHuHBBG",
+            "name": "Unhoused",
+            "color": "redLight2"
+          },
+          {
+            "id": "selmY9tXJz4P37GTr",
+            "name": "Placed",
+            "color": "cyanLight2"
+          },
+          {
+            "id": "selBil2xKK8vQXhvQ",
+            "name": "Exited to Housing",
+            "color": "tealLight2"
+          },
+          {
+            "id": "seljczZSQSUVhOPA9",
+            "name": "Other Exit",
+            "color": "greenLight2"
+          }
+        ]
+      },
+      "id": "fldqpeNxna5Cf6AsG",
+      "name": "Status"
+    },
+    {
+      "type": "singleLineText",
+      "id": "fldyLuux5czodYP3Z",
+      "name": "Phone"
+    },
+    {
+      "type": "email",
+      "id": "fldX739xmxRsA3frc",
+      "name": "Email"
+    },
+    {
+      "type": "multilineText",
+      "id": "fldRpj4drrZCAy3u7",
+      "name": "Notes"
+    },
+    {
+      "type": "createdTime",
+      "options": {
+        "result": {
+          "type": "dateTime",
+          "options": {
+            "dateFormat": {
+              "name": "us",
+              "format": "M/D/YYYY"
+            },
+            "timeFormat": {
+              "name": "12hour",
+              "format": "h:mma"
+            },
+            "timeZone": "utc"
+          }
+        }
+      },
+      "id": "fldl2qGfnvPq0ypgT",
+      "name": "Date Added"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "check",
+        "color": "greenBright"
+      },
+      "id": "fld9dBYGws8EXc3RS",
+      "name": "Pets"
+    },
+    {
+      "type": "multilineText",
+      "id": "fldJ1lXyIVG2nthXX",
+      "name": "Pet name(s) and species"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "check",
+        "color": "greenBright"
+      },
+      "id": "fldNacWuUzRea0m9Z",
+      "name": "Vehicle"
+    },
+    {
+      "type": "multilineText",
+      "id": "fld4CfWQeiW8gwcPV",
+      "name": "Vehicle Details"
+    },
+    {
+      "type": "singleLineText",
+      "id": "fldcIkEIBMP4uQGNs",
+      "name": "VI Score"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "check",
+        "color": "greenBright"
+      },
+      "id": "fldnFxha5jbqu9DTr",
+      "name": "UniteUs"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "check",
+        "color": "greenBright"
+      },
+      "id": "fldogygXUzchl2Smp",
+      "name": "HMIS"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "check",
+        "color": "greenBright"
+      },
+      "id": "fldW9nWv83S827pjX",
+      "name": "Mailing Address"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "check",
+        "color": "greenBright"
+      },
+      "id": "fldy9UdElWFsppJGD",
+      "name": "Employed"
+    },
+    {
+      "type": "multipleSelects",
+      "options": {
+        "choices": [
+          {
+            "id": "sel5wKkdTmH2QLadV",
+            "name": "Wheelchair accessible",
+            "color": "blueLight2"
+          },
+          {
+            "id": "sel0Ra22bYsrOZ5tE",
+            "name": "Ground floor only",
+            "color": "cyanLight2"
+          },
+          {
+            "id": "selm5hyRQr8auAE98",
+            "name": "Grab bars needed",
+            "color": "tealLight2"
+          },
+          {
+            "id": "selhb9zEC5foPvKQl",
+            "name": "Visual accommodations",
+            "color": "greenLight2"
+          },
+          {
+            "id": "selpuWOwrvzYjHZ6q",
+            "name": "Hearing accommodations",
+            "color": "yellowLight2"
+          }
+        ]
+      },
+      "id": "fldz9jUU1EQzUcWnN",
+      "name": "ADA Accommodations"
+    },
+    {
+      "type": "multipleSelects",
+      "options": {
+        "choices": [
+          {
+            "id": "sel8XxSEM1KeimNb7",
+            "name": "Seeking Shelter Placement",
+            "color": "blueLight2"
+          },
+          {
+            "id": "selVDE4EDHDOAjwBW",
+            "name": "Prefers Vehicle",
+            "color": "cyanLight2"
+          },
+          {
+            "id": "selA4jQ0cx4rS7SdU",
+            "name": "Prefers Outdoor/Tent",
+            "color": "tealLight2"
+          },
+          {
+            "id": "sel9BMgqPvmvWu3e6",
+            "name": "Staying with Family/Friends",
+            "color": "greenLight2"
+          },
+          {
+            "id": "selzZGaXRxYPu2C9K",
+            "name": "Unsheltered by Choice",
+            "color": "yellowLight2"
+          },
+          {
+            "id": "selTKmneXfFfGh6Ci",
+            "name": "Undecided",
+            "color": "orangeLight2"
+          },
+          {
+            "id": "selvwC6pslF5FSytF",
+            "name": "Other",
+            "color": "redLight2"
+          }
+        ]
+      },
+      "id": "fld87r2Yl3Hw9aXlo",
+      "name": "Housing Preference"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "heart",
+        "color": "pinkBright"
+      },
+      "id": "fld7zVtxm5SPDM0o9",
+      "name": "Needs Medical Respite"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tbl7zHHtJ14Fyz3zs",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fld4UURPXy8Lw3ff6"
+      },
+      "id": "fldcsZtTs4I3RqEBu",
+      "name": "Waitlist"
+    }
+  ],
+  "views": [
+    {
+      "id": "viwzXSjolVGnO0hhL",
+      "name": "All",
+      "type": "grid"
+    },
+    {
+      "id": "viwKv6PMKOzFzG3oo",
+      "name": "Unhoused",
+      "type": "grid"
+    },
+    {
+      "id": "viwXgZXNbbRWPVdil",
+      "name": "Unhoused (incomplete)",
+      "type": "grid"
+    },
+    {
+      "id": "viwtB1PWLsOCMUDA6",
+      "name": "Referred",
+      "type": "grid"
+    }
+  ]
+}
