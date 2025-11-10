@@ -30,10 +30,10 @@ if (!AIRTABLE_API_KEY || !AIRTABLE_BASE_ID) {
   process.exit(1);
 }
 
-const BED_TYPES_TABLE_ID = "tblTI5lFeTTGozx5q";
+const PROVIDERS_TABLE_ID = "tblTQpGt9Th8ETHPh";
 
-async function fetchBedTypesSchema() {
-  console.log("Fetching Bed Types + Capacity schema from Airtable...\n");
+async function fetchProvidersSchema() {
+  console.log("Fetching Providers schema from Airtable...\n");
 
   try {
     const response = await fetch(
@@ -51,19 +51,19 @@ async function fetchBedTypesSchema() {
 
     const data = await response.json();
 
-    // Find the Bed Types + Capacity table
-    const bedTypesTable = data.tables.find(
-      (table) => table.id === BED_TYPES_TABLE_ID
+    // Find the Providers table
+    const providersTable = data.tables.find(
+      (table) => table.id === PROVIDERS_TABLE_ID
     );
 
-    if (!bedTypesTable) {
-      console.error("Bed Types + Capacity table not found!");
+    if (!providersTable) {
+      console.error("Providers table not found!");
       process.exit(1);
     }
 
-    console.log(`Found table: ${bedTypesTable.name}\n`);
-    console.log(`Fields (${bedTypesTable.fields.length}):`);
-    bedTypesTable.fields.forEach((field) => {
+    console.log(`Found table: ${providersTable.name}\n`);
+    console.log(`Fields (${providersTable.fields.length}):`);
+    providersTable.fields.forEach((field) => {
       console.log(`  - ${field.name} (${field.type})`);
     });
 
@@ -73,24 +73,24 @@ async function fetchBedTypesSchema() {
       "..",
       "data",
       "mocks",
-      "bed-types-schema.json"
+      "providers-schema.json"
     );
-    fs.writeFileSync(schemaPath, JSON.stringify(bedTypesTable, null, 2));
+    fs.writeFileSync(schemaPath, JSON.stringify(providersTable, null, 2));
     console.log(`\n✓ Schema saved to: ${schemaPath}`);
 
-    return bedTypesTable;
+    return providersTable;
   } catch (error) {
     console.error("Error fetching schema:", error);
     process.exit(1);
   }
 }
 
-async function fetchBedTypes() {
-  console.log("\nFetching bed types records from Airtable...\n");
+async function fetchProviders() {
+  console.log("\nFetching providers records from Airtable...\n");
 
   try {
     const response = await fetch(
-      `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${BED_TYPES_TABLE_ID}`,
+      `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${PROVIDERS_TABLE_ID}`,
       {
         headers: {
           Authorization: `Bearer ${AIRTABLE_API_KEY}`,
@@ -104,17 +104,17 @@ async function fetchBedTypes() {
 
     const data = await response.json();
 
-    console.log(`Found ${data.records.length} bed types:\n`);
+    console.log(`Found ${data.records.length} providers:\n`);
 
     data.records.forEach((record, index) => {
-      const name = record.fields["Bed Group Name"] || "(no name)";
-      const status = record.fields["Status"] || "(no status)";
-      const capacity = record.fields["Capacity"] || "(no capacity)";
-      const provider = record.fields["Provider"] || [];
-      console.log(`${index + 1}. ${name} [${status}] - Capacity: ${capacity}`);
+      const name = record.fields["Name"] || "(no name)";
+      const bedTypes = record.fields["Bed Types + Capacity"] || [];
+      const totalBeds = record.fields["Total Beds"] || 0;
+      console.log(`${index + 1}. ${name}`);
       console.log(`   ID: ${record.id}`);
-      if (provider.length > 0) {
-        console.log(`   Provider IDs: ${provider.join(", ")}`);
+      console.log(`   Total Beds: ${totalBeds}`);
+      if (bedTypes.length > 0) {
+        console.log(`   Bed Types: ${bedTypes.length} types`);
       }
       console.log("");
     });
@@ -125,20 +125,21 @@ async function fetchBedTypes() {
       "..",
       "data",
       "mocks",
-      "bed-types.json"
+      "providers.json"
     );
     fs.writeFileSync(outputPath, JSON.stringify(data.records, null, 2));
-    console.log(`✓ Bed types saved to: ${outputPath}`);
+    console.log(`✓ Providers saved to: ${outputPath}`);
   } catch (error) {
-    console.error("Error fetching bed types:", error);
+    console.error("Error fetching providers:", error);
     process.exit(1);
   }
 }
 
 async function main() {
-  await fetchBedTypesSchema();
-  await fetchBedTypes();
-  console.log("\n✅ Bed Types fetch complete!");
+  await fetchProvidersSchema();
+  await fetchProviders();
+  console.log("\n✅ Providers fetch complete!");
 }
 
 main();
+

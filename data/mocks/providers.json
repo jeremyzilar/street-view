@@ -1,0 +1,264 @@
+[
+  {
+    "id": "rec91J0d2eJjQLN3W",
+    "createdTime": "2025-09-01T17:28:22.000Z",
+    "fields": {
+      "Name": "Casa Familia",
+      "Capacity / Layout": "~45 beds: 20 for women; 2 respite; 5 family rooms (up to 5 each)",
+      "Operator": "St. Elizabeth’s",
+      "Population served": "Women and families",
+      "Entry / Referral Process": "Call to join waitlist; intake required; 24 hours to respond if contacted",
+      "Entry Criteria": "Breathalyzer + drug test (dirty UA okay if trending down); Emotional support animals allowed (if safe)",
+      "Services & Amenities": "Food (staples, shared kitchen); Laundry; Case management + therapy; Van transport M–F 9–2; Services for non-guests (food, clothing)",
+      "Notes": "Length of stay variable, set by staff",
+      "Bed Types": [
+        "recA1mxPROScNTAD6",
+        "recA2HEjmy46Zz5KE",
+        "recJQ852bannc7UuF"
+      ],
+      "Total beds": 47,
+      "Website": "https://casafamiliainc.org/",
+      "Phone": "505-983-2042",
+      "Donate URL": "https://casafamiliainc.org/ways-to-give-new/",
+      "Volunteer URL": "https://casafamiliainc.org/volunteer-3/",
+      "Publish": true,
+      "People": [
+        "recq355BNH9RTgMiQ"
+      ],
+      "Beds Filled": 1
+    }
+  },
+  {
+    "id": "recAjEAlCIqhQsCku",
+    "createdTime": "2025-09-01T17:27:06.000Z",
+    "fields": {
+      "Name": "Esperanza",
+      "Capacity / Layout": "30 beds (9 bedrooms ~4 beds each; some singles)",
+      "Operator": "Esperanza",
+      "Population served": "Survivors of domestic violence; high-lethality cases",
+      "Entry / Referral Process": "Hotline only; beds can be held for 24 hours",
+      "Entry Criteria": "Service animals only (vaccines required); no detoxing, drugs, alcohol, or paraphernalia",
+      "Services & Amenities": "Food (dry goods/snacks, shared kitchen); ADA-accessible bathrooms/showers; Laundry; Onsite: clinical services, legal advocacy, case management; No services for non-guests",
+      "Notes": "90-day max stay; No curfew; No case management requirement",
+      "Bed Types": [
+        "recWhJHWlxhJCUUc8"
+      ],
+      "Total beds": 30,
+      "Website": "https://esperanzashelter.org/",
+      "Donate URL": "https://esperanzashelter.org/support-us/",
+      "Volunteer URL": "https://esperanzashelter.org/volunteer/",
+      "Publish": true,
+      "People": [
+        "recYLKPILOAn7A52Y",
+        "recgrMWMVvlQZR8Rr",
+        "recNAUBvO8YtWMG35",
+        "recgFVjKzT2RVQIrE",
+        "recpoBmZzs5Y4srJl",
+        "reczalOTTUXQsjsxA"
+      ],
+      "Beds Filled": 6
+    }
+  },
+  {
+    "id": "recFenTcUcimkyVOR",
+    "createdTime": "2025-09-18T21:51:22.000Z",
+    "fields": {
+      "Name": "Interfaith Community Shelter",
+      "Operator": "Interfaith Community Shelter",
+      "Total beds": 0,
+      "Donations needed": [
+        "recwiZdPfFSavxAT1"
+      ],
+      "Website": "https://interfaithsheltersf.org/",
+      "Donate URL": "https://interfaithsheltersf.org/donate/",
+      "Beds Filled": 0
+    }
+  },
+  {
+    "id": "recFy1oAT87eRU6KX",
+    "createdTime": "2025-09-01T17:15:38.000Z",
+    "fields": {
+      "Name": "Arroyo Chamiso",
+      "Capacity / Layout": "10 units (1–2 people each)",
+      "Operator": "The Life Link",
+      "Population served": "Adults experiencing street homelessness; no children",
+      "Entry / Referral Process": "Referrals only through street outreach; not advertised publicly; shelters cannot refer",
+      "Entry Criteria": "No sobriety requirement; sex offenders allowed; must engage with case worker & pursue housing goal",
+      "Services & Amenities": "Pets allowed (max 2 per unit); Detached restroom & hygiene units; 2 meals/day for residents; No services for non-residents; Not ADA accessible; No bus line (outreach team transports)",
+      "Bed Types": [
+        "recBTyhWRG9EJWm0V"
+      ],
+      "Total beds": 10,
+      "Website": "https://www.thelifelink.org/",
+      "Phone": "(505) 438-0010",
+      "Donate URL": "https://www.thelifelink.org/support-our-work",
+      "Publish": true,
+      "People": [
+        "recCUEsMDDO4dcGHZ"
+      ],
+      "Beds Filled": 1
+    }
+  },
+  {
+    "id": "recKrlSdBu8hD1K8B",
+    "createdTime": "2025-09-01T17:29:30.000Z",
+    "fields": {
+      "Name": "Men’s Shelter",
+      "Capacity / Layout": "28 beds (18+ men; dorm w/ bunks)",
+      "Operator": "St. Elizabeth’s",
+      "Population served": "Adult men",
+      "Entry / Referral Process": "Walk-ins at 3pm; referrals scheduled separately",
+      "Entry Criteria": "High-barrier (alcohol/drug test required; no detox); Sex offenders accepted; ESAs w/ documentation",
+      "Services & Amenities": "2 meals/day; Showers & laundry for guests; Case management + therapy; Inreach program (food, clothing, hygiene, mail)",
+      "Notes": "Must leave 9am–2pm daily; Length of stay depends on progress toward goals",
+      "Bed Types": [
+        "rec6BYXTiszjS4Fiy"
+      ],
+      "Total beds": 28,
+      "Website": "https://www.steshelter.org/",
+      "Phone": "505-982-6611",
+      "Donate URL": "https://www.steshelter.org/donate",
+      "Volunteer URL": "https://www.steshelter.org/volunteer-c1eda",
+      "Publish": true,
+      "People": [
+        "recymgauSVOhVntfx",
+        "rechfz3P9sdiEn8xX"
+      ],
+      "Beds Filled": 2
+    }
+  },
+  {
+    "id": "recpD8WGAmSWmMVGA",
+    "createdTime": "2025-09-01T17:15:38.000Z",
+    "fields": {
+      "Name": "Agape",
+      "Capacity / Layout": "85 beds total, including 5 medical (3 women, 2 men)",
+      "Operator": "Urban Alchemy",
+      "Population served": "Adults (18+)",
+      "Entry / Referral Process": "Low-barrier; no set length of stay; 24/7 access",
+      "Entry Criteria": "Pets allowed (non-violent, muzzles if required); drug-free zone; sobriety not required; only exit violent guests",
+      "Services & Amenities": "3 meals/day; Oasis serves ~100 meals/day to non-guests; Laundry; Transportation provided; Weekly case management/care coordination",
+      "Notes": "28 people on waitlist",
+      "Bed Types": [
+        "recciLDFYDBYcFnYm",
+        "rectXD3HXYmYP016w",
+        "rec9b2J2UTwKTpD5C"
+      ],
+      "Total beds": 85,
+      "Donations needed": [
+        "receuiMV6gh9mj37T",
+        "recq6lZh4jN7rstMw"
+      ],
+      "Website": "https://urban-alchemy.us/cities/santa-fe/",
+      "Donate URL": "https://urban-alchemy.us/donate/",
+      "Publish": true,
+      "People": [
+        "rec0aROLKuFzT1cJf",
+        "rec2ahzbYkHjA3GZ6",
+        "rec3XLpiI5RCJsqPo",
+        "rec5UZOkDlAGi8rUj",
+        "rec7EpvYgHRAPlkZT",
+        "recBFMLakRZ465srd",
+        "recDIM9b4qCrMlsYM",
+        "recHdu4GPBlYrZcCJ",
+        "recLeWe6rbn3ywLZ6",
+        "recahaz5lRLf8Vp2b",
+        "recbxAPb9SyJI18SO",
+        "recigQBd7QktDlahe",
+        "recZXkfokW49RHqe7",
+        "recgThHN378T6ZA6B",
+        "recnU6bcYscF4H8yI",
+        "recnf8WLgDfzAszRV",
+        "reczWQuyaZLFe3p61"
+      ],
+      "Beds Filled": 17
+    }
+  },
+  {
+    "id": "recqVEVaTTdv9kBxY",
+    "createdTime": "2025-09-01T17:15:38.000Z",
+    "fields": {
+      "Name": "Consuelo’s Place",
+      "Capacity / Layout": "60 rooms (30 singles/adult couples; 30 family suites); Expansion: 10+ congregate overflow",
+      "Operator": "Consuelo’s Place",
+      "Population served": "Individuals, couples, families; Priority: 55+, LGBTQ+, Veterans, Medical Respite",
+      "Entry / Referral Process": "Referrals 1st–5th of each month; must be engaged in case management toward housing goal",
+      "Entry Criteria": "No sex offenders; not detoxing; service dogs allowed; sobriety not required",
+      "Services & Amenities": "Food (YW dinners, supplies for girls); Shared showers for guests; Case management required; No services for non-guests; No bus line access",
+      "Notes": "28 people on waitlist",
+      "Bed Types": [
+        "recSKAwnyMFB1N2qK",
+        "reclIU5ZYnCmzhB8b",
+        "recqysbkrelgYADCo",
+        "rec5rstKxttDwp71g"
+      ],
+      "Total beds": 70,
+      "Team": [
+        "recleIA9URDxm8p6O"
+      ],
+      "Donations needed": [
+        "recjA5OeaqqNGJUxY",
+        "recfEtlCuagmqNRip",
+        "recHzfFOFH7TnB2M8",
+        "recSgvWVruKXiHrbT",
+        "recLFgToAyw5qSMKR",
+        "recbVKQeVAawvvN6Q"
+      ],
+      "Website": "https://interfaithsheltersf.org/consuelosplace/",
+      "Phone": "505-372-8206",
+      "Donate URL": "https://interfaithsheltersf.org/donate/",
+      "Publish": true,
+      "People": [
+        "recMl7gGwozCAH2YL",
+        "recIC3YurbGMiBv3a",
+        "recTouDRtUb6MpMMM",
+        "recTRuvjj7bqv2ROe",
+        "recTSGMcpEUEKYccB",
+        "recVkUorN8h90PiFe",
+        "recYXIuvKn4QUN7AV",
+        "recr1mpWeBhGI3fXs",
+        "rec0PyL5lB3lSIYCu",
+        "recfPXVOvkrq3LNkB",
+        "recZe1c7RMDlGicOS",
+        "recFm9aOvMuVz5asC",
+        "recoMdkmKyCWL23Kd",
+        "reczv4Lg66Ehch2DP",
+        "rec43kt2PW1brJN9A",
+        "recBJVF4jecuR7lUZ",
+        "recFBhTScCTVDRi4X",
+        "rectN8ljfM2rvlPJt",
+        "rec0ebxt0W5yMDdOy",
+        "rec22NymdKgYaMR11",
+        "rec2X5ioAXFzFvT4p",
+        "rec35EpJJnHPkT9wE",
+        "rec35KDWH64BFTyTb",
+        "rec3LQ9tjuvjituOn",
+        "rec44gRfqIFaocsvO",
+        "rec2vbzMFGkvB5jos",
+        "rec5r61MGwbq8VJSt",
+        "recNHrWxHrmrFpjx0",
+        "reccfiEVrjUBUVBRh",
+        "recjwcIAoxlFhItoN",
+        "reclweDQEvXVFA2Sk",
+        "recmt4RBGrZy6lYv9",
+        "recsnfEOBEUIe43yj",
+        "recvvJUoi8eHHrVJR",
+        "recxVBGPiP0JBBdAA",
+        "recy67euIiLVwiPOx",
+        "recyuQimiVF2Mq2Fi",
+        "rec01BXO825hXOFUR",
+        "rec3Q7KmyK95d69yg",
+        "recC8fIsYfyVrZS8n",
+        "recHblFQ3lfndnNCA",
+        "recIEp4GlxnVUQ8FR",
+        "recLe1VAA48nKcn5Z",
+        "recNdmfuBgler4pHL",
+        "recPWl1qC1Ehxczt8",
+        "rec4ra0COL4X79ROP",
+        "recD7OIYtAp2mTIoz",
+        "recVIT4JFnl740D3r"
+      ],
+      "Beds Filled": 48
+    }
+  }
+]

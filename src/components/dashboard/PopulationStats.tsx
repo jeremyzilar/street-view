@@ -55,4 +55,3 @@ export function PopulationStats({ stats }: PopulationStatsProps) {
     </div>
   );
 }
-

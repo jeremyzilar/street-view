@@ -7,7 +7,10 @@ This directory contains mock data for the People table in Airtable.
 - **`people-mock-data.json`** - 485 mock records in JSON format
 - **`people-mock-data.csv`** - 485 mock records in CSV format (ready for Airtable import)
 - **`people-schema.json`** - The actual schema from your Airtable People table
-- **`bed-types.json`** - The bed types from your Airtable "Bed Types + Capacity" table
+- **`bed-types.json`** - The bed types from your Airtable "Bed Types + Capacity" table (with Active status)
+- **`bed-types-schema.json`** - Schema from the Bed Types + Capacity table
+- **`providers.json`** - The providers/shelters from your Airtable Providers table
+- **`providers-schema.json`** - Schema from the Providers table
 - **`dashboard-overview-schema.json`** - Schema from the Dashboard Overview table
 - **`dashboard-overview-data.json`** - Aggregate statistics from the Dashboard Overview table
 
@@ -15,12 +18,20 @@ This directory contains mock data for the People table in Airtable.
 
 ### Records Generated: 485
 
+**Key Updates:**
+- **260 people (53.6%)** are Status="In Shelter" with assigned shelters and bed types
+- **Only Active bed types** are used (12 out of 13 total bed types)
+- **Shelter assignments** are based on bed type availability and provider capacity
+- Each person "In Shelter" is assigned to a specific provider and occupying a specific bed type
+
+### Records Generated: 485
+
 ### Status Distribution
 
-- **Unhoused**: ~73% (majority)
-- **Placed**: ~12%
-- **Exited to Housing**: ~11%
-- **Other Exit**: ~4%
+- **In Shelter**: 260 people (53.6%) - Currently placed in a shelter with assigned provider and bed type
+- **Unhoused**: ~161 people (33.2%) - Not in permanent housing or shelter
+- **Exited to Housing**: ~41 people (8.5%) - Successfully housed
+- **Other Exit**: ~23 people (4.7%) - Other reasons for exit
 
 ### Field Details
 
@@ -28,14 +39,16 @@ This directory contains mock data for the People table in Airtable.
 - **Date of Birth**: Ages 16-90
 - **Phone**: All numbers start with `505-555-XXXX`
 - **Email**: Format: `firstname_lastname@example.com`
-- **Bed Types Needed**: 1-3 bed type **names** (comma-separated format: `"Type 1,Type 2"`) based on demographics
-- **Status**: Weighted distribution favoring "Unhoused"
+- **Bed Types Needed**: 1-3 bed type **IDs** (comma-separated format: `"rec123, rec456"`) based on demographics, **Active bed types only**
+- **Status**: "In Shelter" (260), "Unhoused", "Exited to Housing", or "Other Exit"
+- **Shelter**: Provider record ID (only for "In Shelter" status) - which shelter they are currently in
+- **Bed Type**: Single bed type ID (only for "In Shelter" status) - the specific bed they are occupying
 - **Notes**: Realistic case notes (1-3 sentences per person)
 - **Pets**: ~33% have pets (checkbox)
 - **Pet name(s) and species**: Names and species for those with pets
 - **Vehicle**: ~33% have vehicles (checkbox)
 - **Vehicle Details**: Vehicle type and condition
-- **VI Score**: 70-99 (only for "Placed" status)
+- **VI Score**: 70-99 (only for "In Shelter" status)
 - **UniteUs**: 33% are in UniteUs
 - **HMIS**: 21% are in HMIS
 - **Mailing Address**: 39% have a mailing address
@@ -47,10 +60,12 @@ This directory contains mock data for the People table in Airtable.
 
 ### Bed Type Assignment Logic
 
-Bed types are assigned as **names** (not IDs) in Airtable's CSV import format:
+Bed types are assigned as **record IDs** in Airtable's CSV import format:
 
-**CSV Format**: `"Medical Respite – Women,General Adult Beds"` (comma-separated within quotes)
-**JSON Format**: `["Medical Respite – Women", "General Adult Beds"]` (array of strings)
+**CSV Format**: `"rec123, rec456, rec789"` (comma-separated IDs with spaces within quotes)
+**JSON Format**: `["rec123", "rec456", "rec789"]` (array of ID strings)
+
+**Important**: Only **Active bed types** are used (12 out of 13 total). "Congregate Overflow" is excluded as it's not marked Active.
 
 Logic based on demographics:
 
@@ -64,6 +79,27 @@ Logic based on demographics:
 - **Family Status**: 10% assigned to Family Suites (High/Low Barrier) or Family Rooms
 - **Domestic Violence**: 5% assigned to "DV Shelter Beds (Shared Bedrooms)"
 - **Flexibility**: 40% also accept Overflow beds ("Congregate Overflow" or "Non-Congregate Units")
+
+### Shelter Placement Logic (for "In Shelter" status)
+
+For the 260 people with Status="In Shelter":
+
+1. **Bed Type Selection**: Randomly select ONE bed type from their "Bed Types Needed" list
+2. **Provider Match**: Find which provider(s) offer that bed type
+3. **Capacity Check**: Assign to provider with available capacity (soft cap of ~60 per provider)
+4. **Fallback**: If provider is full, try different bed type from their list
+5. **Assignment**: Set both "Shelter" (provider ID) and "Bed Type" (occupied bed ID)
+
+**Result**: 226 out of 260 "In Shelter" people successfully assigned (34 had no matching bed types/providers)
+
+**Provider Distribution** (from latest generation):
+- Agape: 63 people
+- Casa Familia: 53 people
+- Consuelo's Place: 47 people
+- Men's Shelter: 29 people
+- Arroyo Chamiso: 28 people
+- Esperanza: 6 people
+- Interfaith Community Shelter: 0 people
 
 ### Excluded Fields
 
@@ -84,9 +120,11 @@ Logic based on demographics:
 7. Click "Import"
 
 **Important Notes**:
-- Bed types are stored as **names** (e.g., "Medical Respite – Women,General Adult Beds") which Airtable will automatically link to the correct records in the "Bed Types + Capacity" table
+- **Bed Types Needed** are stored as record IDs (e.g., `"rec123, rec456"`) which Airtable will automatically link
+- **Shelter** and **Bed Type** are also record IDs that will link to Providers and Bed Types tables
 - Airtable will auto-generate `Person ID` based on your formula field
-- The import recognizes comma-separated bed type names and creates the proper linked records
+- The import recognizes comma-separated IDs and creates the proper linked records
+- Only Active bed types are included in the data
 
 ### Method 2: Copy-Paste from CSV
 

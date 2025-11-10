@@ -1,0 +1,167 @@
+{
+  "id": "tblTQpGt9Th8ETHPh",
+  "name": "Providers",
+  "primaryFieldId": "fldlii63YzkPRNAH9",
+  "fields": [
+    {
+      "type": "singleLineText",
+      "id": "fldlii63YzkPRNAH9",
+      "name": "Name"
+    },
+    {
+      "type": "singleLineText",
+      "id": "fldUlUlyeEQUKx8si",
+      "name": "Operator"
+    },
+    {
+      "type": "multilineText",
+      "id": "fldJfWo5oYorjTiS0",
+      "name": "Capacity / Layout"
+    },
+    {
+      "type": "multilineText",
+      "id": "fldXqTL15zuPWqbfu",
+      "name": "Population served"
+    },
+    {
+      "type": "multilineText",
+      "id": "fldpaJ2jjX7wccB7i",
+      "name": "Entry / Referral Process"
+    },
+    {
+      "type": "multilineText",
+      "id": "flddOhuRZGhN1vbui",
+      "name": "Entry Criteria"
+    },
+    {
+      "type": "multilineText",
+      "id": "fldXdFMk0XO2C2eHK",
+      "name": "Services & Amenities"
+    },
+    {
+      "type": "multilineText",
+      "id": "fldk4fxHK23FtMDN8",
+      "name": "Notes"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblTI5lFeTTGozx5q",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fld7rHX2Giyph1DRL"
+      },
+      "id": "fldX0KH9gqwpMJceE",
+      "name": "Bed Types"
+    },
+    {
+      "type": "rollup",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldX0KH9gqwpMJceE",
+        "fieldIdInLinkedTable": "fldENpkW2euIIgEgG",
+        "referencedFieldIds": [],
+        "result": {
+          "type": "number",
+          "options": {
+            "precision": 0
+          }
+        }
+      },
+      "id": "fld7sUrvwm0YeqxqF",
+      "name": "Total beds"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldSdGiEUGtriUyEb"
+      },
+      "id": "fldr3ZxTyFhAiIDpg",
+      "name": "Beds Filled"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblkPblJxjB8XsE0c",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldzqHEjQHAgZMOAJ"
+      },
+      "id": "fldwfcl8Le1sOduiv",
+      "name": "Donations needed"
+    },
+    {
+      "type": "url",
+      "id": "fldcKhzdPVcdOY8sV",
+      "name": "Website"
+    },
+    {
+      "type": "phoneNumber",
+      "id": "fldPOm4QB5X87bpTS",
+      "name": "Phone"
+    },
+    {
+      "type": "url",
+      "id": "fldMBPSac528UuCIQ",
+      "name": "Donate URL"
+    },
+    {
+      "type": "url",
+      "id": "fldQeZO8rfJnVNjYH",
+      "name": "Volunteer URL"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "check",
+        "color": "greenBright"
+      },
+      "id": "fldtAuU8hJnHcWAAl",
+      "name": "HIPAA Org"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "check",
+        "color": "greenBright"
+      },
+      "id": "fldTcCHayVYzW4DWg",
+      "name": "Publish"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblgfLcOI1iViWkun",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldBx6OInJ8HQtomI"
+      },
+      "id": "fldSdGiEUGtriUyEb",
+      "name": "People"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblrNE27jkp9vWLFF",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldDcZiFOO5I18lqG"
+      },
+      "id": "fldJt0h0R3Z9lg7HI",
+      "name": "Team"
+    }
+  ],
+  "views": [
+    {
+      "id": "viwKYxZf8WwBBUn1T",
+      "name": "All",
+      "type": "grid"
+    },
+    {
+      "id": "viwmVHRfGGhAp34au",
+      "name": "Gallery",
+      "type": "gallery"
+    }
+  ]
+}

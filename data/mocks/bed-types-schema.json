@@ -1,0 +1,135 @@
+{
+  "id": "tblTI5lFeTTGozx5q",
+  "name": "Bed Types + Capacity",
+  "primaryFieldId": "fldyeAOIXzDmmNQ2I",
+  "fields": [
+    {
+      "type": "singleLineText",
+      "id": "fldyeAOIXzDmmNQ2I",
+      "name": "Bed Group Name"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblTQpGt9Th8ETHPh",
+        "isReversed": false,
+        "prefersSingleRecordLink": true,
+        "inverseLinkFieldId": "fldX0KH9gqwpMJceE"
+      },
+      "id": "fld7rHX2Giyph1DRL",
+      "name": "Provider"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblTHG6J3nTuYF693",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldAHYyZOX8gNYBKM"
+      },
+      "id": "fldGYYzxD38JeBuMv",
+      "name": "Bed Type(s)"
+    },
+    {
+      "type": "multilineText",
+      "id": "fldRM0xKGBP5wDnuH",
+      "name": "Notes"
+    },
+    {
+      "type": "checkbox",
+      "options": {
+        "icon": "thumbsUp",
+        "color": "greenBright"
+      },
+      "id": "fld2UG08RmOv5aEeQ",
+      "name": "Active"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblU46mPjx84fjNjZ",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldaZ564VAYW9LTnD"
+      },
+      "id": "fldN50idMJhNf16lg",
+      "name": "Availability Reports"
+    },
+    {
+      "type": "number",
+      "options": {
+        "precision": 0
+      },
+      "id": "fldENpkW2euIIgEgG",
+      "name": "Total Beds"
+    },
+    {
+      "type": "count",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldxP9rWsZApHnaOh"
+      },
+      "id": "fldZRb2vFpQprvAE2",
+      "name": "Beds Filled Now"
+    },
+    {
+      "type": "multipleLookupValues",
+      "options": {
+        "isValid": true,
+        "recordLinkFieldId": "fldN50idMJhNf16lg",
+        "fieldIdInLinkedTable": "fldxHfrtpmeW6TnHs",
+        "result": {
+          "type": "date",
+          "options": {
+            "dateFormat": {
+              "name": "friendly",
+              "format": "LL"
+            }
+          }
+        }
+      },
+      "id": "fldOOafBom4nsbcA7",
+      "name": "Date available"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblgfLcOI1iViWkun",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fld10m3FhXPGOYf0M"
+      },
+      "id": "fldxP9rWsZApHnaOh",
+      "name": "People in Need"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblyqwTuZAkdk08WL",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldaUXpGDHXkz6knW"
+      },
+      "id": "fldKVrQMrLheGA33A",
+      "name": "Dashboard Overview"
+    },
+    {
+      "type": "multipleRecordLinks",
+      "options": {
+        "linkedTableId": "tblgfLcOI1iViWkun",
+        "isReversed": false,
+        "prefersSingleRecordLink": false,
+        "inverseLinkFieldId": "fldg4lhypHE81Vu7o"
+      },
+      "id": "fldVlroXlAyx2Bj5t",
+      "name": "People Assigned"
+    }
+  ],
+  "views": [
+    {
+      "id": "viwb9bIcuF1rlcxRe",
+      "name": "All",
+      "type": "grid"
+    }
+  ]
+}

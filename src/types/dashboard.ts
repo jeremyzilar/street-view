@@ -139,9 +139,7 @@ export function transformDashboardData(
     {
       name: "Medical Respite – Men",
       demand: fields["Medical Respite – Men Demand (Unhoused)"] || 0,
-      available: parseAvailable(
-        fields["Medical Respite – Men Beds Available"]
-      ),
+      available: parseAvailable(fields["Medical Respite – Men Beds Available"]),
       gap: calculateGap(
         fields["Medical Respite – Men Demand (Unhoused)"] || 0,
         fields["Medical Respite – Men Beds Available"]
@@ -170,7 +168,9 @@ export function transformDashboardData(
     {
       name: "Adult Singles & Couples",
       demand: fields["Adult Singles & Couples Demand (Unhoused)"] || 0,
-      available: parseAvailable(fields["Adult Singles & Couples Beds Available"]),
+      available: parseAvailable(
+        fields["Adult Singles & Couples Beds Available"]
+      ),
       gap: calculateGap(
         fields["Adult Singles & Couples Demand (Unhoused)"] || 0,
         fields["Adult Singles & Couples Beds Available"]
@@ -263,4 +263,3 @@ export function transformDashboardData(
     },
   };
 }
-

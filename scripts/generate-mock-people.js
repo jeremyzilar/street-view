@@ -12,12 +12,53 @@ const bedTypesPath = path.join(
 let bedTypesData = [];
 try {
   bedTypesData = JSON.parse(fs.readFileSync(bedTypesPath, "utf8"));
+  console.log(`✓ Loaded ${bedTypesData.length} bed types`);
 } catch (error) {
   console.error(
     "Warning: Could not load bed-types.json. Run fetch-bed-types.js first."
   );
   console.error("Continuing without bed type assignments...\n");
 }
+
+// Filter to only Active bed types
+const activeBedTypes = bedTypesData.filter((bt) => bt.fields.Active === true);
+console.log(`✓ Filtered to ${activeBedTypes.length} active bed types\n`);
+
+// Load providers from the JSON file
+const providersPath = path.join(
+  __dirname,
+  "..",
+  "data",
+  "mocks",
+  "providers.json"
+);
+let providersData = [];
+try {
+  providersData = JSON.parse(fs.readFileSync(providersPath, "utf8"));
+  console.log(`✓ Loaded ${providersData.length} providers\n`);
+} catch (error) {
+  console.error(
+    "Warning: Could not load providers.json. Run fetch-providers.js first."
+  );
+  console.error("Continuing without shelter assignments...\n");
+}
+
+// Create a map of bed type ID to provider ID(s)
+const bedTypeToProvider = {};
+activeBedTypes.forEach((bedType) => {
+  const providers = bedType.fields.Provider || [];
+  if (providers.length > 0) {
+    bedTypeToProvider[bedType.id] = providers;
+  }
+});
+
+// Track provider occupancy
+const providerOccupancy = {};
+providersData.forEach((provider) => {
+  providerOccupancy[provider.id] = 0;
+});
+
+console.log("Provider capacity tracking initialized\n");
 
 // Sample names
 const firstNamesMale = [
@@ -456,17 +497,17 @@ const housingPreferences = [
   "Other",
 ];
 
-// Create a mapping of bed type names to IDs
+// Create a mapping of bed type names to IDs (only Active bed types)
 const nameToIdMap = {};
-if (bedTypesData && bedTypesData.length > 0) {
-  bedTypesData.forEach((bedType) => {
+if (activeBedTypes && activeBedTypes.length > 0) {
+  activeBedTypes.forEach((bedType) => {
     const name = bedType.fields["Bed Group Name"];
     if (name && !nameToIdMap[name]) {
       nameToIdMap[name] = bedType.id;
     }
   });
   console.log(
-    `\nLoaded ${Object.keys(nameToIdMap).length} bed type mappings from Airtable\n`
+    `✓ Created ${Object.keys(nameToIdMap).length} active bed type mappings\n`
   );
 }
 
@@ -548,12 +589,22 @@ function selectBedTypes(isMale, age, hasPets) {
 }
 
 // Weighted status selection (70% Unhoused, 15% Placed, 10% Exited, 5% Other)
+// Status counter to ensure exactly 260 "In Shelter"
+let inShelterCount = 0;
+const MAX_IN_SHELTER = 260;
+
 function getRandomStatus() {
+  // First 260 people will be "In Shelter"
+  if (inShelterCount < MAX_IN_SHELTER) {
+    inShelterCount++;
+    return "In Shelter";
+  }
+
+  // Remaining 225 distributed among other statuses
   const rand = Math.random();
-  if (rand < 0.7) return "Unhoused";
-  if (rand < 0.85) return "Placed";
-  if (rand < 0.95) return "Exited to Housing";
-  return "Other Exit";
+  if (rand < 0.70) return "Unhoused"; // ~158 people
+  if (rand < 0.90) return "Exited to Housing"; // ~45 people
+  return "Other Exit"; // ~22 people
 }
 
 function getRandomElement(arr) {
@@ -590,6 +641,48 @@ function generateNotes() {
     selectedNotes.push(getRandomElement(notesTemplates));
   }
   return selectedNotes.join(". ") + ".";
+}
+
+// Assign shelter and occupied bed type for "In Shelter" people
+function assignShelterPlacement(bedTypesNeeded) {
+  if (!bedTypesNeeded || bedTypesNeeded.length === 0) {
+    return { shelter: null, bedType: null };
+  }
+
+  // Shuffle bed types to try them in random order
+  const shuffledBedTypes = [...bedTypesNeeded].sort(() => Math.random() - 0.5);
+
+  for (const bedTypeId of shuffledBedTypes) {
+    // Find providers that offer this bed type
+    const providerIds = bedTypeToProvider[bedTypeId];
+
+    if (!providerIds || providerIds.length === 0) {
+      continue; // No provider offers this bed type
+    }
+
+    // Try each provider for this bed type
+    for (const providerId of providerIds) {
+      // Check if provider has capacity (no hard limit set, so we track informally)
+      // For mock data, we'll allow reasonable distribution
+      if (providerOccupancy[providerId] < 60) {
+        // Arbitrary cap per provider
+        providerOccupancy[providerId]++;
+        return { shelter: providerId, bedType: bedTypeId };
+      }
+    }
+  }
+
+  // If all providers are full for all bed types, assign to first available anyway
+  // This ensures all "In Shelter" people get placed
+  const firstBedType = shuffledBedTypes[0];
+  const firstProviderId = bedTypeToProvider[firstBedType]?.[0];
+
+  if (firstProviderId) {
+    providerOccupancy[firstProviderId]++;
+    return { shelter: firstProviderId, bedType: firstBedType };
+  }
+
+  return { shelter: null, bedType: null };
 }
 
 function generatePerson() {
@@ -692,10 +785,19 @@ function generatePerson() {
     vehicleDetails = `${vehicle} - ${getRandomElement(condition)}`;
   }
 
-  // VI Score only for Placed status
-  const viScore = status === "Placed" ? String(getRandomInt(70, 99)) : "";
+  // VI Score only for In Shelter status
+  const viScore = status === "In Shelter" ? String(getRandomInt(70, 99)) : "";
 
   const dateAdded = generateDateAdded();
+
+  // Assign shelter and bed type for "In Shelter" people
+  let shelter = null;
+  let bedType = null;
+  if (status === "In Shelter") {
+    const placement = assignShelterPlacement(bedTypesNeeded);
+    shelter = placement.shelter;
+    bedType = placement.bedType;
+  }
 
   return {
     "Full Name": fullName,
@@ -704,6 +806,8 @@ function generatePerson() {
     Email: email,
     "Bed Types Needed": bedTypesNeeded,
     Status: status,
+    Shelter: shelter,
+    "Bed Type": bedType,
     Notes: notes,
     Pets: hasPets,
     "Pet name(s) and species": petNamesList,
@@ -767,6 +871,8 @@ const headers = [
   "Email",
   "Bed Types Needed",
   "Status",
+  "Shelter",
+  "Bed Type",
   "Notes",
   "Pets",
   "Pet name(s) and species",
@@ -919,6 +1025,27 @@ Object.entries(bedTypeCounts)
   .forEach(([bedType, count]) => {
     const percent = ((count / people.length) * 100).toFixed(1);
     console.log(`  ${bedType}: ${count} (${percent}%)`);
+  });
+
+// Shelter placement statistics
+const inShelterPeople = people.filter((p) => p.Status === "In Shelter");
+const withShelterAssignment = inShelterPeople.filter((p) => p.Shelter).length;
+const withBedTypeAssignment = inShelterPeople.filter((p) => p["Bed Type"])
+  .length;
+
+console.log("\nShelter Placement Statistics:");
+console.log(`  People "In Shelter": ${inShelterPeople.length}`);
+console.log(`  Assigned to Shelter: ${withShelterAssignment}`);
+console.log(`  Assigned Bed Type: ${withBedTypeAssignment}`);
+
+// Provider occupancy breakdown
+console.log("\nProvider Occupancy:");
+Object.entries(providerOccupancy)
+  .sort(([, a], [, b]) => b - a)
+  .forEach(([providerId, count]) => {
+    const provider = providersData.find((p) => p.id === providerId);
+    const name = provider ? provider.fields.Name : providerId;
+    console.log(`  ${name}: ${count} people`);
   });
 
 console.log("\n✅ Mock data generation complete!");
