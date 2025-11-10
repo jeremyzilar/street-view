@@ -6,30 +6,10 @@ import { PopulationStats } from "@/components/dashboard/PopulationStats";
 import { CurrentNeedsCard } from "@/components/dashboard/CurrentNeedsCard";
 import { BedAvailability } from "@/components/dashboard/BedAvailability";
 import { SystemCoverage } from "@/components/dashboard/SystemCoverage";
-import type { DashboardData } from "@/types/dashboard";
-
-async function getDashboardData(): Promise<DashboardData | null> {
-  try {
-    // Use absolute URL for server-side fetch
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-    const response = await fetch(`${baseUrl}/api/dashboard`, {
-      next: { revalidate: 300 }, // Revalidate every 5 minutes
-    });
-
-    if (!response.ok) {
-      console.error("Failed to fetch dashboard data:", response.status);
-      return null;
-    }
-
-    return response.json();
-  } catch (error) {
-    console.error("Error fetching dashboard data:", error);
-    return null;
-  }
-}
+import { fetchDashboardData } from "@/lib/airtable";
 
 export default async function Home() {
-  const dashboardData = await getDashboardData();
+  const dashboardData = await fetchDashboardData();
 
   return (
     <PageLayout showHeader={false}>
